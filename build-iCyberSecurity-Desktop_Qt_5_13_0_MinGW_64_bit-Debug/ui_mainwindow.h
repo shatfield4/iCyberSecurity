@@ -65,13 +65,13 @@ public:
         BussinessOutcomes->setObjectName(QString::fromUtf8("BussinessOutcomes"));
         textBrowser = new QTextBrowser(BussinessOutcomes);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-        textBrowser->setGeometry(QRect(40, 160, 801, 281));
+        textBrowser->setGeometry(QRect(0, 0, 891, 581));
         tabWidget->addTab(BussinessOutcomes, QString());
         Reviews = new QWidget();
         Reviews->setObjectName(QString::fromUtf8("Reviews"));
         textBrowser_2 = new QTextBrowser(Reviews);
         textBrowser_2->setObjectName(QString::fromUtf8("textBrowser_2"));
-        textBrowser_2->setGeometry(QRect(40, 100, 811, 341));
+        textBrowser_2->setGeometry(QRect(0, 0, 891, 581));
         tabWidget->addTab(Reviews, QString());
         ContactUs = new QWidget();
         ContactUs->setObjectName(QString::fromUtf8("ContactUs"));
@@ -88,7 +88,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 916, 21));
+        menubar->setGeometry(QRect(0, 0, 916, 26));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -96,7 +96,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -119,22 +119,22 @@ public:
         textBrowser->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e; background-color:#ffffff;\">Business Outcomes:</span><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;\"><br />\342\200\242 iCyberSecurity offers one of the best and updated cyber security programs available in the world. Our"
-                        " 24/7 support team is always available if anything goes wrong and is constantly looking for new viruses/threats every day.<br />\342\200\242 Our system is not only fast, it is accurate.<br />\342\200\242 Our system is very complex but can be installed in less than 24 hours to get you up and running while being protected at the same time.<br />Features:<br />\342\200\242 Our system keeps you updated any time any threat is detected<br />\342\200\242 Our system is completely customizable; if you don\342\200\231t like what you see, it\342\200\231s completely open for you to configure<br />\342\200\242 State of the art automatic removal of any threats detected</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;\">- Can detect and "
-                        "remove any threats within 500 miliseconds of being installed</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'MS UI Gothic'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e; background-color:#ffffff;\">Business Outcomes:</span><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;\"><br />\342\200\242 iCyberSecurity offers one of the best and updated cyber security programs available in the world. Our 24/7"
+                        " support team is always available if anything goes wrong and is constantly looking for new viruses/threats every day.<br />\342\200\242 Our system is not only fast, it is accurate.<br />\342\200\242 Our system is very complex but can be installed in less than 24 hours to get you up and running while being protected at the same time.<br />Features:<br />\342\200\242 Our system keeps you updated any time any threat is detected<br />\342\200\242 Our system is completely customizable; if you don\342\200\231t like what you see, it\342\200\231s completely open for you to configure<br />\342\200\242 State of the art automatic removal of any threats detected</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;\">- Can detect and remov"
+                        "e any threats within 500 miliseconds of being installed</span></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(BussinessOutcomes), QCoreApplication::translate("MainWindow", "Business Outcomes", nullptr));
         textBrowser_2->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e; background-color:#ffffff;\">Bob S.</span><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e;\"><br />8/10/2019<br />Our company has a large IT environment that requires a very reliable security system. iCyberSecurity is constantl"
-                        "y updating their systems to oppose new threats and to make the software more easier to use. We have been using iCyberSecurity for years and never had to look back.</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e; background-color:#ffffff;\">Maria H.</span><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e;\"><br />7/12/2019<br />I have been only using iCyberSecurity for couple of months but I clearly see the difference in my computers performance. They have a cleanup service to remove any unnecessary cache etc. to boost up your computer performance and only once using it I have more space on my drive"
-                        " and faster performance. There are other free cleanup services that I have also used before but iCyberSecurity constantly updates it to help get rid of any additional stuff and upgrade your computer's environment. I am satisfied with their service and plan to continue using their software.</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e; background-color:#ffffff;\">Karen W.</span><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e;\"><br />2/20/2019<br />Our computer had recently been attacked by a virus and ended up called iCyberSecurity for help. I am glad we have chosen them because of their 24/7 he"
-                        "lp service and easy to understand instructions by their IT supports. Their fast and reliable support are the best so far from our experience and we love it. Will continue to support them.</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'MS UI Gothic'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e; background-color:#ffffff;\">Bob S.</span><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e;\"><br />8/10/2019<br />Our company has a large IT environment that requires a very reliable security system. iCyberSecurity is constantly upd"
+                        "ating their systems to oppose new threats and to make the software more easier to use. We have been using iCyberSecurity for years and never had to look back.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e; background-color:#ffffff;\">Maria H.</span><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e;\"><br />7/12/2019<br />I have been only using iCyberSecurity for couple of months but I clearly see the difference in my computers performance. They have a cleanup service to remove any unnecessary cache etc. to boost up your computer performance and only once using it I have more space on my drive and "
+                        "faster performance. There are other free cleanup services that I have also used before but iCyberSecurity constantly updates it to help get rid of any additional stuff and upgrade your computer's environment. I am satisfied with their service and plan to continue using their software.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e; background-color:#ffffff;\">Karen W.</span><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:8pt; color:#24292e;\"><br />2/20/2019<br />Our computer had recently been attacked by a virus and ended up called iCyberSecurity for help. I am glad we have chosen them because of their 24/7 help se"
+                        "rvice and easy to understand instructions by their IT supports. Their fast and reliable support are the best so far from our experience and we love it. Will continue to support them.</span></p></body></html>", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Reviews), QCoreApplication::translate("MainWindow", "Reviews", nullptr));
         SubmitMessage->setText(QCoreApplication::translate("MainWindow", "Submit", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(ContactUs), QCoreApplication::translate("MainWindow", "Contact Us", nullptr));
