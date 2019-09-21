@@ -65,13 +65,13 @@ public:
         BussinessOutcomes->setObjectName(QString::fromUtf8("BussinessOutcomes"));
         textBrowser = new QTextBrowser(BussinessOutcomes);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-        textBrowser->setGeometry(QRect(40, 160, 801, 281));
+        textBrowser->setGeometry(QRect(0, 0, 891, 581));
         tabWidget->addTab(BussinessOutcomes, QString());
         Reviews = new QWidget();
         Reviews->setObjectName(QString::fromUtf8("Reviews"));
         textBrowser_2 = new QTextBrowser(Reviews);
         textBrowser_2->setObjectName(QString::fromUtf8("textBrowser_2"));
-        textBrowser_2->setGeometry(QRect(40, 100, 811, 341));
+        textBrowser_2->setGeometry(QRect(0, 0, 891, 581));
         tabWidget->addTab(Reviews, QString());
         ContactUs = new QWidget();
         ContactUs->setObjectName(QString::fromUtf8("ContactUs"));
