@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="Products">
        <attribute name="title">
@@ -59,10 +59,10 @@ p, li { white-space: pre-wrap; }
        <widget class="QTextBrowser" name="textBrowser">
         <property name="geometry">
          <rect>
-          <x>40</x>
-          <y>160</y>
-          <width>801</width>
-          <height>281</height>
+          <x>0</x>
+          <y>0</y>
+          <width>891</width>
+          <height>581</height>
          </rect>
         </property>
         <property name="html">
@@ -82,10 +82,10 @@ p, li { white-space: pre-wrap; }
        <widget class="QTextBrowser" name="textBrowser_2">
         <property name="geometry">
          <rect>
-          <x>40</x>
-          <y>100</y>
-          <width>811</width>
-          <height>341</height>
+          <x>0</x>
+          <y>0</y>
+          <width>891</width>
+          <height>581</height>
          </rect>
         </property>
         <property name="html">
