@@ -1,0 +1,16 @@
+
+*.stash
+*.exe
+build-iCyberSecurity-Desktop_Qt_5_13_0_MinGW_64_bit-Debug/debug/main.o
+build-iCyberSecurity-Desktop_Qt_5_13_0_MinGW_64_bit-Debug/debug/mainwindow.o
+build-iCyberSecurity-Desktop_Qt_5_13_0_MinGW_64_bit-Debug/debug/moc_mainwindow.cpp
+build-iCyberSecurity-Desktop_Qt_5_13_0_MinGW_64_bit-Debug/debug/moc_mainwindow.cpp
+build-iCyberSecurity-Desktop_Qt_5_13_0_MinGW_64_bit-Debug/debug/moc_mainwindow.o
+build-iCyberSecurity-Desktop_Qt_5_13_0_MinGW_64_bit-Debug/Makefile
+build-iCyberSecurity-Desktop_Qt_5_13_0_MinGW_64_bit-Debug/debug/moc_predefs.h
+build-iCyberSecurity-Desktop_Qt_5_13_0_MinGW_64_bit-Debug/Makefile.Release
+build-iCyberSecurity-Desktop_Qt_5_13_0_MinGW_64_bit-Debug/Makefile.Debug
+build-iCyberSecurity-Desktop_Qt_5_13_0_MinGW_64_bit-Debug/ui_mainwindow.h
+iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/iCyberSecurity.pro.user
+*.user
+iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/iCyberSecurity.pro.user
