@@ -13,6 +13,7 @@
 
 # A listing of all the files included in the project
 *.files
+*.stash
 
 # Include directories
 *.includes
@@ -25,6 +26,7 @@
 
 # User project settings
 *.creator.user*
+*.pro.user*
 
 # Qt Creator backups
 *.autosave
