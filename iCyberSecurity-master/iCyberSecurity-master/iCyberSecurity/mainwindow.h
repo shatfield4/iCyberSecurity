@@ -15,6 +15,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+//public slots:
+
+private slots:
+    void on_pampletSubmitButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
