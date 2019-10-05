@@ -22,6 +22,9 @@ SOURCES += \
 HEADERS += \
     ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h \
     ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h \
+    Customer.h \
+    Key.h \
+    interestlevel.h \
     linkedListType.h \
     mainwindow.h \
     orderLinkedList.h
