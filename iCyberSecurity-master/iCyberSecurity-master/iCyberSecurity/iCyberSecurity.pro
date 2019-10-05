@@ -20,8 +20,11 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
-    Key.h \
-    mainwindow.h
+    ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h \
+    ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h \
+    linkedListType.h \
+    mainwindow.h \
+    orderLinkedList.h
 
 FORMS += \
     mainwindow.ui
