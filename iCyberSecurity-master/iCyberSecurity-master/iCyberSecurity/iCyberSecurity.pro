@@ -20,6 +20,7 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    Key.h \
     mainwindow.h
 
 FORMS += \
