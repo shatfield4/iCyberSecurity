@@ -1,6 +1,8 @@
 #include "Customer.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QFile>
+#include <QTextStream>
 #include <QMessageBox>
 #include <QFile>
 #include <QTextStream>
@@ -22,6 +24,17 @@ MainWindow::MainWindow(QWidget *parent)
     ui->customerTable->setHorizontalHeaderItem(2, new QTableWidgetItem("Address Line 2"));
     ui->customerTable->setHorizontalHeaderItem(3, new QTableWidgetItem("Interest Level"));
     ui->customerTable->setHorizontalHeaderItem(4, new QTableWidgetItem("Key"));
+
+    QFile file("testimonials.txt");
+
+    if (!file.open(QFile::ReadOnly | QFile::Text))
+    {
+        QMessageBox::warning(this,"Error","File not open");
+    }
+    QTextStream in(&file);
+    QString text = in.readAll();
+    ui->textReviews->setPlainText(text);
+    file.close();
 }
 
 MainWindow::~MainWindow()
@@ -126,4 +139,23 @@ void MainWindow::on_loadCustomerData_clicked()
     //qDebug() << QString::fromStdString(customerArr[7].getname());
 
 
+void MainWindow::on_pushSubmit_clicked()
+{
+    QFile file("testimonials.txt");
+
+    if (!file.open(QFile::WriteOnly | QFile::Text | QFile::Append))
+    {
+        QMessageBox::warning(this,"Error","File not open");
+    }
+    QTextStream out(&file);
+    QString name = ui->editName->toPlainText();
+    QString stars = ui->editStars->toPlainText();
+    QString review = ui->editReviews->toPlainText();
+
+    out << name << endl << stars << " stars" << endl << review << endl << endl;
+    file.flush();
+    file.close();
+    ui->editName->setPlainText("");
+    ui->editStars->setPlainText("");
+    ui->editReviews->setPlainText("");
 }
