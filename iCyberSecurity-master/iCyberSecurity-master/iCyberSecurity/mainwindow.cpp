@@ -152,5 +152,6 @@ void MainWindow::on_loadCustomerData_clicked()
         }
 
         ui->customerTable->resizeColumnsToContents();
+        file.close();
 
 }
