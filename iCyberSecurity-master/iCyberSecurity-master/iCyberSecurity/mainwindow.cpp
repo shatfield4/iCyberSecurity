@@ -51,4 +51,17 @@ void MainWindow::on_pushSubmit_clicked()
     ui->editName->setPlainText("");
     ui->editStars->setPlainText("");
     ui->editReviews->setPlainText("");
+
+    ui->setupUi(this);
+
+    QFile ifile("testimonials.txt");
+
+    if (!ifile.open(QFile::ReadOnly | QFile::Text))
+    {
+        QMessageBox::warning(this,"Error","File not open");
+    }
+    QTextStream in(&ifile);
+    QString text = in.readAll();
+    ui->textReviews->setPlainText(text);
+    ifile.close();
 }
