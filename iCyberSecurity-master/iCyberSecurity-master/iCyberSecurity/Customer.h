@@ -11,17 +11,16 @@ class Customer
 
 std::string name;
 
-Key keylevel;
+//Key keylevel;
+std::string keylevel;
 
 bool recieved_pamphlet;
 
-std::string zipcode;
+std::string address1;
 
-std::string state;
+std::string address2;
 
-std::string address;
-
-Interest_level interest;
+std::string interest;
 
 public:
 
@@ -29,18 +28,16 @@ public:
 
 void setname(std::string);
 
-void setkey(Key);
+void setkey(std::string);
 
 void setpamphlet(bool);
 
 
-void setzipcode(std::string);
+void setaddress1(std::string);
 
-void setsate(std::string);
+void setaddress2(std::string);
 
-void setaddress(std::string);
-
-void setInterest(Interest_level);
+void setInterest(std::string);
 
 
 //getters
@@ -48,23 +45,21 @@ void setInterest(Interest_level);
 
 std::string getname();
 
-Key getkey(Key);
+std::string getkey();
 
 bool getpamphlet();
 
-std::string getaddress();
+std::string getaddress1();
 
-std::string getzipcode();
+std::string getaddress2();
 
-std::string getsate();
-
-Interest_level getInterest();
+std::string getInterest();
 
 
 //constructors
 Customer();
 
-Customer(std::string name,Key keylevel ,bool recieved_pamphlet ,std::string zipcode,std::string state,std::string address, Interest_level interest);
+Customer(std::string xname,Key xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, Interest_level xinterest);
 //no pointed to data so no need for copy constructor currently;
 
 
