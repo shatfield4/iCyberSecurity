@@ -11,7 +11,7 @@ void Customer::setname(std::string x)
     name=x;
 };
 
-void Customer::setkey(Key x)
+void Customer::setkey(std::string x)
 {
     keylevel=x;
 }
@@ -21,22 +21,18 @@ void Customer::setpamphlet(bool x)
     recieved_pamphlet = x;
 };
 
-void Customer::setaddress(std::string x)
+void Customer::setaddress1(std::string x)
 {
-    address= x;
+    address1= x;
 };
 
-void Customer::setzipcode(std::string x)
+void Customer::setaddress2(std::string x)
 {
-    zipcode=x;
+    address2= x;
 };
 
-void Customer::setsate(std::string x)
-{
-    state=x;
-};
 
-void Customer::setInterest(Interest_level x)
+void Customer::setInterest(std::string x)
 {
 interest=x;
 };
@@ -48,7 +44,7 @@ std::string Customer::getname()
 {
     return name;
 };
-Key Customer::getkey(Key)
+std::string Customer::getkey()
 {
     return keylevel;
 };
@@ -59,18 +55,22 @@ bool Customer::getpamphlet()
 };
 
 
-std::string Customer::getaddress()
+std::string Customer::getaddress1()
 {
-    return address;
+    return address1;
 };
-std::string Customer::getzipcode()
+
+std::string Customer::getaddress2()
 {
-    return zipcode;
+    return address2;
 };
-std::string Customer::getsate()
+
+std::string Customer::getInterest()
 {
-    return state;
+    return interest;
 };
+
+
 
 //constructors
 Customer::Customer()
@@ -78,20 +78,18 @@ Customer::Customer()
      name="NOT SET";
      keylevel= mean;
      recieved_pamphlet=false;
-     zipcode="NOT SET";
-     state="NOT SET";
-     address="NOT SET";
+     address1="NOT SET";
+     address2="NOT SET";
      interest=NOTATALL;
 
 };
-Customer::Customer(std::string xname,Key xKey,bool xpamphlet ,std::string xzip,std::string xstate,std::string xaddress, Interest_level xinterest)
+Customer::Customer(std::string xname,Key xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, Interest_level xinterest)
 {
     name=xname;
     keylevel= xKey;
     recieved_pamphlet=xpamphlet;
-    zipcode=xzip;
-    state=xstate;
-    address=xaddress;
+    address1=xaddress1;
+    address2=xaddress2;
     interest=xinterest;
 };
 

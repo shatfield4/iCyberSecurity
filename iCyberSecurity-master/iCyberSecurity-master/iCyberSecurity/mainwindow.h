@@ -22,6 +22,8 @@ private slots:
 
     void on_pushSubmit_clicked();
 
+    void on_loadCustomerData_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
