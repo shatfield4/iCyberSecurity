@@ -59,7 +59,11 @@ OBJECTS       = Customer.o \
 		main.o \
 		mainwindow.o \
 		moc_mainwindow.o
-DIST          = /Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/features/spec_pre.prf \
+DIST          = /Users/SeanVHatfield/SeanHatfield/Documents/iCyberSecurity \
+		../iCyberSecurity/Done \
+		../iCyberSecurity/Input/iCyberSecurity/customers.txt \
+		../iCyberSecurity/customers.txt \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/features/spec_pre.prf \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/qdevice.pri \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/features/device_config.prf \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/common/unix.conf \
@@ -739,7 +743,12 @@ mainwindow.o: ../iCyberSecurity/mainwindow.cpp ../iCyberSecurity/mainwindow.h \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/QTextStream \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/qtextstream.h \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/QMessageBox \
-		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/QDebug \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/qdebug.h \
+		../iCyberSecurity/Customer.h \
+		../iCyberSecurity/interestlevel.h \
+		../iCyberSecurity/Key.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../iCyberSecurity/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 

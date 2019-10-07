@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="tabsCustomer">
       <property name="currentIndex">
-       <number>6</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tabCOO">
        <attribute name="title">
@@ -509,7 +509,7 @@ Call Us                  Support
        <attribute name="title">
         <string>Admin</string>
        </attribute>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>0</x>

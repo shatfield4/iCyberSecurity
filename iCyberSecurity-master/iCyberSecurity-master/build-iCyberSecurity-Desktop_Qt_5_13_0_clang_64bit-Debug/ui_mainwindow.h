@@ -72,7 +72,7 @@ public:
     QLabel *pampletAddressLabel;
     QWidget *tabHelp;
     QWidget *tabAdmin;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QTableWidget *customerTable;
     QPushButton *loadCustomerData;
@@ -213,18 +213,18 @@ public:
         tabsCustomer->addTab(tabHelp, QString());
         tabAdmin = new QWidget();
         tabAdmin->setObjectName(QString::fromUtf8("tabAdmin"));
-        widget = new QWidget(tabAdmin);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(0, 0, 881, 561));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(tabAdmin);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(0, 0, 881, 561));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        customerTable = new QTableWidget(widget);
+        customerTable = new QTableWidget(layoutWidget);
         customerTable->setObjectName(QString::fromUtf8("customerTable"));
 
         verticalLayout->addWidget(customerTable);
 
-        loadCustomerData = new QPushButton(widget);
+        loadCustomerData = new QPushButton(layoutWidget);
         loadCustomerData->setObjectName(QString::fromUtf8("loadCustomerData"));
 
         verticalLayout->addWidget(loadCustomerData);
@@ -244,7 +244,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabsCustomer->setCurrentIndex(6);
+        tabsCustomer->setCurrentIndex(3);
         tabsProduct->setCurrentIndex(2);
         tabsPlans->setCurrentIndex(1);
 
