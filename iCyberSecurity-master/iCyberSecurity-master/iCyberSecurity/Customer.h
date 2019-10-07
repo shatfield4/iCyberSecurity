@@ -50,7 +50,7 @@ std::string getname();
 
 Key getkey(Key);
 
-bool getpamphlet(bool);
+bool getpamphlet();
 
 std::string getaddress();
 

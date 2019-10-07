@@ -52,7 +52,7 @@ Key Customer::getkey(Key)
 {
     return keylevel;
 };
-bool Customer::getpamphlet(bool)
+bool Customer::getpamphlet()
 {
     return recieved_pamphlet;
 
