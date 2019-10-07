@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QFile>
+#include<QStandardPaths>
 #include <QTextStream>
 #include <QMessageBox>
 #include <QDebug>
@@ -90,7 +91,12 @@ void MainWindow::on_loadCustomerData_clicked()
         QString tempInterest;
         QString tempKey;
 
-        QFile file("/Users/SeanVHatfield/SeanHatfield/Documents/iCyberSecurity Done Input/iCyberSecurity/customers.txt");
+        //QString path = QStandardPaths::AppLocalDataLocation;
+        //path.append("/customers.txt");
+
+       // QString documentLocation = QStandardPaths::locate(QStandardPaths::DocumentsLocation, "customers.txt", QStandardPaths::LocateDirectory);
+
+        QFile file("iCyberSecurity/customers.txt");
         if(!file.open(QFile::ReadOnly | QFile::Text))
         {
             QMessageBox::warning(this, "title", "file not open");
