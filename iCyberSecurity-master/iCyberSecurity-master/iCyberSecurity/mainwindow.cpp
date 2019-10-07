@@ -84,28 +84,20 @@ void MainWindow::on_loadCustomerData_clicked()
         int column = 0;
         //int row = 0;
 
-        QString tempName;
-        QString tempAddress1;
-        QString tempAddress2;
-        QString tempInterest;
-        QString tempKey;
-
-        QFile file("/Users/SeanVHatfield/SeanHatfield/Documents/iCyberSecurity Done Input/iCyberSecurity/customers.txt");
+        QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
         if(!file.open(QFile::ReadOnly | QFile::Text))
         {
             QMessageBox::warning(this, "title", "file not open");
         }
         QTextStream in(&file);
 
-
-
         for (int i = 0; !in.atEnd(); i++)
         {
-            tempName = in.readLine();
-            tempAddress1 = in.readLine();
-            tempAddress2 = in.readLine();
-            tempInterest = in.readLine();
-            tempKey = in.readLine();
+           QString tempName = in.readLine();
+           QString tempAddress1 = in.readLine();
+           QString tempAddress2 = in.readLine();
+           QString tempInterest = in.readLine();
+           QString tempKey = in.readLine();
 
             qDebug() << "Name: " << tempName;
             qDebug() << "Address 1: " << tempAddress1;
@@ -157,10 +149,6 @@ void MainWindow::on_loadCustomerData_clicked()
 
             row += 1;
             column = 0;
-
-
-
-
         }
 
         ui->customerTable->resizeColumnsToContents();
