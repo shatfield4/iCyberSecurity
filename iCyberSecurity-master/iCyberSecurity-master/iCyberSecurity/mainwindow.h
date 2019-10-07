@@ -20,6 +20,8 @@ public:
 private slots:
     void on_pampletSubmitButton_clicked();
 
+    void on_pushSubmit_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
