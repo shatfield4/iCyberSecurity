@@ -27,9 +27,7 @@ HEADERS += \
     Customer.h \
     Key.h \
     interestlevel.h \
-    linkedListType.h \
     mainwindow.h \
-    orderLinkedList.h \
     purchasingpage.h
 
 FORMS += \
