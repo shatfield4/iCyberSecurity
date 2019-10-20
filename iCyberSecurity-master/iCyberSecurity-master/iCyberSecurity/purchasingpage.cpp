@@ -30,7 +30,7 @@ purchasingPage::purchasingPage(QWidget *parent) :
             int count = 0;
 
 
-            QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+            QFile file(":/data/textFiles/customers.txt");
 
             if(!file.open(QFile::ReadOnly | QFile::Text))
             {
@@ -107,11 +107,15 @@ void purchasingPage::on_buttonBox_accepted()
 //Cancel button
 void purchasingPage::on_buttonBox_rejected()
 {
+   QMessageBox::information(this,tr("Order Canceled"), tr("Your order has been canceled.\nGoing back to product page."));
+    /*
+
     QMessageBox msgBox;
     msgBox.setText("You are canceling a order.");
     msgBox.setInformativeText("Are you sure you would like to cancel your order?\nAll information entered will be deleted.");
     msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
     int ret = msgBox.exec();
+
 
     switch (ret) {
       case QMessageBox::Yes:
@@ -126,6 +130,8 @@ void purchasingPage::on_buttonBox_rejected()
           // should never be reached
           break;
     }
+
+    */
 
 }
 

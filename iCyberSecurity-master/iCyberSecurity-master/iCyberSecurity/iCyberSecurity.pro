@@ -25,8 +25,6 @@ SOURCES += \
     sorting.cpp
 
 HEADERS += \
-    ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h \
-    ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h \
     Customer.h \
     Key.h \
     adminpage.h \
@@ -46,5 +44,7 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-DISTFILES += \
-    customers.txt
+DISTFILES +=
+
+RESOURCES += \
+    resource.qrc
