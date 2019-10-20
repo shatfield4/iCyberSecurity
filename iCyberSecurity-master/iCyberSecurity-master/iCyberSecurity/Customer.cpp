@@ -3,8 +3,8 @@
 
 
 #include <string>
-#include "Key.h"
-#include "interestlevel.h"
+//#include "Key.h"
+//#include "interestlevel.h"
 #include "Customer.h"
 
 
@@ -78,17 +78,17 @@ std::string Customer::getinterest()
 Customer::Customer()
 {
      name="NOT SET";
-     keylevel= mean;
+     keylevel= "NOT SET";
      received_pamphlet=false;
      address1="NOT SET";
      address2="NOT SET";
-     interest=NOTATALL;
+     interest="NOT SET";
 
 };
-Customer::Customer(std::string xname,Key xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest)
+Customer::Customer(std::string xname,std::string xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest)
 {
     name=xname;
-    keylevel= xKey;
+    keylevel = xKey;
     received_pamphlet=xpamphlet;
     address1=xaddress1;
     address2=xaddress2;

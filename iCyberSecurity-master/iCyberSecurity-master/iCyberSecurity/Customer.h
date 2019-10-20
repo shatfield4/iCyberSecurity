@@ -1,6 +1,6 @@
 #include<string>
-#include "interestlevel.h"
-#include "Key.h"
+//#include "interestlevel.h"
+//#include "Key.h"
 #include "order.h"
 
 #ifndef CUSTOMER_H
@@ -70,7 +70,7 @@ std::string getinterest();
 //! this constructor sets all strings to "NOT SET" and recieved_pamphlet to false
 Customer();
 //! This constructor takes all member variables and makes a class.
-Customer(std::string xname,Key xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest);
+Customer(std::string xname, std::string xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest);
 //no pointed to data so no need for copy constructor currently;
 
 
