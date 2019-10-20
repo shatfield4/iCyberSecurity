@@ -126,11 +126,11 @@ void MainWindow::on_loadCustomerData_clicked()
             qDebug() << "Interest: " << tempInterest;
             qDebug() << "Key: " << tempKey;
 
-            customerArr[i].setname(tempName.toUtf8().constData());
-            customerArr[i].setaddress1(tempAddress1.toUtf8().constData());
-            customerArr[i].setaddress2(tempAddress2.toUtf8().constData());
-            customerArr[i].setinterest(tempInterest.toUtf8().constData());
-            customerArr[i].setkey(tempKey.toUtf8().constData());
+            customerArr[i].setName(tempName.toUtf8().constData());
+            customerArr[i].setAddress1(tempAddress1.toUtf8().constData());
+            customerArr[i].setAddress2(tempAddress2.toUtf8().constData());
+            customerArr[i].setInterest(tempInterest.toUtf8().constData());
+            customerArr[i].setKey(tempKey.toUtf8().constData());
 
             count = i;
 
@@ -141,32 +141,32 @@ void MainWindow::on_loadCustomerData_clicked()
             //Set Name
             QTableWidgetItem *item = ui->customerTable->item(row, column);
             item = new QTableWidgetItem();
-            item->setText(QString::fromStdString(customerArr[i].getname()));
+            item->setText(QString::fromStdString(customerArr[i].getName()));
             ui->customerTable->setItem(row, column, item);
 
             //Set Address 1
             item = new QTableWidgetItem();
             ui->customerTable->item(row,column + 1);
             ui->customerTable->setItem(row,column + 1, item);
-            item->setText(QString::fromStdString(customerArr[i].getaddress1()));
+            item->setText(QString::fromStdString(customerArr[i].getAddress1()));
 
             //Set Address 2
             item = new QTableWidgetItem();
             ui->customerTable->item(row,column + 2);
             ui->customerTable->setItem(row,column + 2, item);
-            item->setText(QString::fromStdString(customerArr[i].getaddress2()));
+            item->setText(QString::fromStdString(customerArr[i].getAddress2()));
 
             //Set Interest Level
             item = new QTableWidgetItem();
             ui->customerTable->item(row,column + 3);
             ui->customerTable->setItem(row,column + 3, item);
-            item->setText(QString::fromStdString(customerArr[i].getinterest()));
+            item->setText(QString::fromStdString(customerArr[i].getInterest()));
 
             //Set Key
             item = new QTableWidgetItem();
             ui->customerTable->item(row,column + 4);
             ui->customerTable->setItem(row,column + 4, item);
-            item->setText(QString::fromStdString(customerArr[i].getkey()));
+            item->setText(QString::fromStdString(customerArr[i].getKey()));
 
             row += 1;
             column = 0;

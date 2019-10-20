@@ -17,53 +17,53 @@ class Customer
 
 //variables
 
-//! The customers order;
-order customers_order;
-//! the customers first and last name
+//! The customers order-INPUT
+order customersOrder;
+//! the customers first and last name-INPUT
 std::string name;
-//! How important the customer is to the company
-std::string keylevel;
-//! Indicated whether they have recieved a pamphlet
-bool received_pamphlet;
-//! The space for the customers first line for the address
+//! How important the customer is to the company-INPUT
+std::string keyLevel;
+//! Indicated whether they have recieved a pamphlet-INPUT
+bool receivedPamphlet;
+//! The space for the customers first line for the address-INPUT
 std::string address1;
-//! the space for the customers second line of the address
+//! the space for the customers second line of the address-INPUT
 std::string address2;
-//! Indicates the interest level of the customer
+//! Indicates the interest level of the customer-INPUT
 std::string interest;
 
 public:
 
 //setters
 //! Sets the cusomers first and last name
-void setname(std::string);
+void setName(std::string);
 //! Sets the customers key level
-void setkey(std::string);
+void setKey(std::string);
 //! sets whether the customer has recieved a pamphlet
-void setpamphlet(bool);
+void setPamphlet(bool);
 
 //! sets the customsers first address line
-void setaddress1(std::string);
+void setAddress1(std::string);
 //! sets the customers second address line
-void setaddress2(std::string);
+void setAddress2(std::string);
 //! sets the customers  intersest level
-void setinterest(std::string);
+void setInterest(std::string);
 
 
 //getters
 
 //! returns the customers first name
-std::string getname();
+std::string getName();
 //! returns the customer key level
-std::string getkey();
+std::string getKey();
 //! returns whether the customer has recieved a pamphlet or not. 1 for true, 0 for false.
-bool getpamphlet();
+bool getPamphlet();
 //! returns the customer's address line 1
-std::string getaddress1();
+std::string getAddress1();
 //! returns the customer's  address line 2
-std::string getaddress2();
+std::string getAddress2();
 //! returns the customer's interest level
-std::string getinterest();
+std::string getInterest();
 
 
 //constructors
@@ -78,10 +78,10 @@ Customer(std::string xname, std::string xKey,bool xpamphlet, std::string xaddres
 
 //comparisons
 //!returns true if the name of THIS object is greater in value than x
-bool ismynamebigger(Customer x);
+bool isMynamebigger(Customer x);
 
 //!returns true if the key of THIS object is greater in value than x
-bool ismykeybigger(Customer x);
+bool isMykeybigger(Customer x);
 //note: larger values should come later in this case being a "key" customer is 0, while the "mean" keyvalue of 2
 
 

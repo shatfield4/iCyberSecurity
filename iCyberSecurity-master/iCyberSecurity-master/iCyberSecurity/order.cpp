@@ -7,17 +7,20 @@
 
     void order::setname(std::string x)
     {
+        //sets order's name to the input
         name=x;
     };
 
 
     void order::setaddress1(std::string x)
     {
+        //sets order's address1 to the input
         address1= x;
     };
 
     void order::setaddress2(std::string x)
     {
+        //sets order's address2 to the input
         address2= x;
     };
 

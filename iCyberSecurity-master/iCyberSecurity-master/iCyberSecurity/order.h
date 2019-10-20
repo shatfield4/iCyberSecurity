@@ -13,27 +13,27 @@
 class order
 {
 
-  //! the customers first and last name
+  //! the customers first and last name-INPUT
   std::string name;
-  //! The space for the customers first line for the address
+  //! The space for the customers first line for the address-INPUT
   std::string address1;
-  //! the space for the customers second line of the address
+  //! the space for the customers second line of the address-INPUT
   std::string address2;
-  //! Indicates the interest level of the customer
+  //! Indicates the interest level of the customer-INPUT
 
-  //! Indicates the number of product ones
+  //! Indicates the number of product ones-INPUT
   int number_of_product_one;
-  //! Indicates the number of product twos
+  //! Indicates the number of product twos-INPUT
   int number_of_product_two;
-  //! Indicates the number of product three
+  //! Indicates the number of product three-INPUT
   int number_of_product_three;
-  //! Indicates if they got serviceplan two
+  //! Indicates if they got serviceplan two-INPUT
   bool serviceplan_one;
-  //! Indicates if they got serviceplan two
+  //! Indicates if they got serviceplan two-INPUT
   bool serviceplan_two;
-  //! the taxrate
+  //! the taxrate-INPUT
   double tax;
-  //! the total cost;
+  //! the total cost-CALC&OUT
   double total;
 
 
