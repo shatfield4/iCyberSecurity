@@ -17,6 +17,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     Customer.cpp \
+    adminpage.cpp \
     main.cpp \
     mainwindow.cpp \
     purchasingpage.cpp
@@ -26,11 +27,13 @@ HEADERS += \
     ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h \
     Customer.h \
     Key.h \
+    adminpage.h \
     interestlevel.h \
     mainwindow.h \
     purchasingpage.h
 
 FORMS += \
+    adminpage.ui \
     mainwindow.ui \
     purchasingpage.ui
 
