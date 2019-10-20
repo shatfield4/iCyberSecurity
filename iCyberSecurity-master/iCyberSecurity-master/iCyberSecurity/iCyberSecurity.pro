@@ -20,6 +20,7 @@ SOURCES += \
     adminpage.cpp \
     main.cpp \
     mainwindow.cpp \
+    order.cpp \
     purchasingpage.cpp
 
 HEADERS += \
@@ -30,6 +31,7 @@ HEADERS += \
     adminpage.h \
     interestlevel.h \
     mainwindow.h \
+    order.h \
     purchasingpage.h
 
 FORMS += \

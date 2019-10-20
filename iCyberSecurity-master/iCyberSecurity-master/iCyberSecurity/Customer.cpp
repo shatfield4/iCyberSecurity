@@ -1,5 +1,7 @@
 
 
+
+
 #include <string>
 #include "Key.h"
 #include "interestlevel.h"
@@ -18,7 +20,7 @@ void Customer::setkey(std::string x)
 
 void Customer::setpamphlet(bool x)
 {
-    recieved_pamphlet = x;
+    received_pamphlet = x;
 };
 
 void Customer::setaddress1(std::string x)
@@ -32,7 +34,7 @@ void Customer::setaddress2(std::string x)
 };
 
 
-void Customer::setInterest(std::string x)
+void Customer::setinterest(std::string x)
 {
 interest=x;
 };
@@ -50,7 +52,7 @@ std::string Customer::getkey()
 };
 bool Customer::getpamphlet()
 {
-    return recieved_pamphlet;
+    return received_pamphlet;
 
 };
 
@@ -65,7 +67,7 @@ std::string Customer::getaddress2()
     return address2;
 };
 
-std::string Customer::getInterest()
+std::string Customer::getinterest()
 {
     return interest;
 };
@@ -77,17 +79,17 @@ Customer::Customer()
 {
      name="NOT SET";
      keylevel= mean;
-     recieved_pamphlet=false;
+     received_pamphlet=false;
      address1="NOT SET";
      address2="NOT SET";
      interest=NOTATALL;
 
 };
-Customer::Customer(std::string xname,Key xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, Interest_level xinterest)
+Customer::Customer(std::string xname,Key xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest)
 {
     name=xname;
     keylevel= xKey;
-    recieved_pamphlet=xpamphlet;
+    received_pamphlet=xpamphlet;
     address1=xaddress1;
     address2=xaddress2;
     interest=xinterest;
@@ -113,5 +115,6 @@ bool Customer::ismykeybigger(Customer x)
     else return false;
 
 };
+
 
 

@@ -129,7 +129,7 @@ void MainWindow::on_loadCustomerData_clicked()
             customerArr[i].setname(tempName.toUtf8().constData());
             customerArr[i].setaddress1(tempAddress1.toUtf8().constData());
             customerArr[i].setaddress2(tempAddress2.toUtf8().constData());
-            customerArr[i].setInterest(tempInterest.toUtf8().constData());
+            customerArr[i].setinterest(tempInterest.toUtf8().constData());
             customerArr[i].setkey(tempKey.toUtf8().constData());
 
             count = i;
@@ -160,7 +160,7 @@ void MainWindow::on_loadCustomerData_clicked()
             item = new QTableWidgetItem();
             ui->customerTable->item(row,column + 3);
             ui->customerTable->setItem(row,column + 3, item);
-            item->setText(QString::fromStdString(customerArr[i].getInterest()));
+            item->setText(QString::fromStdString(customerArr[i].getinterest()));
 
             //Set Key
             item = new QTableWidgetItem();
