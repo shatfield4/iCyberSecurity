@@ -69,7 +69,7 @@ void MainWindow::on_pushSubmit_clicked()
 
     ui->setupUi(this);
 
-    QFile ifile("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/testimonials.txt");
+    QFile ifile(":/data/textFiles/testimonials.txt");
 
     if (!ifile.open(QFile::ReadOnly | QFile::Text))
     {
@@ -89,7 +89,7 @@ void MainWindow::on_loadCustomerData_clicked()
 //        int column = 0;
 
 
-//        QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+//        QFile file(":/data/textFiles/customers.txt");
 
 //        if(!file.open(QFile::ReadOnly | QFile::Text))
 //        {

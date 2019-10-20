@@ -126,7 +126,7 @@
     return total;
   };
 
-    //! defualt constructor sets all strings to "Not set" both service plans are set to false  the total and tax are set to 0
+    //! default constructor sets all strings to "Not set" both service plans are set to false  the total and tax are set to 0
   order::order()
   {
     name= "NOT SET";

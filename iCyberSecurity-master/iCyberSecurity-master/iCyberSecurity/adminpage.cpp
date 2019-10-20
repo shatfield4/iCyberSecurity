@@ -35,22 +35,7 @@ void AdminPage::on_loadCustomerData_clicked()
     int column = 0;
     //int row = 0;
 
-    // testing stuff for customer.txt   Ayako---Branch
-    //QString tempName;
-    //QString tempAddress1;
-    //QString tempAddress2;
-    //QString tempInterest;
-    // QString tempKey;
-
-    //QString path = QStandardPaths::AppLocalDataLocation;
-    //path.append("/customers.txt");
-
-    // QString documentLocation = QStandardPaths::locate(QStandardPaths::DocumentsLocation, "customers.txt", QStandardPaths::LocateDirectory);
-
-    //QFile file("iCyberSecurity/customers.txt");
-    //end testing stuff
-
-    QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+    QFile file(":/data/textFiles/customers.txt");
 
     if(!file.open(QFile::ReadOnly | QFile::Text))
     {

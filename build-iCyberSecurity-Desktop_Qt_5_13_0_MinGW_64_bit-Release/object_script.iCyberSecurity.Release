@@ -1,0 +1,11 @@
+release/Customer.o
+release/adminpage.o
+release/main.o
+release/mainwindow.o
+release/order.o
+release/purchasingpage.o
+release/sorting.o
+release/qrc_resource.o
+release/moc_adminpage.o
+release/moc_mainwindow.o
+release/moc_purchasingpage.o
