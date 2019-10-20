@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 #include "Customer.h"
 #include "purchasingpage.h"
-
+#include "adminpage.h"
 
 #include <QFile>
 #include<QStandardPaths>
@@ -182,4 +182,25 @@ void MainWindow::on_pushButton_clicked()
 {
     purchasingPage* page = new purchasingPage;
     page -> show();
+}
+
+void MainWindow::on_buttonLogin_clicked()
+{
+    AdminPage *adminPagePtr = new AdminPage;
+
+    const QString USERNAME = "A";
+    const QString PASSWORD = "A";
+
+    if (ui->lineEditUsername->text() != USERNAME && ui->lineEditPassword->text() != PASSWORD)
+    {
+        QMessageBox::warning(this, "Invalid", "Invalid input. Try again bitch.");
+        ui->lineEditUsername->setText("");
+        ui->lineEditPassword->setText("");
+    }
+    else
+    {
+        adminPagePtr->show();
+        ui->lineEditUsername->setText("");
+        ui->lineEditPassword->setText("");
+    }
 }
