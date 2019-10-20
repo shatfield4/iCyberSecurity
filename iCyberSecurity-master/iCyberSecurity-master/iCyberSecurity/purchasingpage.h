@@ -15,6 +15,13 @@ public:
     explicit purchasingPage(QWidget *parent = nullptr);
     ~purchasingPage();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_buttonBox_rejected();
+
+    void on_buttonBox_accepted();
+
 private:
     Ui::purchasingPage *ui;
 };

@@ -1,11 +1,15 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "Customer.h"
+#include "purchasingpage.h"
+
+
 #include <QFile>
 #include<QStandardPaths>
 #include <QTextStream>
 #include <QMessageBox>
 #include <QDebug>
-#include "Customer.h"
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -164,11 +168,15 @@ void MainWindow::on_loadCustomerData_clicked()
             row += 1;
             column = 0;
 
-
-
-
         }
 
         ui->customerTable->resizeColumnsToContents();
 
+}
+
+//Temporary button to get to the purchasing page
+void MainWindow::on_pushButton_clicked()
+{
+    purchasingPage* page = new purchasingPage;
+    page -> show();
 }
