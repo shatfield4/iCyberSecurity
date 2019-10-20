@@ -122,12 +122,12 @@
        </font>
       </property>
       <property name="text">
-       <string>rgsers</string>
+       <string>Crab Plan</string>
       </property>
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QCheckBox" name="checkBox_4">
+     <widget class="QCheckBox" name="checkBoxCrab">
       <property name="font">
        <font>
         <pointsize>12</pointsize>
@@ -146,12 +146,12 @@
        </font>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>Unicorn Plan</string>
       </property>
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="QCheckBox" name="checkBox_5">
+     <widget class="QCheckBox" name="checkBoxUnicorn">
       <property name="font">
        <font>
         <pointsize>12</pointsize>
@@ -266,7 +266,7 @@ If you would like to cancel the order click CANCEL</string>
      <number>10</number>
     </property>
     <item row="0" column="1">
-     <widget class="QCheckBox" name="checkBox">
+     <widget class="QCheckBox" name="checkBoxSilver">
       <property name="font">
        <font>
         <pointsize>12</pointsize>
@@ -282,7 +282,7 @@ If you would like to cancel the order click CANCEL</string>
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="QCheckBox" name="checkBox_2">
+     <widget class="QCheckBox" name="checkBoxGold">
       <property name="font">
        <font>
         <pointsize>12</pointsize>
@@ -294,7 +294,7 @@ If you would like to cancel the order click CANCEL</string>
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="QCheckBox" name="checkBox_3">
+     <widget class="QCheckBox" name="checkBoxDiamond">
       <property name="font">
        <font>
         <pointsize>12</pointsize>
@@ -417,7 +417,7 @@ If you would like to cancel the order click CANCEL</string>
        </font>
       </property>
       <property name="text">
-       <string>Address:</string>
+       <string>Address 1:</string>
       </property>
      </widget>
     </item>
@@ -434,17 +434,19 @@ If you would like to cancel the order click CANCEL</string>
      </widget>
     </item>
     <item row="1" column="0" colspan="2">
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="existingComboBox">
       <property name="font">
        <font>
         <pointsize>10</pointsize>
        </font>
       </property>
-      <item>
-       <property name="text">
-        <string>Not Selected</string>
-       </property>
-      </item>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Test</string>
+      </property>
      </widget>
     </item>
    </layout>
@@ -459,32 +461,8 @@ If you would like to cancel the order click CANCEL</string>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_4">
-    <item row="2" column="1">
-     <widget class="QLabel" name="label_19">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="label_17">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Diamond</string>
-      </property>
-     </widget>
-    </item>
     <item row="3" column="1">
-     <widget class="QLabel" name="label_20">
+     <widget class="QLabel" name="diamondPrice">
       <property name="font">
        <font>
         <pointsize>12</pointsize>
@@ -507,8 +485,20 @@ If you would like to cancel the order click CANCEL</string>
       </property>
      </widget>
     </item>
+    <item row="5" column="1">
+     <widget class="QLabel" name="unicornPrice">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
     <item row="4" column="1">
-     <widget class="QLabel" name="label_22">
+     <widget class="QLabel" name="crabPrice">
       <property name="font">
        <font>
         <pointsize>12</pointsize>
@@ -528,54 +518,6 @@ If you would like to cancel the order click CANCEL</string>
       </property>
       <property name="text">
        <string>Unicorn</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="QLabel" name="label_26">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="0">
-     <widget class="QLabel" name="label_27">
-      <property name="font">
-       <font>
-        <pointsize>2</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="0">
-     <widget class="QLabel" name="label_23">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Grand  Total:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="1">
-     <widget class="QLabel" name="label_24">
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
       </property>
      </widget>
     </item>
@@ -603,8 +545,68 @@ If you would like to cancel the order click CANCEL</string>
       </property>
      </widget>
     </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_17">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Diamond</string>
+      </property>
+     </widget>
+    </item>
     <item row="1" column="1">
-     <widget class="QLabel" name="label_18">
+     <widget class="QLabel" name="silverPrice">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_23">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Grand  Total:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="goldPrice">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_27">
+      <property name="font">
+       <font>
+        <pointsize>2</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLabel" name="totalPrice">
       <property name="font">
        <font>
         <pointsize>12</pointsize>
@@ -616,6 +618,78 @@ If you would like to cancel the order click CANCEL</string>
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="label_28">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>440</y>
+     <width>70</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Address 2:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>440</y>
+     <width>383</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>680</y>
+     <width>197</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Subtotal</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="subtotalPrice">
+   <property name="geometry">
+    <rect>
+     <x>1010</x>
+     <y>680</y>
+     <width>197</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Subtotal</string>
+   </property>
   </widget>
  </widget>
  <resources/>

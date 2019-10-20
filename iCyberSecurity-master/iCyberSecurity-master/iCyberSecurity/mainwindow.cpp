@@ -18,14 +18,14 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     qDebug("Program Started");
-    ui->customerTable->setColumnCount(5);
-    ui->customerTable->setHorizontalHeaderItem(0, new QTableWidgetItem("Name"));
-    ui->customerTable->setHorizontalHeaderItem(1, new QTableWidgetItem("Address Line 1"));
-    ui->customerTable->setHorizontalHeaderItem(2, new QTableWidgetItem("Address Line 2"));
-    ui->customerTable->setHorizontalHeaderItem(3, new QTableWidgetItem("Interest Level"));
-    ui->customerTable->setHorizontalHeaderItem(4, new QTableWidgetItem("Key"));
+//    ui->customerTable->setColumnCount(5);
+//    ui->customerTable->setHorizontalHeaderItem(0, new QTableWidgetItem("Name"));
+//    ui->customerTable->setHorizontalHeaderItem(1, new QTableWidgetItem("Address Line 1"));
+//    ui->customerTable->setHorizontalHeaderItem(2, new QTableWidgetItem("Address Line 2"));
+//    ui->customerTable->setHorizontalHeaderItem(3, new QTableWidgetItem("Interest Level"));
+//    ui->customerTable->setHorizontalHeaderItem(4, new QTableWidgetItem("Key"));
 
-    QFile file("testimonials.txt");
+    QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/testimonials.txt");
 
     if (!file.open(QFile::ReadOnly | QFile::Text))
     {
@@ -44,12 +44,12 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pampletSubmitButton_clicked()
 {
-    QMessageBox::information(this,tr("THE title"), tr("You have submitted it. Thank you."));
+    //QMessageBox::information(this,tr("THE title"), tr("You have submitted it. Thank you."));
 }
 
 void MainWindow::on_pushSubmit_clicked()
 {
-    QFile file("testimonials.txt");
+    QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/testimonials.txt");
 
     if (!file.open(QFile::WriteOnly | QFile::Text | QFile::Append))
     {
@@ -69,7 +69,7 @@ void MainWindow::on_pushSubmit_clicked()
 
     ui->setupUi(this);
 
-    QFile ifile("testimonials.txt");
+    QFile ifile("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/testimonials.txt");
 
     if (!ifile.open(QFile::ReadOnly | QFile::Text))
     {
@@ -83,97 +83,82 @@ void MainWindow::on_pushSubmit_clicked()
 
 void MainWindow::on_loadCustomerData_clicked()
 {
-        Customer customerArr[500];
-        int count = 0;
+//        Customer customerArr[500];
+//        int count = 0;
 
-        int column = 0;
-        //int row = 0;
+//        int column = 0;
 
-        // testing stuff for customer.txt   Ayako---Branch
-        //QString tempName;
-        //QString tempAddress1;
-        //QString tempAddress2;
-        //QString tempInterest;
-        // QString tempKey;
 
-        //QString path = QStandardPaths::AppLocalDataLocation;
-        //path.append("/customers.txt");
+//        QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
 
-        // QString documentLocation = QStandardPaths::locate(QStandardPaths::DocumentsLocation, "customers.txt", QStandardPaths::LocateDirectory);
+//        if(!file.open(QFile::ReadOnly | QFile::Text))
+//        {
+//            QMessageBox::warning(this, "title", "file not open");
+//        }
+//        QTextStream in(&file);
 
-        //QFile file("iCyberSecurity/customers.txt");
-        //end testing stuff
+//        for (int i = 0; !in.atEnd(); i++)
+//        {
+//           QString tempName = in.readLine();
+//           QString tempAddress1 = in.readLine();
+//           QString tempAddress2 = in.readLine();
+//           QString tempInterest = in.readLine();
+//           QString tempKey = in.readLine();
 
-        QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+//            qDebug() << "Name: " << tempName;
+//            qDebug() << "Address 1: " << tempAddress1;
+//            qDebug() << "Address 2: " << tempAddress2;
+//            qDebug() << "Interest: " << tempInterest;
+//            qDebug() << "Key: " << tempKey;
 
-        if(!file.open(QFile::ReadOnly | QFile::Text))
-        {
-            QMessageBox::warning(this, "title", "file not open");
-        }
-        QTextStream in(&file);
+//            customerArr[i].setname(tempName.toUtf8().constData());
+//            customerArr[i].setaddress1(tempAddress1.toUtf8().constData());
+//            customerArr[i].setaddress2(tempAddress2.toUtf8().constData());
+//            customerArr[i].setinterest(tempInterest.toUtf8().constData());
+//            customerArr[i].setkey(tempKey.toUtf8().constData());
 
-        for (int i = 0; !in.atEnd(); i++)
-        {
-           QString tempName = in.readLine();
-           QString tempAddress1 = in.readLine();
-           QString tempAddress2 = in.readLine();
-           QString tempInterest = in.readLine();
-           QString tempKey = in.readLine();
+//            count = i;
 
-            qDebug() << "Name: " << tempName;
-            qDebug() << "Address 1: " << tempAddress1;
-            qDebug() << "Address 2: " << tempAddress2;
-            qDebug() << "Interest: " << tempInterest;
-            qDebug() << "Key: " << tempKey;
+//            //Create new rows
+//            int row  = ui->customerTable->rowCount();
+//            ui->customerTable->insertRow(row);
 
-            customerArr[i].setName(tempName.toUtf8().constData());
-            customerArr[i].setAddress1(tempAddress1.toUtf8().constData());
-            customerArr[i].setAddress2(tempAddress2.toUtf8().constData());
-            customerArr[i].setInterest(tempInterest.toUtf8().constData());
-            customerArr[i].setKey(tempKey.toUtf8().constData());
+//            //Set Name
+//            QTableWidgetItem *item = ui->customerTable->item(row, column);
+//            item = new QTableWidgetItem();
+//            item->setText(QString::fromStdString(customerArr[i].getname()));
+//            ui->customerTable->setItem(row, column, item);
 
-            count = i;
+//            //Set Address 1
+//            item = new QTableWidgetItem();
+//            ui->customerTable->item(row,column + 1);
+//            ui->customerTable->setItem(row,column + 1, item);
+//            item->setText(QString::fromStdString(customerArr[i].getaddress1()));
 
-            //Create new rows
-            int row  = ui->customerTable->rowCount();
-            ui->customerTable->insertRow(row);
+//            //Set Address 2
+//            item = new QTableWidgetItem();
+//            ui->customerTable->item(row,column + 2);
+//            ui->customerTable->setItem(row,column + 2, item);
+//            item->setText(QString::fromStdString(customerArr[i].getaddress2()));
 
-            //Set Name
-            QTableWidgetItem *item = ui->customerTable->item(row, column);
-            item = new QTableWidgetItem();
-            item->setText(QString::fromStdString(customerArr[i].getName()));
-            ui->customerTable->setItem(row, column, item);
+//            //Set Interest Level
+//            item = new QTableWidgetItem();
+//            ui->customerTable->item(row,column + 3);
+//            ui->customerTable->setItem(row,column + 3, item);
+//            item->setText(QString::fromStdString(customerArr[i].getinterest()));
 
-            //Set Address 1
-            item = new QTableWidgetItem();
-            ui->customerTable->item(row,column + 1);
-            ui->customerTable->setItem(row,column + 1, item);
-            item->setText(QString::fromStdString(customerArr[i].getAddress1()));
+//            //Set Key
+//            item = new QTableWidgetItem();
+//            ui->customerTable->item(row,column + 4);
+//            ui->customerTable->setItem(row,column + 4, item);
+//            item->setText(QString::fromStdString(customerArr[i].getkey()));
 
-            //Set Address 2
-            item = new QTableWidgetItem();
-            ui->customerTable->item(row,column + 2);
-            ui->customerTable->setItem(row,column + 2, item);
-            item->setText(QString::fromStdString(customerArr[i].getAddress2()));
+//            row += 1;
+//            column = 0;
+//        }
 
-            //Set Interest Level
-            item = new QTableWidgetItem();
-            ui->customerTable->item(row,column + 3);
-            ui->customerTable->setItem(row,column + 3, item);
-            item->setText(QString::fromStdString(customerArr[i].getInterest()));
-
-            //Set Key
-            item = new QTableWidgetItem();
-            ui->customerTable->item(row,column + 4);
-            ui->customerTable->setItem(row,column + 4, item);
-            item->setText(QString::fromStdString(customerArr[i].getKey()));
-
-            row += 1;
-            column = 0;
-        }
-
-        ui->customerTable->resizeColumnsToContents();
-        file.close();
+//        ui->customerTable->resizeColumnsToContents();
+//        file.close();
 
 }
 

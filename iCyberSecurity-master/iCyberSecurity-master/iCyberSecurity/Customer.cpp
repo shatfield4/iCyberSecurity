@@ -97,6 +97,7 @@ Customer::Customer()
      address1="NOT SET";
      address2="NOT SET";
      interest="NOT SET";
+     order customerOrder;
 
 };
 Customer::Customer(std::string xname,std::string xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest)
@@ -108,6 +109,7 @@ Customer::Customer(std::string xname,std::string xKey,bool xpamphlet, std::strin
     address1=xaddress1;
     address2=xaddress2;
     interest=xinterest;
+    order customerOrder;
 };
 
 //misc
@@ -135,6 +137,3 @@ bool Customer::isMykeybigger(Customer x)
     else return false;
 
 };
-
-
-
