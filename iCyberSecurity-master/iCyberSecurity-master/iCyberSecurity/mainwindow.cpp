@@ -1,10 +1,15 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "Customer.h"
+#include "purchasingpage.h"
+
+
 #include <QFile>
+#include<QStandardPaths>
 #include <QTextStream>
 #include <QMessageBox>
 #include <QDebug>
-#include "Customer.h"
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -84,7 +89,23 @@ void MainWindow::on_loadCustomerData_clicked()
         int column = 0;
         //int row = 0;
 
+        // testing stuff for customer.txt   Ayako---Branch
+        //QString tempName;
+        //QString tempAddress1;
+        //QString tempAddress2;
+        //QString tempInterest;
+        // QString tempKey;
+
+        //QString path = QStandardPaths::AppLocalDataLocation;
+        //path.append("/customers.txt");
+
+        // QString documentLocation = QStandardPaths::locate(QStandardPaths::DocumentsLocation, "customers.txt", QStandardPaths::LocateDirectory);
+
+        //QFile file("iCyberSecurity/customers.txt");
+        //end testing stuff
+
         QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+
         if(!file.open(QFile::ReadOnly | QFile::Text))
         {
             QMessageBox::warning(this, "title", "file not open");
@@ -154,4 +175,11 @@ void MainWindow::on_loadCustomerData_clicked()
         ui->customerTable->resizeColumnsToContents();
         file.close();
 
+}
+
+//Temporary button to get to the purchasing page
+void MainWindow::on_pushButton_clicked()
+{
+    purchasingPage* page = new purchasingPage;
+    page -> show();
 }

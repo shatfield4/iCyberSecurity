@@ -18,7 +18,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Customer.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    purchasingpage.cpp
 
 HEADERS += \
     ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h \
@@ -28,12 +29,17 @@ HEADERS += \
     interestlevel.h \
     linkedListType.h \
     mainwindow.h \
-    orderLinkedList.h
+    orderLinkedList.h \
+    purchasingpage.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    purchasingpage.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    customers.txt
