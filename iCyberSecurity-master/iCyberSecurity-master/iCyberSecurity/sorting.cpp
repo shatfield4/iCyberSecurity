@@ -18,11 +18,11 @@ void deleteCustomer(Customer toDelete, Customer unsorted[], int &count)
 {
     bool found = false;
     int i = 0;
-    string temp1 = toDelete.getname();
+    string temp1 = toDelete.getName();
 
     while(i < count && !found)
     {
-        string temp2 = unsorted[i].getname();
+        string temp2 = unsorted[i].getName();
         if(strcmp(temp1.c_str(), temp2.c_str()) == 0)
         {
             found = true;
@@ -54,17 +54,17 @@ void sortCustomers(Customer unsorted[], Customer sortname[], Customer sortkey[],
     keyCount = 0;
     for(int i = 0; i < ARRAY_MAX; i++)
     {
-        sortname[i].setname("");
-        sortname[i].setkey("");
-        sortkey[i].setname("");
-        sortkey[i].setkey("");
+        sortname[i].setName("");
+        sortname[i].setKey("");
+        sortkey[i].setName("");
+        sortkey[i].setKey("");
     }
 
     //COPY ARRAYS
     for(int i = 0; i < count; i++)
     {
         sortname[i] = unsorted[i];
-        if(unsorted[i].getkey() == "key")
+        if(unsorted[i].getKey() == "key")
         {
             sortkey[keyCount] = unsorted[i];
             keyCount++;
@@ -106,8 +106,8 @@ void sortCustomers(Customer unsorted[], Customer sortname[], Customer sortkey[],
 bool firstCustomer(Customer one, Customer two)
 {
     bool firstBigger;
-    string temp1 = one.getname();
-    string temp2 = two.getname();
+    string temp1 = one.getName();
+    string temp2 = two.getName();
 
     if(strcmp(temp1.c_str(), temp2.c_str()) > 0)
     {

@@ -51,18 +51,18 @@ purchasingPage::purchasingPage(QWidget *parent) :
                 qDebug() << "Interest: " << tempInterest;
                 qDebug() << "Key: " << tempKey;
 
-                customerArr[i].setname(tempName.toUtf8().constData());
-                customerArr[i].setaddress1(tempAddress1.toUtf8().constData());
-                customerArr[i].setaddress2(tempAddress2.toUtf8().constData());
-                customerArr[i].setinterest(tempInterest.toUtf8().constData());
-                customerArr[i].setkey(tempKey.toUtf8().constData());
+                customerArr[i].setName(tempName.toUtf8().constData());
+                customerArr[i].setAddress1(tempAddress1.toUtf8().constData());
+                customerArr[i].setAddress2(tempAddress2.toUtf8().constData());
+                customerArr[i].setInterest(tempInterest.toUtf8().constData());
+                customerArr[i].setKey(tempKey.toUtf8().constData());
 
                 count = i;
             }
 
             for(int index = 0; index <= count; index++)
             {
-                ui->existingComboBox->addItem(QString::fromStdString(customerArr[index].getname()));
+                ui->existingComboBox->addItem(QString::fromStdString(customerArr[index].getName()));
             }
 
             //Add item for not a previous customer
