@@ -31,6 +31,7 @@ std::string address1;
 std::string address2;
 //! Indicates the interest level of the customer-INPUT
 std::string interest;
+static int arrayCount;
 
 public:
 

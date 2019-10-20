@@ -28,6 +28,14 @@ private slots:
 
     void on_checkBoxSilver_stateChanged(int arg1);
 
+    void on_checkBoxGold_toggled(bool checked);
+
+    void on_checkBoxDiamond_toggled(bool checked);
+
+    void on_checkBoxCrab_toggled(bool checked);
+
+    void on_checkBoxUnicorn_toggled(bool checked);
+
 private:
     Ui::purchasingPage *ui;
 };

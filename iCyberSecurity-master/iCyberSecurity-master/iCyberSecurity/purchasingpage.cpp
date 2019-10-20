@@ -17,6 +17,7 @@
 
 int ARRAYCOUNT;
 
+
 purchasingPage::purchasingPage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::purchasingPage)
@@ -149,10 +150,107 @@ void purchasingPage::on_pushButton_2_clicked()
 
 void purchasingPage::on_checkBoxSilver_toggled(bool checked)
 {
+    if(checked)
+    {
+        ui->silverPrice->setNum(100.00);
+    } else {
+        ui->silverPrice->setNum(0.00);
+    }
+
+    double tempSubtotal = (ui->silverPrice->text()).toDouble() + (ui->goldPrice->text()).toDouble() + (ui->diamondPrice->text()).toDouble() +( ui->crabPrice->text()).toDouble() + (ui->unicornPrice->text()).toDouble();
+
+    ui->subtotalPrice->setNum(tempSubtotal);
+
+    QString tempTotal = QString::number(tempSubtotal*1.0775, 'f', 2);
+
+    ui->totalPrice->setText(tempTotal);
+}
+
+void purchasingPage::on_checkBoxGold_toggled(bool checked)
+{
+
+   if(checked)
+   {
+       ui->goldPrice->setNum(200.00);
+   } else {
+       ui->goldPrice->setNum(0.00);
+   }
+
+   double tempSubtotal = (ui->silverPrice->text()).toDouble() + (ui->goldPrice->text()).toDouble() + (ui->diamondPrice->text()).toDouble() +( ui->crabPrice->text()).toDouble() + (ui->unicornPrice->text()).toDouble();
+
+   ui->subtotalPrice->setNum(tempSubtotal);
+
+   QString tempTotal = QString::number(tempSubtotal*1.0775, 'f', 2);
+
+   ui->totalPrice->setText(tempTotal);
+
+
+
+//   //convert qstring to double
+//   QString stings = ui->goldPrice->text();
+//   double doubleString = stings.toDouble();
+
+//   //convert double to qstring
+//   QString stingsz1 = QString::number(doubleString);
 
 }
 
 void purchasingPage::on_checkBoxSilver_stateChanged(int arg1)
 {
-    QMessageBox::information(this, "title", "box yes");
+
+}
+
+
+
+void purchasingPage::on_checkBoxDiamond_toggled(bool checked)
+{
+    if(checked)
+    {
+        ui->diamondPrice->setNum(300.00);
+    } else {
+        ui->diamondPrice->setNum(0.00);
+    }
+
+    double tempSubtotal = (ui->silverPrice->text()).toDouble() + (ui->goldPrice->text()).toDouble() + (ui->diamondPrice->text()).toDouble() +( ui->crabPrice->text()).toDouble() + (ui->unicornPrice->text()).toDouble();
+
+    ui->subtotalPrice->setNum(tempSubtotal);
+
+    QString tempTotal = QString::number(tempSubtotal*1.0775, 'f', 2);
+
+    ui->totalPrice->setText(tempTotal);
+}
+
+void purchasingPage::on_checkBoxCrab_toggled(bool checked)
+{
+    if(checked)
+    {
+        ui->crabPrice->setNum(50.00);
+    } else {
+        ui->crabPrice->setNum(0.00);
+    }
+
+    double tempSubtotal = (ui->silverPrice->text()).toDouble() + (ui->goldPrice->text()).toDouble() + (ui->diamondPrice->text()).toDouble() +( ui->crabPrice->text()).toDouble() + (ui->unicornPrice->text()).toDouble();
+
+    ui->subtotalPrice->setNum(tempSubtotal);
+
+    QString tempTotal = QString::number(tempSubtotal*1.0775, 'f', 2);
+
+    ui->totalPrice->setText(tempTotal);
+}
+
+void purchasingPage::on_checkBoxUnicorn_toggled(bool checked)
+{
+    if(checked)
+    {
+        ui->unicornPrice->setNum(80.00);
+    } else {
+        ui->unicornPrice->setNum(0.00);
+    }
+
+    double tempSubtotal = (ui->silverPrice->text()).toDouble() + (ui->goldPrice->text()).toDouble() + (ui->diamondPrice->text()).toDouble() +( ui->crabPrice->text()).toDouble() + (ui->unicornPrice->text()).toDouble();
+    ui->subtotalPrice->setNum(tempSubtotal);
+
+    QString tempTotal = QString::number(tempSubtotal*1.0775, 'f', 2);
+
+    ui->totalPrice->setText(tempTotal);
 }

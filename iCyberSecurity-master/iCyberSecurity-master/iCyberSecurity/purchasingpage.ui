@@ -469,7 +469,7 @@ If you would like to cancel the order click CANCEL</string>
        </font>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>0</string>
       </property>
      </widget>
     </item>
@@ -493,7 +493,7 @@ If you would like to cancel the order click CANCEL</string>
        </font>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>0</string>
       </property>
      </widget>
     </item>
@@ -505,7 +505,7 @@ If you would like to cancel the order click CANCEL</string>
        </font>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>0</string>
       </property>
      </widget>
     </item>
@@ -565,7 +565,7 @@ If you would like to cancel the order click CANCEL</string>
        </font>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>0</string>
       </property>
      </widget>
     </item>
@@ -589,7 +589,7 @@ If you would like to cancel the order click CANCEL</string>
        </font>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>0</string>
       </property>
      </widget>
     </item>
@@ -613,7 +613,7 @@ If you would like to cancel the order click CANCEL</string>
        </font>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>0</string>
       </property>
      </widget>
     </item>
@@ -688,7 +688,7 @@ If you would like to cancel the order click CANCEL</string>
     </font>
    </property>
    <property name="text">
-    <string>Subtotal</string>
+    <string>0</string>
    </property>
   </widget>
  </widget>
