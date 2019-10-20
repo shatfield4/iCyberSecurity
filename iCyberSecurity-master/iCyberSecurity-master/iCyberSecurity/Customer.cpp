@@ -83,6 +83,7 @@ Customer::Customer()
      address1="NOT SET";
      address2="NOT SET";
      interest=NOTATALL;
+     order customerOrder;
 
 };
 Customer::Customer(std::string xname,Key xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest)
@@ -93,6 +94,7 @@ Customer::Customer(std::string xname,Key xKey,bool xpamphlet, std::string xaddre
     address1=xaddress1;
     address2=xaddress2;
     interest=xinterest;
+    order customerOrder;
 };
 
 //misc

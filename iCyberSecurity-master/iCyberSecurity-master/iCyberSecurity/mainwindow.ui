@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="tabsCustomer">
       <property name="currentIndex">
-       <number>7</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tabCOO">
        <attribute name="title">
@@ -197,7 +197,7 @@ p, li { white-space: pre-wrap; }
          </rect>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="tabCrab">
          <attribute name="title">
@@ -511,38 +511,6 @@ Call Us                  Support
         <property name="text">
          <string>Email Address</string>
         </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="tabHelp">
-       <attribute name="title">
-        <string>Help</string>
-       </attribute>
-      </widget>
-      <widget class="QWidget" name="tabAdmin">
-       <attribute name="title">
-        <string>Admin</string>
-       </attribute>
-       <widget class="QWidget" name="layoutWidget">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>881</width>
-          <height>561</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QTableWidget" name="customerTable"/>
-         </item>
-         <item>
-          <widget class="QPushButton" name="loadCustomerData">
-           <property name="text">
-            <string>Load Customer Data</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
        </widget>
       </widget>
       <widget class="QWidget" name="tabAdminLogin">

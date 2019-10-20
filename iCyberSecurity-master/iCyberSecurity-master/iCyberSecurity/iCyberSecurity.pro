@@ -21,7 +21,8 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     order.cpp \
-    purchasingpage.cpp
+    purchasingpage.cpp \
+    sorting.cpp
 
 HEADERS += \
     ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h \
@@ -32,7 +33,8 @@ HEADERS += \
     interestlevel.h \
     mainwindow.h \
     order.h \
-    purchasingpage.h
+    purchasingpage.h \
+    sorting.h
 
 FORMS += \
     adminpage.ui \

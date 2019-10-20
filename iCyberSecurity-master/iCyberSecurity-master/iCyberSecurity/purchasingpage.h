@@ -22,6 +22,12 @@ private slots:
 
     void on_buttonBox_accepted();
 
+    void on_pushButton_2_clicked();
+
+    void on_checkBoxSilver_toggled(bool checked);
+
+    void on_checkBoxSilver_stateChanged(int arg1);
+
 private:
     Ui::purchasingPage *ui;
 };

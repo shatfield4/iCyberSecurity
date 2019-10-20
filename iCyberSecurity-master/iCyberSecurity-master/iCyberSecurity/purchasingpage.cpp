@@ -1,13 +1,81 @@
 #include "purchasingpage.h"
 #include "ui_purchasingpage.h"
+#include "Customer.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include "purchasingpage.h"
+#include "adminpage.h"
+
+#include <QFile>
+#include <QStandardPaths>
+#include <QTextStream>
+#include <QMessageBox>
+#include <QDebug>
+#include <QDebug>
 
 #include <QMessageBox>
+
+int ARRAYCOUNT;
 
 purchasingPage::purchasingPage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::purchasingPage)
 {
     ui->setupUi(this);
+
+
+    //Update combo box with existing customers
+            Customer customerArr[500];
+            int count = 0;
+
+
+            QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+
+            if(!file.open(QFile::ReadOnly | QFile::Text))
+            {
+                QMessageBox::warning(this, "title", "file not open");
+            }
+            QTextStream in(&file);
+
+            for (int i = 0; !in.atEnd(); i++)
+            {
+               QString tempName = in.readLine();
+               QString tempAddress1 = in.readLine();
+               QString tempAddress2 = in.readLine();
+               QString tempInterest = in.readLine();
+               QString tempKey = in.readLine();
+
+                qDebug() << "Name: " << tempName;
+                qDebug() << "Address 1: " << tempAddress1;
+                qDebug() << "Address 2: " << tempAddress2;
+                qDebug() << "Interest: " << tempInterest;
+                qDebug() << "Key: " << tempKey;
+
+                customerArr[i].setname(tempName.toUtf8().constData());
+                customerArr[i].setaddress1(tempAddress1.toUtf8().constData());
+                customerArr[i].setaddress2(tempAddress2.toUtf8().constData());
+                customerArr[i].setinterest(tempInterest.toUtf8().constData());
+                customerArr[i].setkey(tempKey.toUtf8().constData());
+
+                count = i;
+            }
+
+            for(int index = 0; index <= count; index++)
+            {
+                ui->existingComboBox->addItem(QString::fromStdString(customerArr[index].getname()));
+            }
+
+            //Add item for not a previous customer
+            ui->existingComboBox->addItem("Not a previous customer");
+
+
+
+            ARRAYCOUNT = count;
+
+
+            file.close();
+
+
 }
 
 purchasingPage::~purchasingPage()
@@ -61,3 +129,30 @@ void purchasingPage::on_buttonBox_rejected()
 }
 
 
+
+void purchasingPage::on_pushButton_2_clicked()
+{
+
+//    int tempIndex = ui->existingComboBox->currentIndex();
+
+//        if (tempIndex == ARRAYCOUNT + 1)
+//        {
+//            QMessageBox::information(this, "title", "not a returning customer");
+//        }
+
+  //
+
+    //FIX THISSS
+
+    //QMessageBox::information(this, "title", ui->checkBoxSilver->checkState());
+}
+
+void purchasingPage::on_checkBoxSilver_toggled(bool checked)
+{
+
+}
+
+void purchasingPage::on_checkBoxSilver_stateChanged(int arg1)
+{
+    QMessageBox::information(this, "title", "box yes");
+}
