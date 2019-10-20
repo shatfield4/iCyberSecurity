@@ -11,6 +11,7 @@
 #include <QDebug>
 
 
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -178,8 +179,14 @@ void MainWindow::on_loadCustomerData_clicked()
 }
 
 //Temporary button to get to the purchasing page
-void MainWindow::on_pushButton_clicked()
+//void MainWindow::on_pushButton_clicked()
+//{
+//    purchasingPage* page = new purchasingPage;
+//    page -> show();
+//}
+
+void MainWindow::on_pushButton_2_clicked()
 {
-    purchasingPage* page = new purchasingPage;
-    page -> show();
+        purchasingPage* page = new purchasingPage;
+        page -> show();
 }

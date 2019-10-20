@@ -54,12 +54,17 @@ OBJECTS_DIR   = ./
 
 SOURCES       = ../iCyberSecurity/Customer.cpp \
 		../iCyberSecurity/main.cpp \
-		../iCyberSecurity/mainwindow.cpp moc_mainwindow.cpp
+		../iCyberSecurity/mainwindow.cpp \
+		../iCyberSecurity/purchasingpage.cpp moc_mainwindow.cpp \
+		moc_purchasingpage.cpp
 OBJECTS       = Customer.o \
 		main.o \
 		mainwindow.o \
-		moc_mainwindow.o
-DIST          = /Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/features/spec_pre.prf \
+		purchasingpage.o \
+		moc_mainwindow.o \
+		moc_purchasingpage.o
+DIST          = ../iCyberSecurity/customers.txt \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/features/spec_pre.prf \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/qdevice.pri \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/features/device_config.prf \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/common/unix.conf \
@@ -238,11 +243,11 @@ DIST          = /Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspe
 		../iCyberSecurity/Customer.h \
 		../iCyberSecurity/Key.h \
 		../iCyberSecurity/interestlevel.h \
-		../iCyberSecurity/linkedListType.h \
 		../iCyberSecurity/mainwindow.h \
-		../iCyberSecurity/orderLinkedList.h ../iCyberSecurity/Customer.cpp \
+		../iCyberSecurity/purchasingpage.h ../iCyberSecurity/Customer.cpp \
 		../iCyberSecurity/main.cpp \
-		../iCyberSecurity/mainwindow.cpp
+		../iCyberSecurity/mainwindow.cpp \
+		../iCyberSecurity/purchasingpage.cpp
 QMAKE_TARGET  = iCyberSecurity
 DESTDIR       = 
 TARGET        = iCyberSecurity.app/Contents/MacOS/iCyberSecurity
@@ -261,7 +266,7 @@ include /Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/featu
 first: all
 ####### Build rules
 
-iCyberSecurity.app/Contents/MacOS/iCyberSecurity: ui_mainwindow.h $(OBJECTS)  
+iCyberSecurity.app/Contents/MacOS/iCyberSecurity: ui_mainwindow.h ui_purchasingpage.h $(OBJECTS)  
 	@test -d iCyberSecurity.app/Contents/MacOS/ || mkdir -p iCyberSecurity.app/Contents/MacOS/
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
@@ -648,9 +653,9 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h ../iCyberSecurity/Customer.h ../iCyberSecurity/Key.h ../iCyberSecurity/interestlevel.h ../iCyberSecurity/linkedListType.h ../iCyberSecurity/mainwindow.h ../iCyberSecurity/orderLinkedList.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../iCyberSecurity/Customer.cpp ../iCyberSecurity/main.cpp ../iCyberSecurity/mainwindow.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../iCyberSecurity/mainwindow.ui $(DISTDIR)/
+	$(COPY_FILE) --parents ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h ../../../../../Saddleback CS/Seredipity/orderedLinkedList.h ../iCyberSecurity/Customer.h ../iCyberSecurity/Key.h ../iCyberSecurity/interestlevel.h ../iCyberSecurity/mainwindow.h ../iCyberSecurity/purchasingpage.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../iCyberSecurity/Customer.cpp ../iCyberSecurity/main.cpp ../iCyberSecurity/mainwindow.cpp ../iCyberSecurity/purchasingpage.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../iCyberSecurity/mainwindow.ui ../iCyberSecurity/purchasingpage.ui $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -685,9 +690,9 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/features/data/dummy.cpp
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -pipe -stdlib=libc++ -g -std=gnu++11 $(EXPORT_ARCH_ARGS) -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -mmacosx-version-min=10.12 -Wall -W -dM -E -o moc_predefs.h /Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_mainwindow.cpp
+compiler_moc_header_make_all: moc_mainwindow.cpp moc_purchasingpage.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp
+	-$(DEL_FILE) moc_mainwindow.cpp moc_purchasingpage.cpp
 moc_mainwindow.cpp: ../iCyberSecurity/mainwindow.h \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
@@ -695,16 +700,27 @@ moc_mainwindow.cpp: ../iCyberSecurity/mainwindow.h \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/bin/moc
 	/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/bin/moc $(DEFINES) --include /Users/SeanVHatfield/SeanHatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/build-iCyberSecurity-Desktop_Qt_5_13_0_clang_64bit-Debug/moc_predefs.h -I/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/macx-clang -I/Users/SeanVHatfield/SeanHatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity -I/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers -I/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtGui.framework/Headers -I/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include -F/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib ../iCyberSecurity/mainwindow.h -o moc_mainwindow.cpp
 
+moc_purchasingpage.cpp: ../iCyberSecurity/purchasingpage.h \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/QDialog \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
+		moc_predefs.h \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/bin/moc
+	/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/bin/moc $(DEFINES) --include /Users/SeanVHatfield/SeanHatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/build-iCyberSecurity-Desktop_Qt_5_13_0_clang_64bit-Debug/moc_predefs.h -I/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/mkspecs/macx-clang -I/Users/SeanVHatfield/SeanHatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity -I/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers -I/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtGui.framework/Headers -I/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include -F/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib ../iCyberSecurity/purchasingpage.h -o moc_purchasingpage.cpp
+
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_mainwindow.h
+compiler_uic_make_all: ui_mainwindow.h ui_purchasingpage.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_mainwindow.h
+	-$(DEL_FILE) ui_mainwindow.h ui_purchasingpage.h
 ui_mainwindow.h: ../iCyberSecurity/mainwindow.ui \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/bin/uic
 	/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/bin/uic ../iCyberSecurity/mainwindow.ui -o ui_mainwindow.h
+
+ui_purchasingpage.h: ../iCyberSecurity/purchasingpage.ui \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/bin/uic
+	/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/bin/uic ../iCyberSecurity/purchasingpage.ui -o ui_purchasingpage.h
 
 compiler_rez_source_make_all:
 compiler_rez_source_clean:
@@ -734,16 +750,37 @@ mainwindow.o: ../iCyberSecurity/mainwindow.cpp ../iCyberSecurity/mainwindow.h \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/QMainWindow \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/qmainwindow.h \
 		ui_mainwindow.h \
+		../iCyberSecurity/Customer.h \
+		../iCyberSecurity/interestlevel.h \
+		../iCyberSecurity/Key.h \
+		../iCyberSecurity/purchasingpage.h \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/QDialog \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/QFile \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/qfile.h \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/QStandardPaths \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/qstandardpaths.h \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/QTextStream \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/qtextstream.h \
 		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/QMessageBox \
-		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/QDebug \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers/qdebug.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../iCyberSecurity/mainwindow.cpp
+
+purchasingpage.o: ../iCyberSecurity/purchasingpage.cpp ../iCyberSecurity/purchasingpage.h \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/QDialog \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/qdialog.h \
+		ui_purchasingpage.h \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/QMessageBox \
+		/Users/SeanVHatfield/SeanHatfield/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o purchasingpage.o ../iCyberSecurity/purchasingpage.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
+
+moc_purchasingpage.o: moc_purchasingpage.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_purchasingpage.o moc_purchasingpage.cpp
 
 ####### Install
 

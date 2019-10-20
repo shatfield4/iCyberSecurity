@@ -36,6 +36,8 @@ public:
     QTabWidget *tabsCustomer;
     QWidget *tabCOO;
     QTextBrowser *textBrowserCOO;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
     QWidget *tabBusinessOutcomes;
     QTextBrowser *textBrowserBusinessOutcomes;
     QWidget *tabProducts;
@@ -72,7 +74,7 @@ public:
     QLabel *pampletAddressLabel;
     QWidget *tabHelp;
     QWidget *tabAdmin;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QTableWidget *customerTable;
     QPushButton *loadCustomerData;
@@ -95,6 +97,12 @@ public:
         textBrowserCOO = new QTextBrowser(tabCOO);
         textBrowserCOO->setObjectName(QString::fromUtf8("textBrowserCOO"));
         textBrowserCOO->setGeometry(QRect(10, 70, 871, 191));
+        pushButton = new QPushButton(tabCOO);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(320, 450, 201, 28));
+        pushButton_2 = new QPushButton(tabCOO);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(360, 350, 113, 32));
         tabsCustomer->addTab(tabCOO, QString());
         tabBusinessOutcomes = new QWidget();
         tabBusinessOutcomes->setObjectName(QString::fromUtf8("tabBusinessOutcomes"));
@@ -213,18 +221,18 @@ public:
         tabsCustomer->addTab(tabHelp, QString());
         tabAdmin = new QWidget();
         tabAdmin->setObjectName(QString::fromUtf8("tabAdmin"));
-        widget = new QWidget(tabAdmin);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(0, 0, 881, 561));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(tabAdmin);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(0, 0, 881, 561));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        customerTable = new QTableWidget(widget);
+        customerTable = new QTableWidget(layoutWidget);
         customerTable->setObjectName(QString::fromUtf8("customerTable"));
 
         verticalLayout->addWidget(customerTable);
 
-        loadCustomerData = new QPushButton(widget);
+        loadCustomerData = new QPushButton(layoutWidget);
         loadCustomerData->setObjectName(QString::fromUtf8("loadCustomerData"));
 
         verticalLayout->addWidget(loadCustomerData);
@@ -244,8 +252,8 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabsCustomer->setCurrentIndex(6);
-        tabsProduct->setCurrentIndex(2);
+        tabsCustomer->setCurrentIndex(0);
+        tabsProduct->setCurrentIndex(0);
         tabsPlans->setCurrentIndex(1);
 
 
@@ -260,6 +268,8 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">What is iCyberSecurity?<br />iCyberSecurity is a global antivirus platform. With over 17 trillion users worldwide, we are the planet's LEADING antivirus experts. Our goal is to eliminate all viruses that can infect any type of system by using our state of the art cyberantibiotics. By ordering our products, we can guarantee the safety and privacy of your systems anytime, anywhere.</span></p></body></html>", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "TempPurchasingPage", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         tabsCustomer->setTabText(tabsCustomer->indexOf(tabCOO), QCoreApplication::translate("MainWindow", "iCyberSecurity", nullptr));
         textBrowserBusinessOutcomes->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -299,10 +309,10 @@ public:
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">Diamond: </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">Diamond Protection Plan: </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342\200\242 This package offers 24/7 24GB DDos Protection for servers.</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342\200\242 It comes "
-                        "with our ILOVEYOU antivirus software. </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342\200"
+                        "\242 It comes with our ILOVEYOU antivirus software. </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342\200\242 You gain access to our Diamond rank exclusive support. (not overseas)</span></p></body></html>", nullptr));
         tabsProduct->setTabText(tabsProduct->indexOf(tabDiamond), QCoreApplication::translate("MainWindow", "Diamond", nullptr));
         textCrab->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
