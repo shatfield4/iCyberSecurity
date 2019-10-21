@@ -73,7 +73,7 @@
     <rect>
      <x>10</x>
      <y>470</y>
-     <width>191</width>
+     <width>211</width>
      <height>31</height>
     </rect>
    </property>
@@ -169,7 +169,7 @@
     <rect>
      <x>960</x>
      <y>470</y>
-     <width>96</width>
+     <width>101</width>
      <height>30</height>
     </rect>
    </property>
@@ -185,9 +185,9 @@
   <widget class="QLabel" name="label_10">
    <property name="geometry">
     <rect>
-     <x>910</x>
+     <x>886</x>
      <y>90</y>
-     <width>177</width>
+     <width>201</width>
      <height>30</height>
     </rect>
    </property>
@@ -203,9 +203,9 @@
   <widget class="QLabel" name="label_25">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>21</x>
      <y>710</y>
-     <width>422</width>
+     <width>441</width>
      <height>51</height>
     </rect>
    </property>
@@ -224,8 +224,8 @@ If you would like to cancel the order click CANCEL</string>
     <rect>
      <x>50</x>
      <y>20</y>
-     <width>93</width>
-     <height>28</height>
+     <width>81</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
@@ -242,7 +242,7 @@ If you would like to cancel the order click CANCEL</string>
     <rect>
      <x>20</x>
      <y>140</y>
-     <width>721</width>
+     <width>760</width>
      <height>301</height>
     </rect>
    </property>

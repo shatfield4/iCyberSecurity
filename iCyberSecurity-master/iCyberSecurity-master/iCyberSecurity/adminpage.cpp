@@ -19,6 +19,13 @@ AdminPage::AdminPage(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    ui->comboInterest->addItem("Very Interested", "Very Interested");
+    ui->comboInterest->addItem("Somewhat Interested", "Somewhat Interested");
+    ui->comboInterest->addItem("Not Interested", "Not Interested");
+    ui->comboInterest->addItem("Do Not Call", "NOTATALL");
+
+    ui->comboKey->addItem("Key", "Key");
+    ui->comboKey->addItem("Nice to Have", "Nice to Have");
 
 }
 
@@ -283,4 +290,49 @@ void AdminPage::on_pushButton_2_clicked()
     }//END for loop
 
     ui->customerTable->resizeColumnsToContents();
+}
+
+void AdminPage::on_pushButton_3_clicked()
+{
+    QMessageBox::warning(this, "Help", "To display original customer list, press load. To sort alphabettically, press sort by name. To list only key customers, press sort by key.");
+}
+
+void AdminPage::on_pushButton_4_clicked()
+{
+    QMessageBox::warning(this, "Help", "To display pamphlet requests, click the big ass button.");
+}
+
+void AdminPage::on_buttonAddCustomer_clicked()
+{
+    QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+
+    if (!file.open(QFile::WriteOnly | QFile::Append | QFile::Text))
+    {
+        QMessageBox::warning(this, "Error", "Can't open file to add new customers.");
+    }
+    else
+    {
+        QTextStream txtStream(&file);
+
+        QString name = ui->lineEditName->text();
+        QString address1 = ui->lineEditAddress->text();
+        QString address2 = ui->lineEdditAddress2->text();
+        QString interest = ui->comboInterest->currentText();
+        QString key = ui->comboKey->currentText();
+
+        txtStream << name << endl << address1 << endl << address2 << endl << interest << endl << key << endl;
+
+        file.flush();
+        file.close();
+        QMessageBox::warning(this, "Submitted", "Customer appended to file.");
+    }
+
+    ui->lineEditName->setText("");
+    ui->lineEditAddress->setText("");
+    ui->lineEdditAddress2->setText("");
+}
+
+void AdminPage::on_pushButton_5_clicked()
+{
+    QMessageBox::warning(this, "Help", "To append a customer, fill out forms. Press add customer.");
 }
