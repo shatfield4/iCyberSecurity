@@ -1,7 +1,6 @@
 #include "adminpage.h"
 #include "ui_adminpage.h"
 #include "Customer.h"
-//#include "readAndWriteFunctions.cpp"
 
 #include <QFile>
 #include<QStandardPaths>
@@ -9,6 +8,7 @@
 #include <QMessageBox>
 #include <QDebug>
 
+//Definition in readAndWriteFunctions.cpp
 void readInCustomerData(Customer customerArr[], //array of customer that will be updated with the data txt file
                                         int arraySize,                  //the array size of customerArr[]
                                         int& totalNumCustomers); //total number of customers from the data
@@ -24,10 +24,6 @@ AdminPage::AdminPage(QWidget *parent) :
     ui->customerTable->setHorizontalHeaderItem(2, new QTableWidgetItem("Address Line 2"));
     ui->customerTable->setHorizontalHeaderItem(3, new QTableWidgetItem("Interest Level"));
     ui->customerTable->setHorizontalHeaderItem(4, new QTableWidgetItem("Key"));
-
-    ui->pamphletTable->setColumnCount(2);
-    ui->pamphletTable->setHorizontalHeaderItem(0, new QTableWidgetItem("Name"));
-    ui->pamphletTable->setHorizontalHeaderItem(1, new QTableWidgetItem("Email"));
 
 }
 
@@ -93,37 +89,4 @@ void AdminPage::on_loadCustomerData_clicked()
 
     ui->customerTable->resizeColumnsToContents();
 
-
-}
-
-void AdminPage::on_buttonLoadPamphlets_clicked()
-{
-    QFile file("E:/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/pamphletsubmissions.txt");
-
-    if(!file.open(QFile::ReadOnly | QFile::Text))
-    {
-        QMessageBox::warning(this, "Error", "File not open for reading. pamphletsubmissions.txt.");
-    }
-    else
-    {
-        QTextStream txtStream(&file);
-
-        for (int i = 0; !txtStream.atEnd(); i++)
-        {
-            ui->pamphletTable->insertRow(i);
-            //QMessageBox::warning(this, "Hi", "Hi");
-            QString tempName = txtStream.readLine();
-            QString tempEmail = txtStream.readLine();
-
-            ui->pamphletTable->setItem(i, 0, new QTableWidgetItem(tempName));
-            ui->pamphletTable->setItem(i, 1, new QTableWidgetItem(tempEmail));
-        }
-    }
-
-    ui->pamphletTable->resizeColumnsToContents();
-    file.close();
-
-
-
 } //END void AdminPage::on_loadCustomerData_clicked()
-

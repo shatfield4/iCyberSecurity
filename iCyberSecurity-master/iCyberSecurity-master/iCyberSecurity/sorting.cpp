@@ -3,17 +3,13 @@
 
 const int ARRAY_MAX = 500;
 
-sorting::sorting()
-{
-
-}
-
+//! adds a customer to the array of customers
 void addCustomer(Customer toAdd, Customer unsorted[], int &count)
 {
     unsorted[count] = toAdd;
     count++;
 }
-
+//! removes a customer from the array of customers
 void deleteCustomer(Customer toDelete, Customer unsorted[], int &count)
 {
     bool found = false;
@@ -44,7 +40,7 @@ void deleteCustomer(Customer toDelete, Customer unsorted[], int &count)
         count--;
     }
 }
-
+//! fills the SortName, and SortKey with unsorted customers, and then it sorts both lists.
 void sortCustomers(Customer unsorted[], Customer sortname[], Customer sortkey[], int count, int &keyCount)
 {
     Customer guy1;
@@ -102,7 +98,7 @@ void sortCustomers(Customer unsorted[], Customer sortname[], Customer sortkey[],
     }
 
 }
-
+//! if customer one is bigger than customer two it returns true
 bool firstCustomer(Customer one, Customer two)
 {
     bool firstBigger;

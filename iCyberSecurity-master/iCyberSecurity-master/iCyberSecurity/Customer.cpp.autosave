@@ -41,10 +41,6 @@ void Customer::setInterest(std::string x)
     interest=x;
 };
 
-order Customer::getCustomerOrder(/*int p1, int p2 , int p3, bool s1, bool s2, double xtax*/)
-{
-   return *customersOrder;
-}
 
 //getters
 std::string Customer::getName()
@@ -84,7 +80,10 @@ std::string Customer::getInterest()
     return interest;
 };
 
-
+order Customer::getCustomerOrder()
+{
+   return *customersOrder;
+}
 
 //constructors
 Customer::Customer()
