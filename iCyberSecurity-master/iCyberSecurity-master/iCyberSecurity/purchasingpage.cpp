@@ -102,6 +102,7 @@ void purchasingPage::on_pushButton_clicked()
 void purchasingPage::on_buttonBox_accepted()
 {
     QMessageBox::information(this,tr("Order Accepted"), tr("Your order has been accepted.\nThank you for your purchase.\nGoing back to product page."));
+
 }
 
 //Cancel button
