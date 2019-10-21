@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['address1_0',['address1',['../class_customer.html#ad27652c96dd5f6615cebd3aaf1b2250d',1,'Customer::address1()'],['../classorder.html#ab9585df876f178e92f1b38b935a5c28f',1,'order::address1()']]],
-  ['address2_1',['address2',['../class_customer.html#a3e417c560cb99bedb832a49115ede36a',1,'Customer::address2()'],['../classorder.html#abbaf8dc3482b2621fbbf702d6dde61b6',1,'order::address2()']]]
+  ['customer_0',['Customer',['../class_customer.html',1,'Customer'],['../class_customer.html#abcc8fae9701e5ba9d7d6fe44498b34e3',1,'Customer::Customer()'],['../class_customer.html#a7f02f2de8d3590e26c8d10b104ade262',1,'Customer::Customer(std::string xname, std::string xKey, bool xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest)']]],
+  ['customersorder_1',['customersOrder',['../class_customer.html#a7de77eb2aa4cfa66faffa276470bf850',1,'Customer']]]
 ];

@@ -65,95 +65,101 @@ $(function() {
 <div class="title">Customer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include&lt;string&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;interestlevel.h&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Key.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;order.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef CUSTOMER_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define CUSTOMER_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CUSTOMER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CUSTOMER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//#include &quot;interestlevel.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//#include &quot;Key.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;order.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_customer.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_customer.html">Customer</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//variables</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_customer.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_customer.html">Customer</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//VARIABLES</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::string name;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_customer.html#a492acd1bb82f7a23861dbecba94412fd">   21</a></span>&#160;<a class="code" href="classorder.html">order</a> <a class="code" href="class_customer.html#a492acd1bb82f7a23861dbecba94412fd">customers_order</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_customer.html#a6e6fc6e4c2e23085849bb544aa68a77e">   23</a></span>&#160;std::string <a class="code" href="class_customer.html#a6e6fc6e4c2e23085849bb544aa68a77e">name</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_customer.html#a17b8fcf53664106a406bdcd3fd1f5482">   25</a></span>&#160;std::string <a class="code" href="class_customer.html#a17b8fcf53664106a406bdcd3fd1f5482">keylevel</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_customer.html#ab92b6772c65d7959cd38b9df6ae16129">   27</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_customer.html#ab92b6772c65d7959cd38b9df6ae16129">recieved_pamphlet</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_customer.html#ad27652c96dd5f6615cebd3aaf1b2250d">   29</a></span>&#160;std::string <a class="code" href="class_customer.html#ad27652c96dd5f6615cebd3aaf1b2250d">address1</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_customer.html#a3e417c560cb99bedb832a49115ede36a">   31</a></span>&#160;std::string <a class="code" href="class_customer.html#a3e417c560cb99bedb832a49115ede36a">address2</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_customer.html#adf830a2c968b4784eb4031fafa4ce1ef">   33</a></span>&#160;std::string <a class="code" href="class_customer.html#adf830a2c968b4784eb4031fafa4ce1ef">interest</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::string keyLevel;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> receivedPamphlet;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::string address1;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::string address2;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::string interest;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> arrayCount;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//setters</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="class_customer.html#afa85079cb74467ecb43b39e7fbc2ccfd">setname</a>(std::string);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_customer.html#a74aef802c32323824d0f61288ed5f95a">setkey</a>(std::string);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_customer.html#ae2cce0f050315a08fca426f7dc09a3bf">setpamphlet</a>(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_customer.html#abfb529b440138d0f0f744ee943dffae7">setaddress1</a>(std::string);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_customer.html#a5664facfe71af2d548cde5e95a145e36">setaddress2</a>(std::string);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_customer.html#aea8bdff10954734129fb841be5932e2b">setInterest</a>(std::string);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_customer.html#a7de77eb2aa4cfa66faffa276470bf850">   39</a></span>&#160;        <a class="code" href="classorder.html">order</a> *<a class="code" href="class_customer.html#a7de77eb2aa4cfa66faffa276470bf850">customersOrder</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">//SETTERS</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span>        <span class="keywordtype">void</span> <a class="code" href="class_customer.html#a181707f69c1fb37a2aabd2bab9c97275">setName</a>(std::string);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_customer.html#a0fb4527a89a6bfc369f8366618bb83ad">setKey</a>(std::string);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_customer.html#a47409b0f327c3f07b836cb48bbd57f40">setPamphlet</a>(<span class="keywordtype">bool</span>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">//getters</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_customer.html#aac4e3e531c99ac15368404b5ad3dec2f">setAddress1</a>(std::string);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;std::string <a class="code" href="class_customer.html#accc75b20c321ea90bc568ece35e978d5">getname</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;std::string <a class="code" href="class_customer.html#a477cd69606d79071b539d454fda884c9">getkey</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_customer.html#ac7898a11c963232a49ba5bdabbe3cbf8">getpamphlet</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;std::string <a class="code" href="class_customer.html#aa74b47e2ca516c83b5bacebc1b955194">getaddress1</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;std::string <a class="code" href="class_customer.html#a08dde2dd561191b7c33066d81c1209d6">getaddress2</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;std::string <a class="code" href="class_customer.html#aeb0cfac136e5a110cc668918d315b848">getInterest</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_customer.html#aba9653c9c4283b81328ce82fd48d9cae">setAddress2</a>(std::string);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_customer.html#aea8bdff10954734129fb841be5932e2b">setInterest</a>(std::string);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classorder.html">order</a> getCustomerOrder();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">//GETTERS</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        std::string <a class="code" href="class_customer.html#a4564927e17d6cea720272b83e1108f90">getName</a>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//constructors</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span><a class="code" href="class_customer.html#abcc8fae9701e5ba9d7d6fe44498b34e3">Customer</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="class_customer.html#abcc8fae9701e5ba9d7d6fe44498b34e3">Customer</a>(std::string xname,Key xKey,<span class="keywordtype">bool</span> xpamphlet, std::string xaddress1, std::string xaddress2, <span class="keywordtype">string</span> xinterest);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//no pointed to data so no need for copy constructor currently;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::string <a class="code" href="class_customer.html#ab0604fccdd793d2a6f69a7824fe58e23">getKey</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_customer.html#a38adb72a665f19ce873abab08fabaf31">getPamphlet</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        std::string <a class="code" href="class_customer.html#a4e1b2f165d90bc1a4eeb3278c573d8ba">getAddress1</a>();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//comparisons</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> <a class="code" href="class_customer.html#ae9415d552cf85eb7f7e63b5fb272927d">ismynamebigger</a>(<a class="code" href="class_customer.html">Customer</a> x);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_customer.html#a176821dd4407f9761cefa9765d286ddb">ismykeybigger</a>(<a class="code" href="class_customer.html">Customer</a> x);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">//note: larger values should come later in this case being a &quot;key&quot; customer is 0, while the &quot;mean&quot; keyvalue of 2</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        std::string <a class="code" href="class_customer.html#ad9da8b3d66bcd634e0dddbad963d7781">getAddress2</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        std::string <a class="code" href="class_customer.html#aeb0cfac136e5a110cc668918d315b848">getInterest</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">//CONSTRUCTORS</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span>        <a class="code" href="class_customer.html#abcc8fae9701e5ba9d7d6fe44498b34e3">Customer</a>();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif // CUSTOMER_H</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="class_customer.html#abcc8fae9701e5ba9d7d6fe44498b34e3">Customer</a>(std::string xname, std::string xKey,<span class="keywordtype">bool</span> xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">//no pointed to data so no need for copy constructor currently</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">//COMPARISIONS</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span>        <span class="keywordtype">bool</span> <a class="code" href="class_customer.html#adc9214de247cbf2c915786244258baec">isMynamebigger</a>(<a class="code" href="class_customer.html">Customer</a> x);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_customer.html#acbf5971bbb139f0ca20c97b338c5e8de">isMykeybigger</a>(<a class="code" href="class_customer.html">Customer</a> x);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif // CUSTOMER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_customer_html_a74aef802c32323824d0f61288ed5f95a"><div class="ttname"><a href="class_customer.html#a74aef802c32323824d0f61288ed5f95a">Customer::setkey</a></div><div class="ttdeci">void setkey(std::string)</div><div class="ttdoc">Sets the customers key level.</div></div>
-<div class="ttc" id="aclass_customer_html_a176821dd4407f9761cefa9765d286ddb"><div class="ttname"><a href="class_customer.html#a176821dd4407f9761cefa9765d286ddb">Customer::ismykeybigger</a></div><div class="ttdeci">bool ismykeybigger(Customer x)</div><div class="ttdoc">returns true if the key of THIS object is greater in value than x</div></div>
-<div class="ttc" id="aclass_customer_html"><div class="ttname"><a href="class_customer.html">Customer</a></div><div class="ttdoc">A class to contain customer information.</div><div class="ttdef"><b>Definition:</b> Customer.h:15</div></div>
-<div class="ttc" id="aclass_customer_html_abcc8fae9701e5ba9d7d6fe44498b34e3"><div class="ttname"><a href="class_customer.html#abcc8fae9701e5ba9d7d6fe44498b34e3">Customer::Customer</a></div><div class="ttdeci">Customer()</div><div class="ttdoc">this constructor sets all strings to &quot;NOT SET&quot; and recieved_pamphlet to false</div></div>
-<div class="ttc" id="aclassorder_html"><div class="ttname"><a href="classorder.html">order</a></div><div class="ttdoc">A class to contain order information.</div><div class="ttdef"><b>Definition:</b> order.h:11</div></div>
-<div class="ttc" id="aclass_customer_html_a492acd1bb82f7a23861dbecba94412fd"><div class="ttname"><a href="class_customer.html#a492acd1bb82f7a23861dbecba94412fd">Customer::customers_order</a></div><div class="ttdeci">order customers_order</div><div class="ttdoc">The customers order;.</div><div class="ttdef"><b>Definition:</b> Customer.h:21</div></div>
-<div class="ttc" id="aclass_customer_html_aea8bdff10954734129fb841be5932e2b"><div class="ttname"><a href="class_customer.html#aea8bdff10954734129fb841be5932e2b">Customer::setInterest</a></div><div class="ttdeci">void setInterest(std::string)</div><div class="ttdoc">sets the customers intersest level</div></div>
-<div class="ttc" id="aclass_customer_html_ab92b6772c65d7959cd38b9df6ae16129"><div class="ttname"><a href="class_customer.html#ab92b6772c65d7959cd38b9df6ae16129">Customer::recieved_pamphlet</a></div><div class="ttdeci">bool recieved_pamphlet</div><div class="ttdoc">Indicated whether they have recieved a pamphlet.</div><div class="ttdef"><b>Definition:</b> Customer.h:27</div></div>
-<div class="ttc" id="aclass_customer_html_a5664facfe71af2d548cde5e95a145e36"><div class="ttname"><a href="class_customer.html#a5664facfe71af2d548cde5e95a145e36">Customer::setaddress2</a></div><div class="ttdeci">void setaddress2(std::string)</div><div class="ttdoc">sets the customers second address line</div></div>
-<div class="ttc" id="aclass_customer_html_ae2cce0f050315a08fca426f7dc09a3bf"><div class="ttname"><a href="class_customer.html#ae2cce0f050315a08fca426f7dc09a3bf">Customer::setpamphlet</a></div><div class="ttdeci">void setpamphlet(bool)</div><div class="ttdoc">sets whether the customer has recieved a pamphlet</div></div>
-<div class="ttc" id="aclass_customer_html_a6e6fc6e4c2e23085849bb544aa68a77e"><div class="ttname"><a href="class_customer.html#a6e6fc6e4c2e23085849bb544aa68a77e">Customer::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">the customers first and last name</div><div class="ttdef"><b>Definition:</b> Customer.h:23</div></div>
-<div class="ttc" id="aclass_customer_html_adf830a2c968b4784eb4031fafa4ce1ef"><div class="ttname"><a href="class_customer.html#adf830a2c968b4784eb4031fafa4ce1ef">Customer::interest</a></div><div class="ttdeci">std::string interest</div><div class="ttdoc">Indicates the interest level of the customer.</div><div class="ttdef"><b>Definition:</b> Customer.h:33</div></div>
-<div class="ttc" id="aclass_customer_html_ae9415d552cf85eb7f7e63b5fb272927d"><div class="ttname"><a href="class_customer.html#ae9415d552cf85eb7f7e63b5fb272927d">Customer::ismynamebigger</a></div><div class="ttdeci">bool ismynamebigger(Customer x)</div><div class="ttdoc">returns true if the name of THIS object is greater in value than x</div></div>
-<div class="ttc" id="aclass_customer_html_afa85079cb74467ecb43b39e7fbc2ccfd"><div class="ttname"><a href="class_customer.html#afa85079cb74467ecb43b39e7fbc2ccfd">Customer::setname</a></div><div class="ttdeci">void setname(std::string)</div><div class="ttdoc">Sets the cusomers first and last name.</div></div>
-<div class="ttc" id="aclass_customer_html_ad27652c96dd5f6615cebd3aaf1b2250d"><div class="ttname"><a href="class_customer.html#ad27652c96dd5f6615cebd3aaf1b2250d">Customer::address1</a></div><div class="ttdeci">std::string address1</div><div class="ttdoc">The space for the customers first line for the address.</div><div class="ttdef"><b>Definition:</b> Customer.h:29</div></div>
-<div class="ttc" id="aclass_customer_html_ac7898a11c963232a49ba5bdabbe3cbf8"><div class="ttname"><a href="class_customer.html#ac7898a11c963232a49ba5bdabbe3cbf8">Customer::getpamphlet</a></div><div class="ttdeci">bool getpamphlet()</div><div class="ttdoc">returns whether the customer has recieved a pamphlet or not. 1 for true, 0 for false.</div></div>
-<div class="ttc" id="aclass_customer_html_a08dde2dd561191b7c33066d81c1209d6"><div class="ttname"><a href="class_customer.html#a08dde2dd561191b7c33066d81c1209d6">Customer::getaddress2</a></div><div class="ttdeci">std::string getaddress2()</div><div class="ttdoc">returns the customer's address line 2</div></div>
-<div class="ttc" id="aclass_customer_html_abfb529b440138d0f0f744ee943dffae7"><div class="ttname"><a href="class_customer.html#abfb529b440138d0f0f744ee943dffae7">Customer::setaddress1</a></div><div class="ttdeci">void setaddress1(std::string)</div><div class="ttdoc">sets the customsers first address line</div></div>
-<div class="ttc" id="aclass_customer_html_a3e417c560cb99bedb832a49115ede36a"><div class="ttname"><a href="class_customer.html#a3e417c560cb99bedb832a49115ede36a">Customer::address2</a></div><div class="ttdeci">std::string address2</div><div class="ttdoc">the space for the customers second line of the address</div><div class="ttdef"><b>Definition:</b> Customer.h:31</div></div>
+<div class="ttc" id="aclass_customer_html"><div class="ttname"><a href="class_customer.html">Customer</a></div><div class="ttdoc">A class to contain customer information.</div><div class="ttdef"><b>Definition:</b> Customer.h:13</div></div>
+<div class="ttc" id="aclass_customer_html_abcc8fae9701e5ba9d7d6fe44498b34e3"><div class="ttname"><a href="class_customer.html#abcc8fae9701e5ba9d7d6fe44498b34e3">Customer::Customer</a></div><div class="ttdeci">Customer()</div><div class="ttdoc">this default constructor sets all strings to &quot;NOT SET&quot; and received_pamphlet to false</div><div class="ttdef"><b>Definition:</b> Customer.cpp:78</div></div>
+<div class="ttc" id="aclassorder_html"><div class="ttname"><a href="classorder.html">order</a></div><div class="ttdoc">A class to contain order information.</div><div class="ttdef"><b>Definition:</b> order.h:9</div></div>
+<div class="ttc" id="aclass_customer_html_a7de77eb2aa4cfa66faffa276470bf850"><div class="ttname"><a href="class_customer.html#a7de77eb2aa4cfa66faffa276470bf850">Customer::customersOrder</a></div><div class="ttdeci">order * customersOrder</div><div class="ttdoc">The customers order-INPUT.</div><div class="ttdef"><b>Definition:</b> Customer.h:39</div></div>
+<div class="ttc" id="aclass_customer_html_aea8bdff10954734129fb841be5932e2b"><div class="ttname"><a href="class_customer.html#aea8bdff10954734129fb841be5932e2b">Customer::setInterest</a></div><div class="ttdeci">void setInterest(std::string)</div><div class="ttdoc">sets the customers interest level</div></div>
+<div class="ttc" id="aclass_customer_html_a181707f69c1fb37a2aabd2bab9c97275"><div class="ttname"><a href="class_customer.html#a181707f69c1fb37a2aabd2bab9c97275">Customer::setName</a></div><div class="ttdeci">void setName(std::string)</div><div class="ttdoc">Sets the cusomers first and last name.</div></div>
+<div class="ttc" id="aclass_customer_html_adc9214de247cbf2c915786244258baec"><div class="ttname"><a href="class_customer.html#adc9214de247cbf2c915786244258baec">Customer::isMynamebigger</a></div><div class="ttdeci">bool isMynamebigger(Customer x)</div><div class="ttdoc">returns true if the name of THIS object is greater in value than x</div></div>
+<div class="ttc" id="aclass_customer_html_aac4e3e531c99ac15368404b5ad3dec2f"><div class="ttname"><a href="class_customer.html#aac4e3e531c99ac15368404b5ad3dec2f">Customer::setAddress1</a></div><div class="ttdeci">void setAddress1(std::string)</div><div class="ttdoc">sets the customsers first address line</div></div>
+<div class="ttc" id="aclass_customer_html_a0fb4527a89a6bfc369f8366618bb83ad"><div class="ttname"><a href="class_customer.html#a0fb4527a89a6bfc369f8366618bb83ad">Customer::setKey</a></div><div class="ttdeci">void setKey(std::string)</div><div class="ttdoc">Sets the customers key level.</div></div>
+<div class="ttc" id="aclass_customer_html_ad9da8b3d66bcd634e0dddbad963d7781"><div class="ttname"><a href="class_customer.html#ad9da8b3d66bcd634e0dddbad963d7781">Customer::getAddress2</a></div><div class="ttdeci">std::string getAddress2()</div><div class="ttdoc">returns the customer's address line 2</div></div>
 <div class="ttc" id="aclass_customer_html_aeb0cfac136e5a110cc668918d315b848"><div class="ttname"><a href="class_customer.html#aeb0cfac136e5a110cc668918d315b848">Customer::getInterest</a></div><div class="ttdeci">std::string getInterest()</div><div class="ttdoc">returns the customer's interest level</div></div>
-<div class="ttc" id="aclass_customer_html_a17b8fcf53664106a406bdcd3fd1f5482"><div class="ttname"><a href="class_customer.html#a17b8fcf53664106a406bdcd3fd1f5482">Customer::keylevel</a></div><div class="ttdeci">std::string keylevel</div><div class="ttdoc">How important the customer is to the company.</div><div class="ttdef"><b>Definition:</b> Customer.h:25</div></div>
-<div class="ttc" id="aclass_customer_html_a477cd69606d79071b539d454fda884c9"><div class="ttname"><a href="class_customer.html#a477cd69606d79071b539d454fda884c9">Customer::getkey</a></div><div class="ttdeci">std::string getkey()</div><div class="ttdoc">returns the customer key level</div></div>
-<div class="ttc" id="aclass_customer_html_accc75b20c321ea90bc568ece35e978d5"><div class="ttname"><a href="class_customer.html#accc75b20c321ea90bc568ece35e978d5">Customer::getname</a></div><div class="ttdeci">std::string getname()</div><div class="ttdoc">returns the customers first name</div></div>
-<div class="ttc" id="aclass_customer_html_aa74b47e2ca516c83b5bacebc1b955194"><div class="ttname"><a href="class_customer.html#aa74b47e2ca516c83b5bacebc1b955194">Customer::getaddress1</a></div><div class="ttdeci">std::string getaddress1()</div><div class="ttdoc">returns the customer's address line 1</div></div>
+<div class="ttc" id="aclass_customer_html_a4564927e17d6cea720272b83e1108f90"><div class="ttname"><a href="class_customer.html#a4564927e17d6cea720272b83e1108f90">Customer::getName</a></div><div class="ttdeci">std::string getName()</div><div class="ttdoc">returns the customers first name</div></div>
+<div class="ttc" id="aclass_customer_html_a4e1b2f165d90bc1a4eeb3278c573d8ba"><div class="ttname"><a href="class_customer.html#a4e1b2f165d90bc1a4eeb3278c573d8ba">Customer::getAddress1</a></div><div class="ttdeci">std::string getAddress1()</div><div class="ttdoc">returns the customer's address line 1</div></div>
+<div class="ttc" id="aclass_customer_html_ab0604fccdd793d2a6f69a7824fe58e23"><div class="ttname"><a href="class_customer.html#ab0604fccdd793d2a6f69a7824fe58e23">Customer::getKey</a></div><div class="ttdeci">std::string getKey()</div><div class="ttdoc">returns the customer key level</div></div>
+<div class="ttc" id="aclass_customer_html_a47409b0f327c3f07b836cb48bbd57f40"><div class="ttname"><a href="class_customer.html#a47409b0f327c3f07b836cb48bbd57f40">Customer::setPamphlet</a></div><div class="ttdeci">void setPamphlet(bool)</div><div class="ttdoc">sets whether the customer has received a pamphlet</div></div>
+<div class="ttc" id="aclass_customer_html_aba9653c9c4283b81328ce82fd48d9cae"><div class="ttname"><a href="class_customer.html#aba9653c9c4283b81328ce82fd48d9cae">Customer::setAddress2</a></div><div class="ttdeci">void setAddress2(std::string)</div><div class="ttdoc">sets the customers second address line</div></div>
+<div class="ttc" id="aclass_customer_html_a38adb72a665f19ce873abab08fabaf31"><div class="ttname"><a href="class_customer.html#a38adb72a665f19ce873abab08fabaf31">Customer::getPamphlet</a></div><div class="ttdeci">bool getPamphlet()</div><div class="ttdoc">returns whether the customer has recieved a pamphlet or not. 1 for true, 0 for false.</div></div>
+<div class="ttc" id="aclass_customer_html_acbf5971bbb139f0ca20c97b338c5e8de"><div class="ttname"><a href="class_customer.html#acbf5971bbb139f0ca20c97b338c5e8de">Customer::isMykeybigger</a></div><div class="ttdeci">bool isMykeybigger(Customer x)</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
