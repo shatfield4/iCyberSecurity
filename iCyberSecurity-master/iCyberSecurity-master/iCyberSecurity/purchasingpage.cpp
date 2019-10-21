@@ -29,7 +29,8 @@ purchasingPage::purchasingPage(QWidget *parent) :
             int count = 0;
 
 
-            QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/customers.txt");
+            //QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/customers.txt");
+            QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
 
             if(!file.open(QFile::ReadOnly | QFile::Text))
             {
