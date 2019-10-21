@@ -58,7 +58,11 @@ class Customer
         //! sets the customers interest level
         void setInterest(std::string);
 
+        //! returns the customer interest
         order getCustomerOrder();
+
+
+
 
 
         //GETTERS
@@ -85,7 +89,8 @@ class Customer
         //CONSTRUCTORS
         //! this default constructor sets all strings to "NOT SET" and received_pamphlet to false
         Customer();
-
+        //! copy constructor
+        Customer(const Customer &o2);
         //! This constructor takes all member variables and makes a class.
         Customer(std::string xname, std::string xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest);
         //no pointed to data so no need for copy constructor currently
@@ -98,6 +103,10 @@ class Customer
         //!returns true if the key of THIS object is greater in value than x
         //!note: larger values should come later in this case being a "key" customer is 0, while the "mean" keyvalue of 2
         bool isMykeybigger(Customer x);
+        //Operator overload
+
+        //! assignment operator copies pointed to data
+        Customer operator = (Customer const &c2);
 };
 
 #endif // CUSTOMER_H
