@@ -19,11 +19,11 @@ MainWindow::MainWindow(QWidget *parent)
 
     qDebug("Program Started");
 
-    QFile file(":/data/textFiles/testimonials.txt");
+    QFile file("E:/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/testimonials.txt");
 
     if (!file.open(QFile::ReadOnly | QFile::Text))
     {
-        QMessageBox::warning(this,"Error","File not open");
+        QMessageBox::warning(this, "Error", "File not open for reading data on program execution.");
     }
     QTextStream in(&file);
     QString text = in.readAll();
@@ -43,36 +43,35 @@ void MainWindow::on_pampletSubmitButton_clicked()
 
 void MainWindow::on_pushSubmit_clicked()
 {
-    QFile file(":/data/textFiles/testimonials.txt");
+    QFile file("E:/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/testimonials.txt");
 
     if (!file.open(QFile::WriteOnly | QFile::Text | QFile::Append))
     {
-        QMessageBox::warning(this,"Error","File not open");
+        QMessageBox::warning(this, "Error", "File not open for appending data.");
     }
-    QTextStream out(&file);
-    QString name = ui->editName->toPlainText();
-    QString stars = ui->editStars->toPlainText();
-    QString review = ui->editReviews->toPlainText();
+    else
+    {
+        QTextStream out(&file);
+        QString name = ui->editName->toPlainText();
+        QString stars = ui->editStars->toPlainText() + " stars";
+        QString review = ui->editReviews->toPlainText();
 
-    out << name << endl << stars << " stars" << endl << review << endl << endl;
-    file.flush();
-    file.close();
+        out << name << endl << stars << endl << review << endl << endl;
+        QMessageBox::warning(this, "Submitted", "Thanks for your submission, dog.");
+        file.flush();
+        file.close();
+    }
+
     ui->editName->setPlainText("");
     ui->editStars->setPlainText("");
     ui->editReviews->setPlainText("");
 
-    ui->setupUi(this);
+    file.open(QFile::ReadOnly | QFile::Text);
 
-    QFile ifile(":/data/textFiles/testimonials.txt");
-
-    if (!ifile.open(QFile::ReadOnly | QFile::Text))
-    {
-        QMessageBox::warning(this,"Error","File not open");
-    }
-    QTextStream in(&ifile);
+    QTextStream in(&file);
     QString text = in.readAll();
     ui->textReviews->setPlainText(text);
-    ifile.close();
+    file.close();
 }
 
 void MainWindow::on_loadCustomerData_clicked()
