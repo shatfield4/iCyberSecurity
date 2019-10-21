@@ -241,7 +241,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabsCustomer->setCurrentIndex(3);
+        tabsCustomer->setCurrentIndex(4);
         tabsProduct->setCurrentIndex(1);
         tabsPlans->setCurrentIndex(1);
 
