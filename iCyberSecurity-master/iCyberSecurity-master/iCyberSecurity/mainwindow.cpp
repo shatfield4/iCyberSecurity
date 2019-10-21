@@ -38,7 +38,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pampletSubmitButton_clicked()
 {
-    //QMessageBox::information(this,tr("THE title"), tr("You have submitted it. Thank you."));
+    QMessageBox::information(this,tr("THE title"), tr("You have submitted it. Thank you."));
 }
 
 void MainWindow::on_pushSubmit_clicked()

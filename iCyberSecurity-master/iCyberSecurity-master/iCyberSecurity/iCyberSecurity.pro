@@ -22,6 +22,7 @@ SOURCES += \
     mainwindow.cpp \
     order.cpp \
     purchasingpage.cpp \
+    readAndWriteFunctions.cpp \
     sorting.cpp
 
 HEADERS += \
