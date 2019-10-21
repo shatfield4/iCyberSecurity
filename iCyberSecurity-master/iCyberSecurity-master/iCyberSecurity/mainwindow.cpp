@@ -41,7 +41,7 @@ void MainWindow::on_pampletSubmitButton_clicked()
 
     QMessageBox::information(this, tr("Submitted"), tr("You've submitted it to the big homies. Word up dog."));
 
-    QFile file ("E:/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/pamphletsubmissions.txt");
+    QFile file ("C:\\Users\\kaito\\Desktop\\pamphletsubmissions.txt");
 
     if (!file.open(QFile::WriteOnly | QFile::Text | QFile::Append))
     {

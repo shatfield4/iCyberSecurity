@@ -104,7 +104,7 @@ void AdminPage::on_loadCustomerData_clicked()
 
 void AdminPage::on_buttonLoadPamphlets_clicked()
 {
-    QFile file("E:/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/pamphletsubmissions.txt");
+    QFile file("C:\\Users\\kaito\\Desktop\\pamphletsubmissions.txt");
 
     if(!file.open(QFile::ReadOnly | QFile::Text))
     {
@@ -128,8 +128,6 @@ void AdminPage::on_buttonLoadPamphlets_clicked()
 
     ui->pamphletTable->resizeColumnsToContents();
     file.close();
-
-
 
 } //END void AdminPage::on_loadCustomerData_clicked()
 
