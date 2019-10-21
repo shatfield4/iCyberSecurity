@@ -43,18 +43,8 @@ Nicholas
 Address City, AD, 11111
 very interested
 key
-AA
-AA
-AA
-very interested
-key
-AAA
-AAA
-AAA
-very interested
-key
-AAAA
-AAAA
-VBBBB
+Mike
+Mike's House Avenue
+Mike City, MC, 00001
 very interested
 key
