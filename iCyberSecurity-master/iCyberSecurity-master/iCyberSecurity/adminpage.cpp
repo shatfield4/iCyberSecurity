@@ -104,7 +104,7 @@ void AdminPage::on_loadCustomerData_clicked()
 
 void AdminPage::on_buttonLoadPamphlets_clicked()
 {
-    QFile file("C:\\Users\\kaito\\Desktop\\pamphletsubmissions.txt");
+    QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/pamphletsubmissions.txt");
 
     if(!file.open(QFile::ReadOnly | QFile::Text))
     {
