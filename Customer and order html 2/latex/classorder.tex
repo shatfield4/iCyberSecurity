@@ -1,0 +1,222 @@
+\hypertarget{classorder}{}\doxysection{order Class Reference}
+\label{classorder}\index{order@{order}}
+
+
+A class to contain order information.  
+
+
+
+
+{\ttfamily \#include $<$order.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorder_ab7f01b38c626c4e6e30da432dd8dbfc1}{setnumber\+\_\+of\+\_\+product\+\_\+one}} (int)
+\begin{DoxyCompactList}\small\item\em sets the number of product one they have ordered \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorder_a9c97743244cc7b36c4ae8e86ec7690ac}{setnumber\+\_\+of\+\_\+product\+\_\+two}} (int)
+\begin{DoxyCompactList}\small\item\em sets the number of product two they have ordered \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorder_a0e044bf6b5aacb51725e0b7e9b063867}{setnumber\+\_\+of\+\_\+product\+\_\+three}} (int)
+\begin{DoxyCompactList}\small\item\em sets the number of product three they have ordered \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorder_a5fac58f55e6c8a2fc8f17ffdc31a80b3}{setserviceplan\+\_\+one}} (bool)
+\begin{DoxyCompactList}\small\item\em Indicates if they got serviceplan one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorder_aa975dd789f954d62c3c331158df81961}{setserviceplan\+\_\+two}} (bool)
+\begin{DoxyCompactList}\small\item\em Indicates if they got serviceplan two. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorder_a0b6a9e0f134fa4df0b980831297f6c5d}{settax}} (double)
+\begin{DoxyCompactList}\small\item\em sets the taxrate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classorder_a16ffa2ee727c524cec39e6ec7e4a1854}{update\+\_\+total}} ()
+\begin{DoxyCompactList}\small\item\em calculates the total \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorder_ac797c2b513733fac1d391da5b8378200}{getnumber\+\_\+of\+\_\+product\+\_\+one}} ()
+\begin{DoxyCompactList}\small\item\em gets the number of product one they have ordered \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorder_ac77e92bf7fca7ee507cea3cd6130bbe6}{getnumber\+\_\+of\+\_\+product\+\_\+two}} ()
+\begin{DoxyCompactList}\small\item\em gets the number of product two they have ordered \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classorder_ad9cfa600e56a758f22dfd8d3dcaf9393}{getnumber\+\_\+of\+\_\+product\+\_\+three}} ()
+\begin{DoxyCompactList}\small\item\em gets the number of product three they have ordered \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classorder_aa85fa26ae13bcf5dfc1ce0d9c2857d7c}{getserviceplan\+\_\+one}} ()
+\begin{DoxyCompactList}\small\item\em returns true if they got serviceplan one \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classorder_abc0e2bc13c8f8115366d5899d8df08a0}{getserviceplan\+\_\+two}} ()
+\begin{DoxyCompactList}\small\item\em returns true if they got serviceplan two \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorder_a35c07c127b9b08f7c69b6bc255f51ff4}{gettax}} ()
+\begin{DoxyCompactList}\small\item\em gets the taxrate in \% form \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classorder_af9e92870f14a56698003c03ca901b23e}{gettotal}} ()
+\begin{DoxyCompactList}\small\item\em gets the the total cost \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorder_a1dc9a5b41ac3e7a9155a5780fe5cb383}{order}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor\+: sets all strings to \char`\"{}\+Not set\char`\"{} both service plans are set to false the total and tax are set to 0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorder_ad22b08776923bb1a0552dea1c143c7fc}{order}} (int p1, int p2, int p3, bool s1, bool s2, double xtax)
+\begin{DoxyCompactList}\small\item\em sets all variables except total. total is a calculated variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to contain order information. 
+
+This class contains all customer information and an order variable. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorder_a1dc9a5b41ac3e7a9155a5780fe5cb383}\label{classorder_a1dc9a5b41ac3e7a9155a5780fe5cb383}} 
+\index{order@{order}!order@{order}}
+\index{order@{order}!order@{order}}
+\doxysubsubsection{\texorpdfstring{order()}{order()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily order\+::order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor\+: sets all strings to \char`\"{}\+Not set\char`\"{} both service plans are set to false the total and tax are set to 0. 
+
+\mbox{\Hypertarget{classorder_ad22b08776923bb1a0552dea1c143c7fc}\label{classorder_ad22b08776923bb1a0552dea1c143c7fc}} 
+\index{order@{order}!order@{order}}
+\index{order@{order}!order@{order}}
+\doxysubsubsection{\texorpdfstring{order()}{order()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily order\+::order (\begin{DoxyParamCaption}\item[{int}]{p1,  }\item[{int}]{p2,  }\item[{int}]{p3,  }\item[{bool}]{s1,  }\item[{bool}]{s2,  }\item[{double}]{xtax }\end{DoxyParamCaption})}
+
+
+
+sets all variables except total. total is a calculated variable. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorder_ac797c2b513733fac1d391da5b8378200}\label{classorder_ac797c2b513733fac1d391da5b8378200}} 
+\index{order@{order}!getnumber\_of\_product\_one@{getnumber\_of\_product\_one}}
+\index{getnumber\_of\_product\_one@{getnumber\_of\_product\_one}!order@{order}}
+\doxysubsubsection{\texorpdfstring{getnumber\_of\_product\_one()}{getnumber\_of\_product\_one()}}
+{\footnotesize\ttfamily int order\+::getnumber\+\_\+of\+\_\+product\+\_\+one (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the number of product one they have ordered 
+
+\mbox{\Hypertarget{classorder_ad9cfa600e56a758f22dfd8d3dcaf9393}\label{classorder_ad9cfa600e56a758f22dfd8d3dcaf9393}} 
+\index{order@{order}!getnumber\_of\_product\_three@{getnumber\_of\_product\_three}}
+\index{getnumber\_of\_product\_three@{getnumber\_of\_product\_three}!order@{order}}
+\doxysubsubsection{\texorpdfstring{getnumber\_of\_product\_three()}{getnumber\_of\_product\_three()}}
+{\footnotesize\ttfamily int order\+::getnumber\+\_\+of\+\_\+product\+\_\+three (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the number of product three they have ordered 
+
+\mbox{\Hypertarget{classorder_ac77e92bf7fca7ee507cea3cd6130bbe6}\label{classorder_ac77e92bf7fca7ee507cea3cd6130bbe6}} 
+\index{order@{order}!getnumber\_of\_product\_two@{getnumber\_of\_product\_two}}
+\index{getnumber\_of\_product\_two@{getnumber\_of\_product\_two}!order@{order}}
+\doxysubsubsection{\texorpdfstring{getnumber\_of\_product\_two()}{getnumber\_of\_product\_two()}}
+{\footnotesize\ttfamily int order\+::getnumber\+\_\+of\+\_\+product\+\_\+two (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the number of product two they have ordered 
+
+\mbox{\Hypertarget{classorder_aa85fa26ae13bcf5dfc1ce0d9c2857d7c}\label{classorder_aa85fa26ae13bcf5dfc1ce0d9c2857d7c}} 
+\index{order@{order}!getserviceplan\_one@{getserviceplan\_one}}
+\index{getserviceplan\_one@{getserviceplan\_one}!order@{order}}
+\doxysubsubsection{\texorpdfstring{getserviceplan\_one()}{getserviceplan\_one()}}
+{\footnotesize\ttfamily bool order\+::getserviceplan\+\_\+one (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns true if they got serviceplan one 
+
+\mbox{\Hypertarget{classorder_abc0e2bc13c8f8115366d5899d8df08a0}\label{classorder_abc0e2bc13c8f8115366d5899d8df08a0}} 
+\index{order@{order}!getserviceplan\_two@{getserviceplan\_two}}
+\index{getserviceplan\_two@{getserviceplan\_two}!order@{order}}
+\doxysubsubsection{\texorpdfstring{getserviceplan\_two()}{getserviceplan\_two()}}
+{\footnotesize\ttfamily bool order\+::getserviceplan\+\_\+two (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns true if they got serviceplan two 
+
+\mbox{\Hypertarget{classorder_a35c07c127b9b08f7c69b6bc255f51ff4}\label{classorder_a35c07c127b9b08f7c69b6bc255f51ff4}} 
+\index{order@{order}!gettax@{gettax}}
+\index{gettax@{gettax}!order@{order}}
+\doxysubsubsection{\texorpdfstring{gettax()}{gettax()}}
+{\footnotesize\ttfamily double order\+::gettax (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the taxrate in \% form 
+
+\mbox{\Hypertarget{classorder_af9e92870f14a56698003c03ca901b23e}\label{classorder_af9e92870f14a56698003c03ca901b23e}} 
+\index{order@{order}!gettotal@{gettotal}}
+\index{gettotal@{gettotal}!order@{order}}
+\doxysubsubsection{\texorpdfstring{gettotal()}{gettotal()}}
+{\footnotesize\ttfamily double order\+::gettotal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the the total cost 
+
+\mbox{\Hypertarget{classorder_ab7f01b38c626c4e6e30da432dd8dbfc1}\label{classorder_ab7f01b38c626c4e6e30da432dd8dbfc1}} 
+\index{order@{order}!setnumber\_of\_product\_one@{setnumber\_of\_product\_one}}
+\index{setnumber\_of\_product\_one@{setnumber\_of\_product\_one}!order@{order}}
+\doxysubsubsection{\texorpdfstring{setnumber\_of\_product\_one()}{setnumber\_of\_product\_one()}}
+{\footnotesize\ttfamily void order\+::setnumber\+\_\+of\+\_\+product\+\_\+one (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+sets the number of product one they have ordered 
+
+\mbox{\Hypertarget{classorder_a0e044bf6b5aacb51725e0b7e9b063867}\label{classorder_a0e044bf6b5aacb51725e0b7e9b063867}} 
+\index{order@{order}!setnumber\_of\_product\_three@{setnumber\_of\_product\_three}}
+\index{setnumber\_of\_product\_three@{setnumber\_of\_product\_three}!order@{order}}
+\doxysubsubsection{\texorpdfstring{setnumber\_of\_product\_three()}{setnumber\_of\_product\_three()}}
+{\footnotesize\ttfamily void order\+::setnumber\+\_\+of\+\_\+product\+\_\+three (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+sets the number of product three they have ordered 
+
+\mbox{\Hypertarget{classorder_a9c97743244cc7b36c4ae8e86ec7690ac}\label{classorder_a9c97743244cc7b36c4ae8e86ec7690ac}} 
+\index{order@{order}!setnumber\_of\_product\_two@{setnumber\_of\_product\_two}}
+\index{setnumber\_of\_product\_two@{setnumber\_of\_product\_two}!order@{order}}
+\doxysubsubsection{\texorpdfstring{setnumber\_of\_product\_two()}{setnumber\_of\_product\_two()}}
+{\footnotesize\ttfamily void order\+::setnumber\+\_\+of\+\_\+product\+\_\+two (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+sets the number of product two they have ordered 
+
+\mbox{\Hypertarget{classorder_a5fac58f55e6c8a2fc8f17ffdc31a80b3}\label{classorder_a5fac58f55e6c8a2fc8f17ffdc31a80b3}} 
+\index{order@{order}!setserviceplan\_one@{setserviceplan\_one}}
+\index{setserviceplan\_one@{setserviceplan\_one}!order@{order}}
+\doxysubsubsection{\texorpdfstring{setserviceplan\_one()}{setserviceplan\_one()}}
+{\footnotesize\ttfamily void order\+::setserviceplan\+\_\+one (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})}
+
+
+
+Indicates if they got serviceplan one. 
+
+\mbox{\Hypertarget{classorder_aa975dd789f954d62c3c331158df81961}\label{classorder_aa975dd789f954d62c3c331158df81961}} 
+\index{order@{order}!setserviceplan\_two@{setserviceplan\_two}}
+\index{setserviceplan\_two@{setserviceplan\_two}!order@{order}}
+\doxysubsubsection{\texorpdfstring{setserviceplan\_two()}{setserviceplan\_two()}}
+{\footnotesize\ttfamily void order\+::setserviceplan\+\_\+two (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})}
+
+
+
+Indicates if they got serviceplan two. 
+
+\mbox{\Hypertarget{classorder_a0b6a9e0f134fa4df0b980831297f6c5d}\label{classorder_a0b6a9e0f134fa4df0b980831297f6c5d}} 
+\index{order@{order}!settax@{settax}}
+\index{settax@{settax}!order@{order}}
+\doxysubsubsection{\texorpdfstring{settax()}{settax()}}
+{\footnotesize\ttfamily void order\+::settax (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})}
+
+
+
+sets the taxrate 
+
+\mbox{\Hypertarget{classorder_a16ffa2ee727c524cec39e6ec7e4a1854}\label{classorder_a16ffa2ee727c524cec39e6ec7e4a1854}} 
+\index{order@{order}!update\_total@{update\_total}}
+\index{update\_total@{update\_total}!order@{order}}
+\doxysubsubsection{\texorpdfstring{update\_total()}{update\_total()}}
+{\footnotesize\ttfamily void order\+::update\+\_\+total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+calculates the total 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{order_8h}{order.\+h}}\end{DoxyCompactItemize}

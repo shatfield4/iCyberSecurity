@@ -1,8 +1,9 @@
 #include "adminpage.h"
 #include "ui_adminpage.h"
 #include "Customer.h"
-//#include "readAndWriteFunctions.cpp"
+#include "readAndWriteFunctions.h"
 #include "sorting.h"
+#include "readAndWriteFunctions.h"
 
 #include <QFile>
 #include<QStandardPaths>
@@ -10,9 +11,7 @@
 #include <QMessageBox>
 #include <QDebug>
 
-void readInCustomerData(Customer customerArr[], //array of customer that will be updated with the data txt file
-                                        int arraySize,                  //the array size of customerArr[]
-                                        int& totalNumCustomers); //total number of customers from the data
+
 
 AdminPage::AdminPage(QWidget *parent) :
     QDialog(parent),
@@ -104,7 +103,7 @@ void AdminPage::on_loadCustomerData_clicked()
 
 void AdminPage::on_buttonLoadPamphlets_clicked()
 {
-    QFile file("C:\\Users\\kaito\\Desktop\\pamphletsubmissions.txt");
+    QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/pamphletsubmissions.txt");
 
     if(!file.open(QFile::ReadOnly | QFile::Text))
     {

@@ -4,8 +4,9 @@
 #include "ui_mainwindow.h"
 #include "adminpage.h"
 #include "ui_adminpage.h"
-
 #include "Customer.h"
+#include "sorting.h"
+#include "readAndWriteFunctions.h"
 
 #include <QFile>
 #include <QStandardPaths>
@@ -93,12 +94,7 @@ void purchasingPage::on_pushButton_clicked()
                                                       "taken back to the products page."));
 }
 
-//OK button
-void purchasingPage::on_buttonBox_accepted()
-{
-    QMessageBox::information(this,tr("Order Accepted"), tr("Your order has been accepted.\nThank you for your purchase.\nGoing back to product page."));
 
-}
 
 //Cancel button
 void purchasingPage::on_buttonBox_rejected()
@@ -255,4 +251,64 @@ void purchasingPage::on_checkBoxUnicorn_toggled(bool checked)
     QString tempTotal = QString::number(tempSubtotal*1.0775, 'f', 2);
 
     ui->totalPrice->setText(tempTotal);
+}
+
+//OK button
+//NOT WORKING NEED TO BE FIXED
+void purchasingPage::on_buttonBox_accepted()
+{
+    Customer unsorted[500];
+    Customer sortName[500];
+    Customer sortKey[500];
+    int comboBoxIndex;
+    int count = 0;
+    int keyCount = 0;
+
+    readInCustomerData(unsorted, //array of customer that will be updated with the data txt file
+                                    500,                  //the array size of customerArr[]
+                                    count); //total number of customers from the data
+
+    sortCustomers(unsorted, sortName, sortKey, count, keyCount);
+    qDebug() << "Count: " << count;
+
+    comboBoxIndex = ui->existingComboBox->currentIndex();
+
+    if (comboBoxIndex != count)
+    {
+        if(ui->silverPrice->text().toDouble() > 0)
+        {
+            unsorted[comboBoxIndex].getCustomerOrder().setnumber_of_product_one(1);
+        }
+        if(ui->goldPrice->text().toDouble() > 0)
+        {
+            unsorted[comboBoxIndex].getCustomerOrder().setnumber_of_product_two(unsorted[comboBoxIndex].getCustomerOrder().getnumber_of_product_two() + 1);
+        }
+        if(ui->diamondPrice->text().toDouble() > 0)
+        {
+            unsorted[comboBoxIndex].getCustomerOrder().setnumber_of_product_three(unsorted[comboBoxIndex].getCustomerOrder().getnumber_of_product_three() + 1);
+        }
+        if(ui->crabPrice->text().toDouble() > 0)
+        {
+            unsorted[comboBoxIndex].getCustomerOrder().setserviceplan_one(true);
+        }
+        if(ui->unicornPrice->text().toDouble() > 0)
+        {
+            unsorted[comboBoxIndex].getCustomerOrder().setserviceplan_two(true);
+        }
+        qDebug() << "Index: " << comboBoxIndex;
+
+    }
+
+
+    qDebug() << "Index: " << comboBoxIndex;
+    qDebug() << "Expression: " << (ui->silverPrice->text().toDouble() > 0);
+
+    qDebug() << "Number of Product one: "   << unsorted[comboBoxIndex].getCustomerOrder().getnumber_of_product_one();
+    qDebug() << "Number of Product two: "   << unsorted[comboBoxIndex].getCustomerOrder().getnumber_of_product_two();
+    qDebug() << "Number of Product three: " << unsorted[comboBoxIndex].getCustomerOrder().getnumber_of_product_three();
+
+
+
+    QMessageBox::information(this,tr("Order Accepted"), tr("Your order has been accepted.\nThank you for your purchase.\nGoing back to product page."));
+
 }
