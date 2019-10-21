@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['customer_47',['Customer',['../class_customer.html#abcc8fae9701e5ba9d7d6fe44498b34e3',1,'Customer::Customer()'],['../class_customer.html#a5f32a723504267df48509b42391c2849',1,'Customer::Customer(std::string xname, Key xKey, bool xpamphlet, std::string xaddress1, std::string xaddress2, string xinterest)']]]
+  ['customer_33',['Customer',['../class_customer.html#abcc8fae9701e5ba9d7d6fe44498b34e3',1,'Customer::Customer()'],['../class_customer.html#a7f02f2de8d3590e26c8d10b104ade262',1,'Customer::Customer(std::string xname, std::string xKey, bool xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest)']]]
 ];

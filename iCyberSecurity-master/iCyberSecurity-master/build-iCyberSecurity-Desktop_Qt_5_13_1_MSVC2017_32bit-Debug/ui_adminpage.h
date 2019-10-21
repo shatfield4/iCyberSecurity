@@ -12,23 +12,37 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QLabel>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QTableWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_AdminPage
 {
 public:
-    QLabel *label;
+    QPushButton *loadCustomerData;
+    QTableWidget *customerTable;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
 
     void setupUi(QDialog *AdminPage)
     {
         if (AdminPage->objectName().isEmpty())
             AdminPage->setObjectName(QString::fromUtf8("AdminPage"));
-        AdminPage->resize(400, 300);
-        label = new QLabel(AdminPage);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(170, 130, 47, 13));
+        AdminPage->resize(965, 619);
+        loadCustomerData = new QPushButton(AdminPage);
+        loadCustomerData->setObjectName(QString::fromUtf8("loadCustomerData"));
+        loadCustomerData->setGeometry(QRect(40, 576, 241, 23));
+        customerTable = new QTableWidget(AdminPage);
+        customerTable->setObjectName(QString::fromUtf8("customerTable"));
+        customerTable->setGeometry(QRect(40, 40, 879, 530));
+        pushButton = new QPushButton(AdminPage);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(320, 580, 171, 23));
+        pushButton_2 = new QPushButton(AdminPage);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(530, 580, 171, 23));
 
         retranslateUi(AdminPage);
 
@@ -38,7 +52,9 @@ public:
     void retranslateUi(QDialog *AdminPage)
     {
         AdminPage->setWindowTitle(QCoreApplication::translate("AdminPage", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("AdminPage", "hi homie", nullptr));
+        loadCustomerData->setText(QCoreApplication::translate("AdminPage", "Load Customer Data From File", nullptr));
+        pushButton->setText(QCoreApplication::translate("AdminPage", "Sort By Customer Name", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("AdminPage", "Sort By Key", nullptr));
     } // retranslateUi
 
 };

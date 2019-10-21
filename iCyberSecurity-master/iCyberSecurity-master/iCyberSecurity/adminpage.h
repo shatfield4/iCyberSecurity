@@ -18,6 +18,8 @@ public:
 private slots:
     void on_loadCustomerData_clicked();
 
+    void on_buttonLoadPamphlets_clicked();
+
 private:
     Ui::AdminPage *ui;
 };

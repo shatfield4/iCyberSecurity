@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['interest_18',['interest',['../class_customer.html#adf830a2c968b4784eb4031fafa4ce1ef',1,'Customer']]],
-  ['ismykeybigger_19',['ismykeybigger',['../class_customer.html#a176821dd4407f9761cefa9765d286ddb',1,'Customer']]],
-  ['ismynamebigger_20',['ismynamebigger',['../class_customer.html#ae9415d552cf85eb7f7e63b5fb272927d',1,'Customer']]]
+  ['order_17',['order',['../classorder.html',1,'order'],['../classorder.html#a1dc9a5b41ac3e7a9155a5780fe5cb383',1,'order::order()'],['../classorder.html#ad22b08776923bb1a0552dea1c143c7fc',1,'order::order(int p1, int p2, int p3, bool s1, bool s2, double xtax)']]]
 ];

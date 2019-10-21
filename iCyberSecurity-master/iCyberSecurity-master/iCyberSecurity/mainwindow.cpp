@@ -38,7 +38,28 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pampletSubmitButton_clicked()
 {
-    //QMessageBox::information(this,tr("THE title"), tr("You have submitted it. Thank you."));
+
+    QMessageBox::information(this, tr("Submitted"), tr("You've submitted it to the big homies. Word up dog."));
+
+    QFile file ("E:/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/pamphletsubmissions.txt");
+
+    if (!file.open(QFile::WriteOnly | QFile::Text | QFile::Append))
+    {
+        QMessageBox::warning(this, "Error", "File not open for appending data.");
+    }
+    else
+    {
+        QTextStream out(&file);
+        QString name = ui->pampletNameInput->text();
+        QString email = ui->pampletAddressInput->text();
+
+        out << name << endl << email << endl;
+        file.flush();
+        file.close();
+    }
+    ui->pampletNameInput->setText("");
+    ui->pampletAddressInput->setText("");
+
 }
 
 void MainWindow::on_pushSubmit_clicked()

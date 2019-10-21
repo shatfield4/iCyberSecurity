@@ -1,9 +1,8 @@
-
-
 #include <string>
 //#include "Key.h"
 //#include "interestlevel.h"
 #include "Customer.h"
+#include "order.h"
 
 
 void Customer::setName(std::string x)
@@ -36,33 +35,36 @@ void Customer::setAddress2(std::string x)
     address2= x;
 };
 
-
 void Customer::setInterest(std::string x)
 {
     //setting the input value to the objects interest
     interest=x;
 };
 
+order Customer::getCustomerOrder(/*int p1, int p2 , int p3, bool s1, bool s2, double xtax*/)
+{
+   return *customersOrder;
+}
+
 //getters
-
-
 std::string Customer::getName()
 {
     //returns the objects name
     return name;
 };
+
 std::string Customer::getKey()
 {
     //returns the objects name
     return keyLevel;
 };
+
 bool Customer::getPamphlet()
 {
     //returns true if the customer has received a pamphlet
     return receivedPamphlet;
 
 };
-
 
 std::string Customer::getAddress1()
 {
@@ -95,9 +97,9 @@ Customer::Customer()
      address1="NOT SET";
      address2="NOT SET";
      interest="NOT SET";
-     order customerOrder;
-
+     customersOrder = new order;
 };
+
 Customer::Customer(std::string xname,std::string xKey,bool xpamphlet, std::string xaddress1, std::string xaddress2, std::string xinterest)
 {
     //sets all the variables according to the input variables
@@ -107,7 +109,7 @@ Customer::Customer(std::string xname,std::string xKey,bool xpamphlet, std::strin
     address1=xaddress1;
     address2=xaddress2;
     interest=xinterest;
-    order customerOrder;
+    customersOrder = new order;
 };
 
 //misc

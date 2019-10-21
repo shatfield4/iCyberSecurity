@@ -95,7 +95,7 @@ public:
         textBrowserCOO->setGeometry(QRect(10, 70, 881, 451));
         pushButton = new QPushButton(tabCOO);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(50, 540, 201, 28));
+        pushButton->setGeometry(QRect(340, 540, 201, 28));
         tabsCustomer->addTab(tabCOO, QString());
         tabBusinessOutcomes = new QWidget();
         tabBusinessOutcomes->setObjectName(QString::fromUtf8("tabBusinessOutcomes"));
@@ -241,7 +241,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabsCustomer->setCurrentIndex(2);
+        tabsCustomer->setCurrentIndex(0);
         tabsProduct->setCurrentIndex(1);
         tabsPlans->setCurrentIndex(1);
 
@@ -270,7 +270,7 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14"
                         "pt;\">iCybersecurity is not backed or owned by John McAffee, or associated with any of John McAffee's relatives in any way. </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">*iCybersecurity is the physical embodiment of John McAffee</span></p></body></html>", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "TempPurchasingPage", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Purchase Plans", nullptr));
         tabsCustomer->setTabText(tabsCustomer->indexOf(tabCOO), QCoreApplication::translate("MainWindow", "iCyberSecurity", nullptr));
         textBrowserBusinessOutcomes->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"

@@ -12,15 +12,6 @@ A class to contain order information.
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classorder_a9d0ee50b968d4fe3233446e078d9d3cb}\label{classorder_a9d0ee50b968d4fe3233446e078d9d3cb}} 
-void \mbox{\hyperlink{classorder_a9d0ee50b968d4fe3233446e078d9d3cb}{setname}} (std\+::string)
-\begin{DoxyCompactList}\small\item\em Sets the customers first and last name. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_a5a62799fc128c366236d7a0fe00955d0}\label{classorder_a5a62799fc128c366236d7a0fe00955d0}} 
-void \mbox{\hyperlink{classorder_a5a62799fc128c366236d7a0fe00955d0}{setaddress1}} (std\+::string)
-\begin{DoxyCompactList}\small\item\em sets the customsers first address line \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_ab9ceed814d6d6f78f5faeeb354d0a92a}\label{classorder_ab9ceed814d6d6f78f5faeeb354d0a92a}} 
-void \mbox{\hyperlink{classorder_ab9ceed814d6d6f78f5faeeb354d0a92a}{setaddress2}} (std\+::string)
-\begin{DoxyCompactList}\small\item\em sets the customers second address line \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classorder_ab7f01b38c626c4e6e30da432dd8dbfc1}\label{classorder_ab7f01b38c626c4e6e30da432dd8dbfc1}} 
 void \mbox{\hyperlink{classorder_ab7f01b38c626c4e6e30da432dd8dbfc1}{setnumber\+\_\+of\+\_\+product\+\_\+one}} (int)
 \begin{DoxyCompactList}\small\item\em sets the number of product one they have ordered \end{DoxyCompactList}\item 
@@ -42,15 +33,6 @@ void \mbox{\hyperlink{classorder_a0b6a9e0f134fa4df0b980831297f6c5d}{settax}} (do
 \mbox{\Hypertarget{classorder_a16ffa2ee727c524cec39e6ec7e4a1854}\label{classorder_a16ffa2ee727c524cec39e6ec7e4a1854}} 
 void \mbox{\hyperlink{classorder_a16ffa2ee727c524cec39e6ec7e4a1854}{update\+\_\+total}} ()
 \begin{DoxyCompactList}\small\item\em calculates the total \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_a478049dfff51c0e75818319bd04fe6ac}\label{classorder_a478049dfff51c0e75818319bd04fe6ac}} 
-std\+::string \mbox{\hyperlink{classorder_a478049dfff51c0e75818319bd04fe6ac}{getname}} ()
-\begin{DoxyCompactList}\small\item\em gets the customers first and last name \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_a8ea92d00b974c17bd51e7e2a7f20c9cc}\label{classorder_a8ea92d00b974c17bd51e7e2a7f20c9cc}} 
-std\+::string \mbox{\hyperlink{classorder_a8ea92d00b974c17bd51e7e2a7f20c9cc}{getaddress1}} ()
-\begin{DoxyCompactList}\small\item\em gets the customsers first address line \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_a05e205aea9d7875cec04f648cf13f0f0}\label{classorder_a05e205aea9d7875cec04f648cf13f0f0}} 
-std\+::string \mbox{\hyperlink{classorder_a05e205aea9d7875cec04f648cf13f0f0}{getaddress2}} ()
-\begin{DoxyCompactList}\small\item\em gets the customers second address line \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classorder_ac797c2b513733fac1d391da5b8378200}\label{classorder_ac797c2b513733fac1d391da5b8378200}} 
 int \mbox{\hyperlink{classorder_ac797c2b513733fac1d391da5b8378200}{getnumber\+\_\+of\+\_\+product\+\_\+one}} ()
 \begin{DoxyCompactList}\small\item\em gets the number of product one they have ordered \end{DoxyCompactList}\item 
@@ -72,48 +54,11 @@ double \mbox{\hyperlink{classorder_a35c07c127b9b08f7c69b6bc255f51ff4}{gettax}} (
 \mbox{\Hypertarget{classorder_af9e92870f14a56698003c03ca901b23e}\label{classorder_af9e92870f14a56698003c03ca901b23e}} 
 double \mbox{\hyperlink{classorder_af9e92870f14a56698003c03ca901b23e}{gettotal}} ()
 \begin{DoxyCompactList}\small\item\em gets the the total cost \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_a1dc9a5b41ac3e7a9155a5780fe5cb383}\label{classorder_a1dc9a5b41ac3e7a9155a5780fe5cb383}} 
 \mbox{\hyperlink{classorder_a1dc9a5b41ac3e7a9155a5780fe5cb383}{order}} ()
-\begin{DoxyCompactList}\small\item\em defualt constructor sets all strings to \char`\"{}\+Not set\char`\"{} both service plans are set to false the total and tax are set to 0 \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_af980731f3766c38470cd7a588ca2c6f8}\label{classorder_af980731f3766c38470cd7a588ca2c6f8}} 
-\mbox{\hyperlink{classorder_af980731f3766c38470cd7a588ca2c6f8}{order}} (string xname, string ad1, string ad2, int p1, int p2, int p3, bool s1, bool s2, double xtax)
+\begin{DoxyCompactList}\small\item\em Default constructor\+: sets all strings to \char`\"{}\+Not set\char`\"{} both service plans are set to false the total and tax are set to 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classorder_ad22b08776923bb1a0552dea1c143c7fc}\label{classorder_ad22b08776923bb1a0552dea1c143c7fc}} 
+\mbox{\hyperlink{classorder_ad22b08776923bb1a0552dea1c143c7fc}{order}} (int p1, int p2, int p3, bool s1, bool s2, double xtax)
 \begin{DoxyCompactList}\small\item\em sets all variables except total. total is a calculated variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classorder_a35b50f0e4c29b63ab04b23a51887343c}\label{classorder_a35b50f0e4c29b63ab04b23a51887343c}} 
-std\+::string \mbox{\hyperlink{classorder_a35b50f0e4c29b63ab04b23a51887343c}{name}}
-\begin{DoxyCompactList}\small\item\em the customers first and last name \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_ab9585df876f178e92f1b38b935a5c28f}\label{classorder_ab9585df876f178e92f1b38b935a5c28f}} 
-std\+::string \mbox{\hyperlink{classorder_ab9585df876f178e92f1b38b935a5c28f}{address1}}
-\begin{DoxyCompactList}\small\item\em The space for the customers first line for the address. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_abbaf8dc3482b2621fbbf702d6dde61b6}\label{classorder_abbaf8dc3482b2621fbbf702d6dde61b6}} 
-std\+::string \mbox{\hyperlink{classorder_abbaf8dc3482b2621fbbf702d6dde61b6}{address2}}
-\begin{DoxyCompactList}\small\item\em the space for the customers second line of the address \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_ad639f7fa321f668f4afe654d1a2a2445}\label{classorder_ad639f7fa321f668f4afe654d1a2a2445}} 
-std\+::string \mbox{\hyperlink{classorder_ad639f7fa321f668f4afe654d1a2a2445}{customer\+\_\+name}}
-\begin{DoxyCompactList}\small\item\em Indicates the interest level of the customer. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_af24a143656839f1bc7ab7ac88c728000}\label{classorder_af24a143656839f1bc7ab7ac88c728000}} 
-int \mbox{\hyperlink{classorder_af24a143656839f1bc7ab7ac88c728000}{number\+\_\+of\+\_\+product\+\_\+one}}
-\begin{DoxyCompactList}\small\item\em Indicates the number of product ones. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_a8873abb19573e152d52ba3b5d8ef83ac}\label{classorder_a8873abb19573e152d52ba3b5d8ef83ac}} 
-int \mbox{\hyperlink{classorder_a8873abb19573e152d52ba3b5d8ef83ac}{number\+\_\+of\+\_\+product\+\_\+two}}
-\begin{DoxyCompactList}\small\item\em Indicates the number of product twos. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_aefab517e71d514106a1c7f76e12ae5de}\label{classorder_aefab517e71d514106a1c7f76e12ae5de}} 
-int \mbox{\hyperlink{classorder_aefab517e71d514106a1c7f76e12ae5de}{number\+\_\+of\+\_\+product\+\_\+three}}
-\begin{DoxyCompactList}\small\item\em Indicates the number of product three. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_aeddf89021ce7adc805b198e2ecacfcb2}\label{classorder_aeddf89021ce7adc805b198e2ecacfcb2}} 
-bool \mbox{\hyperlink{classorder_aeddf89021ce7adc805b198e2ecacfcb2}{serviceplan\+\_\+one}}
-\begin{DoxyCompactList}\small\item\em Indicates if they got serviceplan two. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_a0a4e087f6f223e7a425448f666147aa2}\label{classorder_a0a4e087f6f223e7a425448f666147aa2}} 
-bool \mbox{\hyperlink{classorder_a0a4e087f6f223e7a425448f666147aa2}{serviceplan\+\_\+two}}
-\begin{DoxyCompactList}\small\item\em Indicates if they got serviceplan two. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_ae3ab30092a0e25cb74be741e257f46ea}\label{classorder_ae3ab30092a0e25cb74be741e257f46ea}} 
-double \mbox{\hyperlink{classorder_ae3ab30092a0e25cb74be741e257f46ea}{tax}}
-\begin{DoxyCompactList}\small\item\em the taxrate \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classorder_af1e25c981785cc24c935189c34fe8805}\label{classorder_af1e25c981785cc24c935189c34fe8805}} 
-double \mbox{\hyperlink{classorder_af1e25c981785cc24c935189c34fe8805}{total}}
-\begin{DoxyCompactList}\small\item\em the total cost; \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -121,6 +66,20 @@ A class to contain order information.
 
 This class contains all customer information and an order variable. 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classorder_a1dc9a5b41ac3e7a9155a5780fe5cb383}\label{classorder_a1dc9a5b41ac3e7a9155a5780fe5cb383}} 
+\index{order@{order}!order@{order}}
+\index{order@{order}!order@{order}}
+\doxysubsubsection{\texorpdfstring{order()}{order()}}
+{\footnotesize\ttfamily order\+::order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor\+: sets all strings to \char`\"{}\+Not set\char`\"{} both service plans are set to false the total and tax are set to 0. 
+
+defualt constructor sets all strings to \char`\"{}\+Not set\char`\"{} both service plans are set to false the total and tax are set to 0 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-order.\+h\end{DoxyCompactItemize}
+order.\+h\item 
+order.\+cpp\end{DoxyCompactItemize}
