@@ -331,3 +331,8 @@ void AdminPage::on_buttonAddCustomer_clicked()
     ui->lineEditAddress->setText("");
     ui->lineEdditAddress2->setText("");
 }
+
+void AdminPage::on_pushButton_5_clicked()
+{
+    QMessageBox::warning(this, "Help", "To append a customer, fill out forms. Press add customer.");
+}
