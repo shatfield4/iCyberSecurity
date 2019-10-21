@@ -111,8 +111,7 @@ void MainWindow::on_loadCustomerData_clicked()
 //Temporary button to get to the purchasing page
 void MainWindow::on_pushButton_clicked()
 {
-    purchasingPage* page = new purchasingPage;
-    page -> show();
+    QMessageBox::warning(this, "Help", "To submit a review, please enter your name, number of stars, and review on the boxes below. After submitting, the review will display on the left.");
 }
 
 void MainWindow::on_buttonLogin_clicked()
@@ -124,7 +123,7 @@ void MainWindow::on_buttonLogin_clicked()
 
     if (ui->lineEditUsername->text() != USERNAME && ui->lineEditPassword->text() != PASSWORD)
     {
-        QMessageBox::warning(this, "Invalid", "Invalid input. Try again bitch.");
+        QMessageBox::warning(this, "Invalid", "Invalid credentials. Try again idiot.");
         ui->lineEditUsername->setText("");
         ui->lineEditPassword->setText("");
     }
@@ -134,4 +133,20 @@ void MainWindow::on_buttonLogin_clicked()
         ui->lineEditUsername->setText("");
         ui->lineEditPassword->setText("");
     }
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    purchasingPage *newPage = new purchasingPage;
+    newPage->show();
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    QMessageBox::warning(this, "Help", "To request a pamphlet, please enter your name and email address. The pamphlet will be processed and sent shortly.");
+}
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    QMessageBox::warning(this, "Help", "Enter username and password. Why do you need help with this.");
 }
