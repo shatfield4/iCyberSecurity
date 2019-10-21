@@ -33,6 +33,7 @@ HEADERS += \
     mainwindow.h \
     order.h \
     purchasingpage.h \
+    readAndWriteFunctions.h \
     sorting.h
 
 FORMS += \
