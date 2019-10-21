@@ -20,6 +20,10 @@ AdminPage::AdminPage(QWidget *parent) :
     ui->customerTable->setHorizontalHeaderItem(3, new QTableWidgetItem("Interest Level"));
     ui->customerTable->setHorizontalHeaderItem(4, new QTableWidgetItem("Key"));
 
+    ui->pamphletTable->setColumnCount(2);
+    ui->pamphletTable->setHorizontalHeaderItem(0, new QTableWidgetItem("Name"));
+    ui->pamphletTable->setHorizontalHeaderItem(1, new QTableWidgetItem("Email"));
+
 }
 
 AdminPage::~AdminPage()
@@ -104,6 +108,35 @@ void AdminPage::on_loadCustomerData_clicked()
     }
 
     ui->customerTable->resizeColumnsToContents();
+    file.close();
+
+}
+
+void AdminPage::on_buttonLoadPamphlets_clicked()
+{
+    QFile file("E:/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/pamphletsubmissions.txt");
+
+    if(!file.open(QFile::ReadOnly | QFile::Text))
+    {
+        QMessageBox::warning(this, "Error", "File not open for reading. pamphletsubmissions.txt.");
+    }
+    else
+    {
+        QTextStream txtStream(&file);
+
+        for (int i = 0; !txtStream.atEnd(); i++)
+        {
+            ui->pamphletTable->insertRow(i);
+            //QMessageBox::warning(this, "Hi", "Hi");
+            QString tempName = txtStream.readLine();
+            QString tempEmail = txtStream.readLine();
+
+            ui->pamphletTable->setItem(i, 0, new QTableWidgetItem(tempName));
+            ui->pamphletTable->setItem(i, 1, new QTableWidgetItem(tempEmail));
+        }
+    }
+
+    ui->pamphletTable->resizeColumnsToContents();
     file.close();
 
 }
