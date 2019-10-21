@@ -253,6 +253,7 @@ void purchasingPage::on_checkBoxUnicorn_toggled(bool checked)
 }
 
 //OK button
+//NOT WORKING NEED TO BE FIXED
 void purchasingPage::on_buttonBox_accepted()
 {
     Customer unsorted[500];
