@@ -27,9 +27,7 @@ SOURCES += \
 
 HEADERS += \
     Customer.h \
-    Key.h \
     adminpage.h \
-    interestlevel.h \
     mainwindow.h \
     order.h \
     purchasingpage.h \

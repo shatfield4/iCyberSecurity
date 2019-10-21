@@ -1,0 +1,272 @@
+\hypertarget{class_customer}{}\doxysection{Customer Class Reference}
+\label{class_customer}\index{Customer@{Customer}}
+
+
+A class to contain customer information.  
+
+
+
+
+{\ttfamily \#include $<$Customer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_customer_a181707f69c1fb37a2aabd2bab9c97275}{set\+Name}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Sets the cusomers first and last name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_a0fb4527a89a6bfc369f8366618bb83ad}{set\+Key}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em Sets the customers key level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_a47409b0f327c3f07b836cb48bbd57f40}{set\+Pamphlet}} (bool)
+\begin{DoxyCompactList}\small\item\em sets whether the customer has received a pamphlet \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_aac4e3e531c99ac15368404b5ad3dec2f}{set\+Address1}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em sets the customsers first address line \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_aba9653c9c4283b81328ce82fd48d9cae}{set\+Address2}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em sets the customers second address line \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_customer_aea8bdff10954734129fb841be5932e2b}{set\+Interest}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em sets the customers interest level \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classorder}{order}} \mbox{\hyperlink{class_customer_a293fbae519abfba0d42a2f9d8a1d3f13}{get\+Customer\+Order}} ()
+\begin{DoxyCompactList}\small\item\em returns the customer interest \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_customer_a4564927e17d6cea720272b83e1108f90}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em returns the customers first name \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_customer_ab0604fccdd793d2a6f69a7824fe58e23}{get\+Key}} ()
+\begin{DoxyCompactList}\small\item\em returns the customer key level \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_customer_a38adb72a665f19ce873abab08fabaf31}{get\+Pamphlet}} ()
+\begin{DoxyCompactList}\small\item\em returns whether the customer has recieved a pamphlet or not. 1 for true, 0 for false. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_customer_a4e1b2f165d90bc1a4eeb3278c573d8ba}{get\+Address1}} ()
+\begin{DoxyCompactList}\small\item\em returns the customer\textquotesingle{}s address line 1 \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_customer_ad9da8b3d66bcd634e0dddbad963d7781}{get\+Address2}} ()
+\begin{DoxyCompactList}\small\item\em returns the customer\textquotesingle{}s address line 2 \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_customer_aeb0cfac136e5a110cc668918d315b848}{get\+Interest}} ()
+\begin{DoxyCompactList}\small\item\em returns the customer\textquotesingle{}s interest level \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_customer_abcc8fae9701e5ba9d7d6fe44498b34e3}{Customer}} ()
+\begin{DoxyCompactList}\small\item\em this default constructor sets all strings to \char`\"{}\+N\+O\+T S\+E\+T\char`\"{} and received\+\_\+pamphlet to false \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_customer_a2da213262a0f5177c870115eaa1c2afc}{Customer}} (const \mbox{\hyperlink{class_customer}{Customer}} \&o2)
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_customer_a7f02f2de8d3590e26c8d10b104ade262}{Customer}} (std\+::string xname, std\+::string x\+Key, bool xpamphlet, std\+::string xaddress1, std\+::string xaddress2, std\+::string xinterest)
+\begin{DoxyCompactList}\small\item\em This constructor takes all member variables and makes a class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_customer_adc9214de247cbf2c915786244258baec}{is\+Mynamebigger}} (\mbox{\hyperlink{class_customer}{Customer}} x)
+\begin{DoxyCompactList}\small\item\em returns true if the name of T\+H\+IS object is greater in value than x \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_customer_acbf5971bbb139f0ca20c97b338c5e8de}{is\+Mykeybigger}} (\mbox{\hyperlink{class_customer}{Customer}} x)
+\item 
+\mbox{\hyperlink{class_customer}{Customer}} \mbox{\hyperlink{class_customer_acf2974aa72a38cead00d9ca570113265}{operator=}} (\mbox{\hyperlink{class_customer}{Customer}} const \&c2)
+\begin{DoxyCompactList}\small\item\em assignment operator copies pointed to data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorder}{order}} $\ast$ \mbox{\hyperlink{class_customer_a7de77eb2aa4cfa66faffa276470bf850}{customers\+Order}}
+\begin{DoxyCompactList}\small\item\em The customers order-\/\+I\+N\+P\+UT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to contain customer information. 
+
+This class contains all customer information and an order variable. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_customer_abcc8fae9701e5ba9d7d6fe44498b34e3}\label{class_customer_abcc8fae9701e5ba9d7d6fe44498b34e3}} 
+\index{Customer@{Customer}!Customer@{Customer}}
+\index{Customer@{Customer}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{Customer()}{Customer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Customer\+::\+Customer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+this default constructor sets all strings to \char`\"{}\+N\+O\+T S\+E\+T\char`\"{} and received\+\_\+pamphlet to false 
+
+\mbox{\Hypertarget{class_customer_a2da213262a0f5177c870115eaa1c2afc}\label{class_customer_a2da213262a0f5177c870115eaa1c2afc}} 
+\index{Customer@{Customer}!Customer@{Customer}}
+\index{Customer@{Customer}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{Customer()}{Customer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Customer\+::\+Customer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_customer}{Customer}} \&}]{o2 }\end{DoxyParamCaption})}
+
+
+
+copy constructor 
+
+\mbox{\Hypertarget{class_customer_a7f02f2de8d3590e26c8d10b104ade262}\label{class_customer_a7f02f2de8d3590e26c8d10b104ade262}} 
+\index{Customer@{Customer}!Customer@{Customer}}
+\index{Customer@{Customer}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{Customer()}{Customer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Customer\+::\+Customer (\begin{DoxyParamCaption}\item[{std\+::string}]{xname,  }\item[{std\+::string}]{x\+Key,  }\item[{bool}]{xpamphlet,  }\item[{std\+::string}]{xaddress1,  }\item[{std\+::string}]{xaddress2,  }\item[{std\+::string}]{xinterest }\end{DoxyParamCaption})}
+
+
+
+This constructor takes all member variables and makes a class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_customer_a4e1b2f165d90bc1a4eeb3278c573d8ba}\label{class_customer_a4e1b2f165d90bc1a4eeb3278c573d8ba}} 
+\index{Customer@{Customer}!getAddress1@{getAddress1}}
+\index{getAddress1@{getAddress1}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{getAddress1()}{getAddress1()}}
+{\footnotesize\ttfamily std\+::string Customer\+::get\+Address1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the customer\textquotesingle{}s address line 1 
+
+\mbox{\Hypertarget{class_customer_ad9da8b3d66bcd634e0dddbad963d7781}\label{class_customer_ad9da8b3d66bcd634e0dddbad963d7781}} 
+\index{Customer@{Customer}!getAddress2@{getAddress2}}
+\index{getAddress2@{getAddress2}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{getAddress2()}{getAddress2()}}
+{\footnotesize\ttfamily std\+::string Customer\+::get\+Address2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the customer\textquotesingle{}s address line 2 
+
+\mbox{\Hypertarget{class_customer_a293fbae519abfba0d42a2f9d8a1d3f13}\label{class_customer_a293fbae519abfba0d42a2f9d8a1d3f13}} 
+\index{Customer@{Customer}!getCustomerOrder@{getCustomerOrder}}
+\index{getCustomerOrder@{getCustomerOrder}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{getCustomerOrder()}{getCustomerOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorder}{order}} Customer\+::get\+Customer\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the customer interest 
+
+\mbox{\Hypertarget{class_customer_aeb0cfac136e5a110cc668918d315b848}\label{class_customer_aeb0cfac136e5a110cc668918d315b848}} 
+\index{Customer@{Customer}!getInterest@{getInterest}}
+\index{getInterest@{getInterest}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{getInterest()}{getInterest()}}
+{\footnotesize\ttfamily std\+::string Customer\+::get\+Interest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the customer\textquotesingle{}s interest level 
+
+\mbox{\Hypertarget{class_customer_ab0604fccdd793d2a6f69a7824fe58e23}\label{class_customer_ab0604fccdd793d2a6f69a7824fe58e23}} 
+\index{Customer@{Customer}!getKey@{getKey}}
+\index{getKey@{getKey}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily std\+::string Customer\+::get\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the customer key level 
+
+\mbox{\Hypertarget{class_customer_a4564927e17d6cea720272b83e1108f90}\label{class_customer_a4564927e17d6cea720272b83e1108f90}} 
+\index{Customer@{Customer}!getName@{getName}}
+\index{getName@{getName}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Customer\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the customers first name 
+
+\mbox{\Hypertarget{class_customer_a38adb72a665f19ce873abab08fabaf31}\label{class_customer_a38adb72a665f19ce873abab08fabaf31}} 
+\index{Customer@{Customer}!getPamphlet@{getPamphlet}}
+\index{getPamphlet@{getPamphlet}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{getPamphlet()}{getPamphlet()}}
+{\footnotesize\ttfamily bool Customer\+::get\+Pamphlet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns whether the customer has recieved a pamphlet or not. 1 for true, 0 for false. 
+
+\mbox{\Hypertarget{class_customer_acbf5971bbb139f0ca20c97b338c5e8de}\label{class_customer_acbf5971bbb139f0ca20c97b338c5e8de}} 
+\index{Customer@{Customer}!isMykeybigger@{isMykeybigger}}
+\index{isMykeybigger@{isMykeybigger}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{isMykeybigger()}{isMykeybigger()}}
+{\footnotesize\ttfamily bool Customer\+::is\+Mykeybigger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_customer}{Customer}}}]{x }\end{DoxyParamCaption})}
+
+returns true if the key of T\+H\+IS object is greater in value than x note\+: larger values should come later in this case being a \char`\"{}key\char`\"{} customer is 0, while the \char`\"{}mean\char`\"{} keyvalue of 2 \mbox{\Hypertarget{class_customer_adc9214de247cbf2c915786244258baec}\label{class_customer_adc9214de247cbf2c915786244258baec}} 
+\index{Customer@{Customer}!isMynamebigger@{isMynamebigger}}
+\index{isMynamebigger@{isMynamebigger}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{isMynamebigger()}{isMynamebigger()}}
+{\footnotesize\ttfamily bool Customer\+::is\+Mynamebigger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_customer}{Customer}}}]{x }\end{DoxyParamCaption})}
+
+
+
+returns true if the name of T\+H\+IS object is greater in value than x 
+
+\mbox{\Hypertarget{class_customer_acf2974aa72a38cead00d9ca570113265}\label{class_customer_acf2974aa72a38cead00d9ca570113265}} 
+\index{Customer@{Customer}!operator=@{operator=}}
+\index{operator=@{operator=}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_customer}{Customer}} Customer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_customer}{Customer}} const \&}]{c2 }\end{DoxyParamCaption})}
+
+
+
+assignment operator copies pointed to data 
+
+\mbox{\Hypertarget{class_customer_aac4e3e531c99ac15368404b5ad3dec2f}\label{class_customer_aac4e3e531c99ac15368404b5ad3dec2f}} 
+\index{Customer@{Customer}!setAddress1@{setAddress1}}
+\index{setAddress1@{setAddress1}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{setAddress1()}{setAddress1()}}
+{\footnotesize\ttfamily void Customer\+::set\+Address1 (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+sets the customsers first address line 
+
+\mbox{\Hypertarget{class_customer_aba9653c9c4283b81328ce82fd48d9cae}\label{class_customer_aba9653c9c4283b81328ce82fd48d9cae}} 
+\index{Customer@{Customer}!setAddress2@{setAddress2}}
+\index{setAddress2@{setAddress2}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{setAddress2()}{setAddress2()}}
+{\footnotesize\ttfamily void Customer\+::set\+Address2 (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+sets the customers second address line 
+
+\mbox{\Hypertarget{class_customer_aea8bdff10954734129fb841be5932e2b}\label{class_customer_aea8bdff10954734129fb841be5932e2b}} 
+\index{Customer@{Customer}!setInterest@{setInterest}}
+\index{setInterest@{setInterest}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{setInterest()}{setInterest()}}
+{\footnotesize\ttfamily void Customer\+::set\+Interest (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+sets the customers interest level 
+
+\mbox{\Hypertarget{class_customer_a0fb4527a89a6bfc369f8366618bb83ad}\label{class_customer_a0fb4527a89a6bfc369f8366618bb83ad}} 
+\index{Customer@{Customer}!setKey@{setKey}}
+\index{setKey@{setKey}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{setKey()}{setKey()}}
+{\footnotesize\ttfamily void Customer\+::set\+Key (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Sets the customers key level. 
+
+\mbox{\Hypertarget{class_customer_a181707f69c1fb37a2aabd2bab9c97275}\label{class_customer_a181707f69c1fb37a2aabd2bab9c97275}} 
+\index{Customer@{Customer}!setName@{setName}}
+\index{setName@{setName}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Customer\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+Sets the cusomers first and last name. 
+
+\mbox{\Hypertarget{class_customer_a47409b0f327c3f07b836cb48bbd57f40}\label{class_customer_a47409b0f327c3f07b836cb48bbd57f40}} 
+\index{Customer@{Customer}!setPamphlet@{setPamphlet}}
+\index{setPamphlet@{setPamphlet}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{setPamphlet()}{setPamphlet()}}
+{\footnotesize\ttfamily void Customer\+::set\+Pamphlet (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})}
+
+
+
+sets whether the customer has received a pamphlet 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_customer_a7de77eb2aa4cfa66faffa276470bf850}\label{class_customer_a7de77eb2aa4cfa66faffa276470bf850}} 
+\index{Customer@{Customer}!customersOrder@{customersOrder}}
+\index{customersOrder@{customersOrder}!Customer@{Customer}}
+\doxysubsubsection{\texorpdfstring{customersOrder}{customersOrder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorder}{order}}$\ast$ Customer\+::customers\+Order\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The customers order-\/\+I\+N\+P\+UT. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_customer_8h}{Customer.\+h}}\end{DoxyCompactItemize}

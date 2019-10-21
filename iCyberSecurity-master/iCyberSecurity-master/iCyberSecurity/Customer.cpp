@@ -112,8 +112,39 @@ Customer::Customer(std::string xname,std::string xKey,bool xpamphlet, std::strin
     customersOrder = new order;
 };
 
-//misc
+//!copy constructor
+Customer::Customer(const Customer &c2)
+{
+    name=c2.name;
+    keyLevel = c2.keyLevel;
+    receivedPamphlet= c2.receivedPamphlet;
+    address1= c2.address1;
+    address2=c2.address2;
+    interest=c2.interest;
+    customersOrder= new order;
+    *customersOrder=*c2.customersOrder;
 
+}
+
+
+
+//misc
+//! operator overlod
+Customer Customer::operator = (Customer const &c2)
+{
+
+
+    name=c2.name;
+    keyLevel = c2.keyLevel;
+    receivedPamphlet= c2.receivedPamphlet;
+    address1= c2.address1;
+    address2=c2.address2;
+    interest=c2.interest;
+    customersOrder= new order;
+    *customersOrder=*c2.customersOrder;
+
+     return *this;
+};
 //comparisons
 
 bool Customer:: isMynamebigger(Customer x)
