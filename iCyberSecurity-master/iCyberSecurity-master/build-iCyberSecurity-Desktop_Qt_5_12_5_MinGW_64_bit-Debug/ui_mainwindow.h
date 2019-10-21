@@ -12,7 +12,6 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -21,9 +20,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
-#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QTextBrowser>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -71,12 +68,6 @@ public:
     QLineEdit *pampletAddressInput;
     QLabel *pampletNameLabel;
     QLabel *pampletAddressLabel;
-    QWidget *tabHelp;
-    QWidget *tabAdmin;
-    QWidget *layoutWidget;
-    QVBoxLayout *verticalLayout;
-    QTableWidget *customerTable;
-    QPushButton *loadCustomerData;
     QWidget *tabAdminLogin;
     QLabel *label;
     QLabel *label_2;
@@ -101,10 +92,10 @@ public:
         tabCOO->setObjectName(QString::fromUtf8("tabCOO"));
         textBrowserCOO = new QTextBrowser(tabCOO);
         textBrowserCOO->setObjectName(QString::fromUtf8("textBrowserCOO"));
-        textBrowserCOO->setGeometry(QRect(10, 70, 871, 191));
+        textBrowserCOO->setGeometry(QRect(10, 70, 881, 451));
         pushButton = new QPushButton(tabCOO);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(80, 430, 201, 28));
+        pushButton->setGeometry(QRect(340, 540, 201, 28));
         tabsCustomer->addTab(tabCOO, QString());
         tabBusinessOutcomes = new QWidget();
         tabBusinessOutcomes->setObjectName(QString::fromUtf8("tabBusinessOutcomes"));
@@ -218,28 +209,6 @@ public:
         pampletAddressLabel->setGeometry(QRect(370, 450, 131, 21));
         pampletAddressLabel->setFont(font);
         tabsCustomer->addTab(tabContact, QString());
-        tabHelp = new QWidget();
-        tabHelp->setObjectName(QString::fromUtf8("tabHelp"));
-        tabsCustomer->addTab(tabHelp, QString());
-        tabAdmin = new QWidget();
-        tabAdmin->setObjectName(QString::fromUtf8("tabAdmin"));
-        layoutWidget = new QWidget(tabAdmin);
-        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(0, 0, 881, 561));
-        verticalLayout = new QVBoxLayout(layoutWidget);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        customerTable = new QTableWidget(layoutWidget);
-        customerTable->setObjectName(QString::fromUtf8("customerTable"));
-
-        verticalLayout->addWidget(customerTable);
-
-        loadCustomerData = new QPushButton(layoutWidget);
-        loadCustomerData->setObjectName(QString::fromUtf8("loadCustomerData"));
-
-        verticalLayout->addWidget(loadCustomerData);
-
-        tabsCustomer->addTab(tabAdmin, QString());
         tabAdminLogin = new QWidget();
         tabAdminLogin->setObjectName(QString::fromUtf8("tabAdminLogin"));
         label = new QLabel(tabAdminLogin);
@@ -272,9 +241,9 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabsCustomer->setCurrentIndex(7);
+        tabsCustomer->setCurrentIndex(3);
         tabsProduct->setCurrentIndex(1);
-        tabsPlans->setCurrentIndex(0);
+        tabsPlans->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -287,8 +256,21 @@ public:
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">What is iCyberSecurity?<br />iCyberSecurity is a global antivirus platform. With over 17 trillion users worldwide, we are the planet's LEADING antivirus experts. Our goal is to eliminate all viruses that can infect any type of system by using our state of the art cyberantibiotics. By ordering our products, we can guarantee the safety and privacy of your systems anytime, anywhere.</span></p></body></html>", nullptr));
-        pushButton->setText(QApplication::translate("MainWindow", "TempPurchasingPage", nullptr));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">What is iCyberSecurity?<br />iCyberSecurity is a global antivirus platform. With over 17 trillion users worldwide, we are the planet's LEADING antivirus experts. Our goal is to eliminate all viruses that can infect any type of system by using our state of the art cyberantibiotics. By ordering our products, we can guarantee the safety and privacy of your systems anytime, anywhere.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-rig"
+                        "ht:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:14pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">Why is iCyberSecurity for you?</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">iCyberSecurity is for you because it boasts 3 key points.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">1. Affordability.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">iCyberSecurity is the cheapes"
+                        "t option by far and our serviceplan has the greatest cost to service ratio.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">2. Protection.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">iCyberSecurity is the strongest option by far and our many customers have nothing but positive reviews to give.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">3. It's not made by John McAfee</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14"
+                        "pt;\">iCybersecurity is not backed or owned by John McAffee, or associated with any of John McAffee's relatives in any way. </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">*iCybersecurity is the physical embodiment of John McAffee</span></p></body></html>", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "Purchase Plans", nullptr));
         tabsCustomer->setTabText(tabsCustomer->indexOf(tabCOO), QApplication::translate("MainWindow", "iCyberSecurity", nullptr));
         textBrowserBusinessOutcomes->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -382,9 +364,6 @@ public:
         pampletNameLabel->setText(QApplication::translate("MainWindow", "Name", nullptr));
         pampletAddressLabel->setText(QApplication::translate("MainWindow", "Email Address", nullptr));
         tabsCustomer->setTabText(tabsCustomer->indexOf(tabContact), QApplication::translate("MainWindow", "Contact Us", nullptr));
-        tabsCustomer->setTabText(tabsCustomer->indexOf(tabHelp), QApplication::translate("MainWindow", "Help", nullptr));
-        loadCustomerData->setText(QApplication::translate("MainWindow", "Load Customer Data", nullptr));
-        tabsCustomer->setTabText(tabsCustomer->indexOf(tabAdmin), QApplication::translate("MainWindow", "Admin", nullptr));
         label->setText(QApplication::translate("MainWindow", "USERNAME", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "PASSWORD", nullptr));
         buttonLogin->setText(QApplication::translate("MainWindow", "LOGIN", nullptr));
