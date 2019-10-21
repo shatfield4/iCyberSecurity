@@ -19,6 +19,7 @@ iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/iCyberSecurity.pro.us
 *.user
 iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/iCyberSecurity.pro.user
 *.user
+
 iCyberSecurity-master/iCyberSecurity-master/build-iCyberSecurity-Desktop_Qt_5_13_1_MSVC2017_32bit-Debug/debug/iCyberSecurity.ilk
 iCyberSecurity-master/iCyberSecurity-master/build-iCyberSecurity-Desktop_Qt_5_13_1_MSVC2017_32bit-Debug/debug/iCyberSecurity.pdb
 iCyberSecurity-master/iCyberSecurity-master/build-iCyberSecurity-Desktop_Qt_5_13_1_MSVC2017_32bit-Debug/debug/iCyberSecurity.vc.pdb
@@ -32,3 +33,4 @@ iCyberSecurity-master/iCyberSecurity-master/build-iCyberSecurity-Desktop_Qt_5_13
 iCyberSecurity-master/iCyberSecurity-master/build-iCyberSecurity-Desktop_Qt_5_13_1_MSVC2017_32bit-Debug/Makefile
 iCyberSecurity-master/iCyberSecurity-master/build-iCyberSecurity-Desktop_Qt_5_13_1_MSVC2017_32bit-Debug/debug/moc_predefs.h
 iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/mainwindow.ui.autosave
+
