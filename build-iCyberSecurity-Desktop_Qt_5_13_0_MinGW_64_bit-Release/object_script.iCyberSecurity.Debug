@@ -4,6 +4,7 @@ debug/main.o
 debug/mainwindow.o
 debug/order.o
 debug/purchasingpage.o
+debug/readAndWriteFunctions.o
 debug/sorting.o
 debug/qrc_resource.o
 debug/moc_adminpage.o

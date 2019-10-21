@@ -1,19 +1,17 @@
 #include "purchasingpage.h"
 #include "ui_purchasingpage.h"
-#include "Customer.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "purchasingpage.h"
 #include "adminpage.h"
+#include "ui_adminpage.h"
+
+#include "Customer.h"
 
 #include <QFile>
 #include <QStandardPaths>
 #include <QTextStream>
 #include <QMessageBox>
 #include <QDebug>
-#include <QDebug>
-
-#include <QMessageBox>
 
 int ARRAYCOUNT;
 
@@ -28,7 +26,6 @@ purchasingPage::purchasingPage(QWidget *parent) :
     //Update combo box with existing customers
             Customer customerArr[500];
             int count = 0;
-
 
             QFile file(":/data/textFiles/customers.txt");
 
@@ -69,13 +66,9 @@ purchasingPage::purchasingPage(QWidget *parent) :
             //Add item for not a previous customer
             ui->existingComboBox->addItem("Not a previous customer");
 
-
-
             ARRAYCOUNT = count;
 
-
             file.close();
-
 
 }
 
