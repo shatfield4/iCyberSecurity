@@ -13,8 +13,11 @@ void readInCustomerData(Customer customerArr[], //array of customer that will be
                                         int arraySize,                  //the array size of customerArr[]
                                         int& totalNumCustomers) //total number of customers from the data
 {
-    QFile fileCustomer("C:\\Users\\kaito\\Desktop\\customers.txt");
-    QFile fileOrder("C:\\Users\\kaito\\Desktop\\orders.txt");
+    //QFile fileCustomer("C:\\Users\\kaito\\Desktop\\customers.txt");
+    //QFile fileOrder("C:\\Users\\kaito\\Desktop\\orders.txt");
+    QFile fileCustomer("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+    QFile fileOrder("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/orders.txt");
+
 
     //Error message for when the file dont open
     if(!fileCustomer.open(QFile::ReadOnly | QFile::Text))
@@ -88,8 +91,10 @@ void writeInCustomerData(Customer customerArr[], //array of customer that will b
                                         int arraySize,                  //the array size of customerArr[]
                                         int& totalNumCustomers) //total number of customers from the data
 {
-    QFile fileCustomer("C:\\Users\\kaito\\Desktop\\customers.txt");
-    QFile fileOrder("C:\\Users\\kaito\\Desktop\\orders.txt");
+    //QFile fileCustomer("C:\\Users\\kaito\\Desktop\\customers.txt");
+    //QFile fileOrder("C:\\Users\\kaito\\Desktop\\orders.txt");
+    QFile fileCustomer("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+    QFile fileOrder("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/orders.txt");
 
     //Error message for when the file dont open
     if(!fileCustomer.open(QFile::ReadOnly | QFile::Text))
