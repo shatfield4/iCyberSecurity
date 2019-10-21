@@ -27,7 +27,7 @@ purchasingPage::purchasingPage(QWidget *parent) :
             Customer customerArr[500];
             int count = 0;
 
-            QFile file(":/data/textFiles/customers.txt");
+            QFile file("C:\\Users\\kaito\\Desktop\\customers.txt");
 
             if(!file.open(QFile::ReadOnly | QFile::Text))
             {

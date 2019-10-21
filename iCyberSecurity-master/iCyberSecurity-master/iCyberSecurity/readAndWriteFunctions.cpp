@@ -6,14 +6,15 @@
 #include <QTextStream>
 #include <QMessageBox>
 #include <QDebug>
+#include <QString>
 
 
 void readInCustomerData(Customer customerArr[], //array of customer that will be updated with the data txt file
                                         int arraySize,                  //the array size of customerArr[]
                                         int& totalNumCustomers) //total number of customers from the data
 {
-    QFile fileCustomer(":/data/textFiles/customers.txt");
-    QFile fileOrder(":/data/textFiles/orders.txt");
+    QFile fileCustomer("C:\\Users\\kaito\\Desktop\\customers.txt");
+    QFile fileOrder("C:\\Users\\kaito\\Desktop\\orders.txt");
 
     //Error message for when the file dont open
     if(!fileCustomer.open(QFile::ReadOnly | QFile::Text))
@@ -78,6 +79,82 @@ void readInCustomerData(Customer customerArr[], //array of customer that will be
         totalNumCustomers = i + 1; //Added one to the index for the exact number of customer
 
     }//END for loop
+
+    fileCustomer.close();
+    fileOrder.close();
+}
+
+void writeInCustomerData(Customer customerArr[], //array of customer that will be updated with the data txt file
+                                        int arraySize,                  //the array size of customerArr[]
+                                        int& totalNumCustomers) //total number of customers from the data
+{
+    QFile fileCustomer("C:\\Users\\kaito\\Desktop\\customers.txt");
+    QFile fileOrder("C:\\Users\\kaito\\Desktop\\orders.txt");
+
+    //Error message for when the file dont open
+    if(!fileCustomer.open(QFile::ReadOnly | QFile::Text))
+    {
+        QMessageBox::warning(nullptr, "title", "customer file not open");   //switched this to nullptr - ayako
+    }
+
+    if(!fileOrder.open(QFile::ReadOnly | QFile::Text))
+    {
+        QMessageBox::warning(nullptr, "title", "order file not open");   //switched this to nullptr - ayako
+    }
+
+    QTextStream outCustomer(&fileCustomer);
+    QTextStream outOrder(&fileOrder);
+
+    //Each for loop will input the data for each customer from the text file
+    for (int i = 0; i < totalNumCustomers; i++)
+    {
+       //GETTING DATA FROM CUSTOMER FILE
+       QString tempName      = QString::fromStdString(customerArr[i].getName());
+       QString tempAddress1 = QString::fromStdString(customerArr[i].getAddress1());
+       QString tempAddress2 = QString::fromStdString(customerArr[i].getAddress2());
+       QString tempInterest    = QString::fromStdString(customerArr[i].getInterest());
+       QString tempKey         = QString::fromStdString(customerArr[i].getKey());
+
+        /*
+        qDebug() << "Name: "       << tempName;
+        qDebug() << "Address 1: " << tempAddress1;
+        qDebug() << "Address 2: " << tempAddress2;
+        qDebug() << "Interest: "     << tempInterest;
+        qDebug() << "Key: "          << tempKey;
+        */
+
+        outCustomer << tempName << endl;
+        outCustomer << tempAddress1 << endl;
+        outCustomer << tempAddress2 << endl;
+        outCustomer << tempInterest << endl;
+        outCustomer << tempKey << endl;
+
+        //GETTING DATA FROM ORDER FILE
+        QString tempProduct1 =QString::number(customerArr[i].getCustomerOrder().getnumber_of_product_one());
+        QString tempProduct2 = QString::number(customerArr[i].getCustomerOrder().getnumber_of_product_two());
+        QString tempProduct3 =QString::number(customerArr[i].getCustomerOrder().getnumber_of_product_three());
+        QString tempService1  = QString::number(customerArr[i].getCustomerOrder().getserviceplan_one());
+        QString tempService2  = QString::number(customerArr[i].getCustomerOrder().getserviceplan_two());
+        QString tempTax          = QString::number(customerArr[i].getCustomerOrder().gettax());
+
+         qDebug() << "p1: "  << tempProduct1;
+         qDebug() << "p2: "  << tempProduct2;
+         qDebug() << "p3: "  << tempProduct3;
+         qDebug() << "s1: "  << tempService1;
+         qDebug() << "s2: "  << tempService2;
+         qDebug() << "tax: " << tempTax;
+
+         outOrder << tempProduct1 << endl;
+         outOrder << tempProduct2 << endl;
+         outOrder << tempProduct3 << endl;
+         outOrder << tempService1 << endl;
+         outOrder << tempService2 << endl;
+         outOrder << tempTax << endl;
+
+    }//END for loop
+
+    outCustomer.flush();
+    outOrder.flush();
 
     fileCustomer.close();
     fileOrder.close();
