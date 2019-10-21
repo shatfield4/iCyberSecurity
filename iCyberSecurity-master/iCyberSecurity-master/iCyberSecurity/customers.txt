@@ -41,10 +41,10 @@ key
 Nicholas
 12 Address Street
 Address City, AD, 11111
-Very Interested
-Key
+very interested
+key
 Ayako
 Ayako Street
 Ayako, AY, 22222
-Do Not Call
-Nice to Have
+never call again
+nice to have

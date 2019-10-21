@@ -19,13 +19,13 @@ AdminPage::AdminPage(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->comboInterest->addItem("Very Interested", "Very Interested");
-    ui->comboInterest->addItem("Somewhat Interested", "Somewhat Interested");
-    ui->comboInterest->addItem("Not Interested", "Not Interested");
-    ui->comboInterest->addItem("Do Not Call", "NOTATALL");
+    ui->comboInterest->addItem("very interested", "Very Interested");
+    ui->comboInterest->addItem("somewhat interested", "Somewhat Interested");
+    ui->comboInterest->addItem("not interested", "Not Interested");
+    ui->comboInterest->addItem("never call again", "NOTATALL");
 
-    ui->comboKey->addItem("Key", "Key");
-    ui->comboKey->addItem("Nice to Have", "Nice to Have");
+    ui->comboKey->addItem("key", "Key");
+    ui->comboKey->addItem("nice to have", "Nice to Have");
 
 }
 
