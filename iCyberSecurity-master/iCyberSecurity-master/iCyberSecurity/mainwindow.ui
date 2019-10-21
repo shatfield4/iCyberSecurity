@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="tabsCustomer">
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tabCOO">
        <attribute name="title">
@@ -29,8 +29,8 @@
          <rect>
           <x>10</x>
           <y>70</y>
-          <width>871</width>
-          <height>191</height>
+          <width>881</width>
+          <height>451</height>
          </rect>
         </property>
         <property name="html">
@@ -38,7 +38,40 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;What is iCyberSecurity?&lt;br /&gt;iCyberSecurity is a global antivirus platform. With over 17 trillion users worldwide, we are the planet's LEADING antivirus experts. Our goal is to eliminate all viruses that can infect any type of system by using our state of the art cyberantibiotics. By ordering our products, we can guarantee the safety and privacy of your systems anytime, anywhere.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;What is iCyberSecurity?&lt;br /&gt;iCyberSecurity is a global antivirus platform. With over 17 trillion users worldwide, we are the planet's LEADING antivirus experts. Our goal is to eliminate all viruses that can infect any type of system by using our state of the art cyberantibiotics. By ordering our products, we can guarantee the safety and privacy of your systems anytime, anywhere.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Why is iCyberSecurity for you?&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;iCyberSecurity is for you because it boasts 3 key points.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;1. Affordability.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;iCyberSecurity is the cheapest option by far and our serviceplan has the greatest cost to service ratio.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;2. Protection.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;iCyberSecurity is the strongest option by far and our many customers have nothing but positive reviews to give.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;3. It's not made by John McAfee&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;iCybersecurity is not backed or owned by John McAffee, or associated with any of John McAffee's relatives in any way. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;*iCybersecurity is the physical embodiment of John McAffee&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tabBusinessOutcomes">
+       <attribute name="title">
+        <string>Business Outcomes</string>
+       </attribute>
+       <widget class="QTextBrowser" name="textBrowserBusinessOutcomes">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>891</width>
+          <height>581</height>
+         </rect>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e; background-color:#ffffff;&quot;&gt;Business Outcomes:&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;&quot;&gt;&lt;br /&gt;• iCyberSecurity offers one of the best and updated cyber security programs available in the world. Our 24/7 support team is always available if anything goes wrong and is constantly looking for new viruses/threats every day.&lt;br /&gt;• Our system is not only fast, it is accurate.&lt;br /&gt;• Our system is very complex but can be installed in less than 24 hours to get you up and running while being protected at the same time.&lt;br /&gt;Features:&lt;br /&gt;• Our system keeps you updated any time any threat is detected&lt;br /&gt;• Our system is completely customizable; if you don’t like what you see, it’s completely open for you to configure&lt;br /&gt;• State of the art automatic removal of any threats detected&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;&quot;&gt;- Can detect and remove any threats within 500 miliseconds of being installed&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
       </widget>
@@ -74,7 +107,7 @@ p, li { white-space: pre-wrap; }
          </rect>
         </property>
         <property name="currentIndex">
-         <number>2</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="tabSilver">
          <attribute name="title">
@@ -143,7 +176,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Diamond: &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Diamond Protection Plan: &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;• This package offers 24/7 24GB DDos Protection for servers.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;• It comes with our ILOVEYOU antivirus software. &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;• You gain access to our Diamond rank exclusive support. (not overseas)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -210,27 +243,17 @@ p, li { white-space: pre-wrap; }
          </widget>
         </widget>
        </widget>
-      </widget>
-      <widget class="QWidget" name="tabBusinessOutcomes">
-       <attribute name="title">
-        <string>Business Outcomes</string>
-       </attribute>
-       <widget class="QTextBrowser" name="textBrowserBusinessOutcomes">
+       <widget class="QPushButton" name="pushButton_2">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>891</width>
-          <height>581</height>
+          <x>380</x>
+          <y>510</y>
+          <width>93</width>
+          <height>28</height>
          </rect>
         </property>
-        <property name="html">
-         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e; background-color:#ffffff;&quot;&gt;Business Outcomes:&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;&quot;&gt;&lt;br /&gt;• iCyberSecurity offers one of the best and updated cyber security programs available in the world. Our 24/7 support team is always available if anything goes wrong and is constantly looking for new viruses/threats every day.&lt;br /&gt;• Our system is not only fast, it is accurate.&lt;br /&gt;• Our system is very complex but can be installed in less than 24 hours to get you up and running while being protected at the same time.&lt;br /&gt;Features:&lt;br /&gt;• Our system keeps you updated any time any threat is detected&lt;br /&gt;• Our system is completely customizable; if you don’t like what you see, it’s completely open for you to configure&lt;br /&gt;• State of the art automatic removal of any threats detected&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;&quot;&gt;- Can detect and remove any threats within 500 miliseconds of being installed&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <property name="text">
+         <string>order now</string>
         </property>
        </widget>
       </widget>
@@ -238,23 +261,109 @@ p, li { white-space: pre-wrap; }
        <attribute name="title">
         <string>Reviews</string>
        </attribute>
-       <widget class="QTextBrowser" name="textBrowserReviews">
+       <widget class="QTextBrowser" name="textReviews">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>891</width>
-          <height>581</height>
+          <x>10</x>
+          <y>20</y>
+          <width>501</width>
+          <height>521</height>
          </rect>
         </property>
-        <property name="html">
-         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e; background-color:#ffffff;&quot;&gt;Bob S.&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;&quot;&gt;&lt;br /&gt;8/10/2019&lt;br /&gt;Our company has a large IT environment that requires a very reliable security system. iCyberSecurity is constantly updating their systems to oppose new threats and to make the software more easier to use. We have been using iCyberSecurity for years and never had to look back.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e; background-color:#ffffff;&quot;&gt;Maria H.&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;&quot;&gt;&lt;br /&gt;7/12/2019&lt;br /&gt;I have been only using iCyberSecurity for couple of months but I clearly see the difference in my computers performance. They have a cleanup service to remove any unnecessary cache etc. to boost up your computer performance and only once using it I have more space on my drive and faster performance. There are other free cleanup services that I have also used before but iCyberSecurity constantly updates it to help get rid of any additional stuff and upgrade your computer's environment. I am satisfied with their service and plan to continue using their software.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e; background-color:#ffffff;&quot;&gt;Karen W.&lt;/span&gt;&lt;span style=&quot; font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;&quot;&gt;&lt;br /&gt;2/20/2019&lt;br /&gt;Our computer had recently been attacked by a virus and ended up called iCyberSecurity for help. I am glad we have chosen them because of their 24/7 help service and easy to understand instructions by their IT supports. Their fast and reliable support are the best so far from our experience and we love it. Will continue to support them.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </widget>
+       <widget class="QLabel" name="labelName">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>140</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelStars">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>200</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stars</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelReviews">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>270</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Review</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="editName">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>140</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="editStars">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>200</y>
+          <width>191</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="editReviews">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>270</y>
+          <width>261</width>
+          <height>221</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushSubmit">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>510</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>20</y>
+          <width>41</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Help</string>
         </property>
        </widget>
       </widget>
@@ -262,11 +371,11 @@ p, li { white-space: pre-wrap; }
        <attribute name="title">
         <string>Contact Us</string>
        </attribute>
-       <widget class="QPushButton" name="buttonContact">
+       <widget class="QPushButton" name="pampletSubmitButton">
         <property name="geometry">
          <rect>
-          <x>380</x>
-          <y>420</y>
+          <x>540</x>
+          <y>500</y>
           <width>121</width>
           <height>41</height>
          </rect>
@@ -275,11 +384,247 @@ p, li { white-space: pre-wrap; }
          <string>Submit</string>
         </property>
        </widget>
+       <widget class="QPlainTextEdit" name="guranteePolicyText">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>861</width>
+          <height>271</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="plainText">
+         <string>Gurantee Policy
+
+All of iCyberSecurity products have an unconditional 60 day money back guarantee. If for any reason within this timeframe you would like to return the product, you will receive a full refund of the purchase price. Please note that refund process may take up to approximately 6 to 8 weeks in total.
+
+If you have purchased your order from our site, you have 60 days to cancel your order from your purchase date. To request your order to be cancelled, please go to the myorders.com/iCyberSecurity page and fill out your form there. 
+
+We will need the following information to find your order.
+
+-order number
+-last 4 digits of your credit card you used to make the purchase
+
+Once you have found your order, click on the return product tab and fill in the form. After you have submitted your request, it will take approximately up to 2-3 weeks to have it accepted. Once accepted, please allow us another 3-4 weeks to refund your amount to the same card you have used to make the original order. If your card is not avaliable, we will contact you for a complete postal mail address to send you a check instead of your card.</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="contactInfoText">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>296</y>
+          <width>321</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="plainText">
+         <string>Contact Information
+
+Billing Address
+8456 Central Ave
+Queensland, NY 11735
+
+Call Us                  Support
+(516) 714-2800     (516) 719-2701</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="pampletSubmitText">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>300</y>
+          <width>521</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="plainText">
+         <string>To request a copy of our online pamphlet please fill out the form below and click submit.</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="pampletNameInput">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>390</y>
+          <width>321</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="pampletAddressInput">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>450</y>
+          <width>321</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="pampletNameLabel">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>390</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="pampletAddressLabel">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>450</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Email Address</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>520</y>
+          <width>41</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Help</string>
+        </property>
+       </widget>
       </widget>
-      <widget class="QWidget" name="tabHelp">
+      <widget class="QWidget" name="tabAdminLogin">
        <attribute name="title">
-        <string>Help</string>
+        <string>Admin Login</string>
        </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>130</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>USERNAME</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>180</y>
+          <width>91</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PASSWORD</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditUsername">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>130</y>
+          <width>181</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditPassword">
+        <property name="geometry">
+         <rect>
+          <x>192</x>
+          <y>180</y>
+          <width>161</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="buttonLogin">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>260</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>LOGIN</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>510</y>
+          <width>41</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Help</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>

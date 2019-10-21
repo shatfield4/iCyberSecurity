@@ -15,6 +15,25 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+//public slots:
+
+private slots:
+    void on_pampletSubmitButton_clicked();
+
+    void on_pushSubmit_clicked();
+
+    void on_loadCustomerData_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_buttonLogin_clicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_4_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

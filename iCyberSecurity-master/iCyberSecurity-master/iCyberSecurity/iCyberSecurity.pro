@@ -16,16 +16,35 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Customer.cpp \
+    adminpage.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    order.cpp \
+    purchasingpage.cpp \
+    readAndWriteFunctions.cpp \
+    sorting.cpp
 
 HEADERS += \
-    mainwindow.h
+    Customer.h \
+    adminpage.h \
+    mainwindow.h \
+    order.h \
+    purchasingpage.h \
+    readAndWriteFunctions.h \
+    sorting.h
 
 FORMS += \
-    mainwindow.ui
+    adminpage.ui \
+    mainwindow.ui \
+    purchasingpage.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES +=
+
+RESOURCES += \
+    resource.qrc
