@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/testimonials.txt");
     QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/testimonials.txt");
+    //QFile file("C:\\Users\\kaito\\Desktop\\testimonials.txt");
 
     if (!file.open(QFile::ReadOnly | QFile::Text))
     {
@@ -71,7 +72,7 @@ void MainWindow::on_pushSubmit_clicked()
 {
     //QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/testimonials.txt");
     QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/testimonials.txt");
-
+    //QFile file("C:\\Users\\kaito\\Desktop\\testimonials.txt");
 
     if (!file.open(QFile::WriteOnly | QFile::Text | QFile::Append))
     {

@@ -1,9 +1,7 @@
-#include <string>
-//#include "Key.h"
-//#include "interestlevel.h"
 #include "Customer.h"
 #include "order.h"
 
+#include <string>
 
 void Customer::setName(std::string x)
 {
@@ -129,22 +127,22 @@ Customer::Customer(const Customer &c2)
 
 
 //misc
-//! operator overlod
+//! operator overload
 Customer Customer::operator = (Customer const &c2)
 {
-
-
     name=c2.name;
     keyLevel = c2.keyLevel;
     receivedPamphlet= c2.receivedPamphlet;
     address1= c2.address1;
     address2=c2.address2;
     interest=c2.interest;
-    customersOrder= new order;
-    *customersOrder=*c2.customersOrder;
+
+    delete customersOrder;
+    customersOrder= new order(*c2.customersOrder);
 
      return *this;
 };
+
 //comparisons
 
 bool Customer:: isMynamebigger(Customer x)

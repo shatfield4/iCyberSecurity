@@ -29,7 +29,7 @@ public:
     QDialogButtonBox *buttonBox;
     QLabel *label;
     QLabel *label_protectionPlan;
-    QLabel *label_3;
+    QLabel *maintancePlanTitle;
     QWidget *layoutWidget;
     QGridLayout *gridLayout_2;
     QLabel *label_7;
@@ -50,43 +50,41 @@ public:
     QLabel *label_4;
     QWidget *layoutWidget2;
     QGridLayout *gridLayout_3;
-    QLineEdit *lineEdit;
-    QLineEdit *lineEdit_2;
-    QLabel *label_13;
-    QLabel *label_11;
-    QLabel *label_14;
     QLabel *label_12;
+    QLabel *label_11;
     QComboBox *existingComboBox;
-    QPushButton *pushButton_2;
+    QLineEdit *lineEdit_2;
+    QLabel *label_28;
+    QLineEdit *lineEdit;
+    QLabel *label_13;
+    QLabel *label_14;
+    QLineEdit *lineEdit_3;
     QWidget *layoutWidget3;
     QGridLayout *gridLayout_4;
-    QLabel *diamondPrice;
-    QLabel *label_15;
+    QLabel *totalPrice;
+    QLabel *silverPrice;
     QLabel *unicornPrice;
-    QLabel *crabPrice;
     QLabel *label_21;
+    QLabel *label_23;
+    QLabel *crabPrice;
     QLabel *label_16;
+    QLabel *diamondPrice;
+    QLabel *goldPrice;
+    QLabel *label_15;
     QLabel *label_9;
     QLabel *label_17;
-    QLabel *silverPrice;
-    QLabel *label_23;
-    QLabel *goldPrice;
-    QLabel *label_27;
-    QLabel *totalPrice;
-    QLabel *label_28;
-    QLineEdit *lineEdit_3;
-    QLabel *label_22;
     QLabel *subtotalPrice;
+    QLabel *label_22;
 
     void setupUi(QDialog *purchasingPage)
     {
         if (purchasingPage->objectName().isEmpty())
             purchasingPage->setObjectName(QString::fromUtf8("purchasingPage"));
-        purchasingPage->resize(1257, 795);
+        purchasingPage->resize(1267, 805);
         purchasingPage->setLayoutDirection(Qt::LeftToRight);
         buttonBox = new QDialogButtonBox(purchasingPage);
         buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
-        buttonBox->setGeometry(QRect(490, 720, 201, 32));
+        buttonBox->setGeometry(QRect(490, 750, 201, 32));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         label = new QLabel(purchasingPage);
@@ -101,18 +99,18 @@ public:
         QFont font1;
         font1.setPointSize(18);
         label_protectionPlan->setFont(font1);
-        label_3 = new QLabel(purchasingPage);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(10, 470, 191, 31));
-        label_3->setFont(font1);
+        maintancePlanTitle = new QLabel(purchasingPage);
+        maintancePlanTitle->setObjectName(QString::fromUtf8("maintancePlanTitle"));
+        maintancePlanTitle->setGeometry(QRect(10, 480, 211, 31));
+        maintancePlanTitle->setFont(font1);
         layoutWidget = new QWidget(purchasingPage);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(20, 520, 721, 131));
+        layoutWidget->setGeometry(QRect(20, 520, 762, 190));
         gridLayout_2 = new QGridLayout(layoutWidget);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        gridLayout_2->setHorizontalSpacing(100);
+        gridLayout_2->setHorizontalSpacing(50);
         gridLayout_2->setVerticalSpacing(10);
-        gridLayout_2->setContentsMargins(10, 10, 10, 10);
+        gridLayout_2->setContentsMargins(5, 5, 5, 5);
         label_7 = new QLabel(layoutWidget);
         label_7->setObjectName(QString::fromUtf8("label_7"));
         QFont font2;
@@ -141,25 +139,25 @@ public:
 
         label_2 = new QLabel(purchasingPage);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(960, 470, 96, 30));
+        label_2->setGeometry(QRect(990, 480, 101, 30));
         label_2->setFont(font1);
         label_10 = new QLabel(purchasingPage);
         label_10->setObjectName(QString::fromUtf8("label_10"));
-        label_10->setGeometry(QRect(910, 90, 177, 30));
+        label_10->setGeometry(QRect(940, 90, 177, 30));
         label_10->setFont(font1);
         label_25 = new QLabel(purchasingPage);
         label_25->setObjectName(QString::fromUtf8("label_25"));
-        label_25->setGeometry(QRect(40, 710, 422, 51));
+        label_25->setGeometry(QRect(21, 740, 441, 51));
         label_25->setFont(font2);
         pushButton = new QPushButton(purchasingPage);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(50, 20, 93, 28));
+        pushButton->setGeometry(QRect(50, 20, 81, 31));
         QFont font3;
         font3.setPointSize(13);
         pushButton->setFont(font3);
         layoutWidget1 = new QWidget(purchasingPage);
         layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(20, 140, 721, 301));
+        layoutWidget1->setGeometry(QRect(20, 140, 760, 301));
         gridLayout = new QGridLayout(layoutWidget1);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setHorizontalSpacing(30);
@@ -207,78 +205,85 @@ public:
 
         layoutWidget2 = new QWidget(purchasingPage);
         layoutWidget2->setObjectName(QString::fromUtf8("layoutWidget2"));
-        layoutWidget2->setGeometry(QRect(780, 140, 461, 291));
+        layoutWidget2->setGeometry(QRect(790, 140, 461, 291));
         gridLayout_3 = new QGridLayout(layoutWidget2);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         gridLayout_3->setContentsMargins(0, 0, 0, 0);
-        lineEdit = new QLineEdit(layoutWidget2);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        label_12 = new QLabel(layoutWidget2);
+        label_12->setObjectName(QString::fromUtf8("label_12"));
         QFont font5;
-        font5.setPointSize(10);
-        lineEdit->setFont(font5);
+        font5.setPointSize(11);
+        label_12->setFont(font5);
 
-        gridLayout_3->addWidget(lineEdit, 6, 1, 1, 1);
-
-        lineEdit_2 = new QLineEdit(layoutWidget2);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-        lineEdit_2->setFont(font5);
-
-        gridLayout_3->addWidget(lineEdit_2, 7, 1, 1, 1);
-
-        label_13 = new QLabel(layoutWidget2);
-        label_13->setObjectName(QString::fromUtf8("label_13"));
-        QFont font6;
-        font6.setPointSize(11);
-        label_13->setFont(font6);
-
-        gridLayout_3->addWidget(label_13, 6, 0, 1, 1);
+        gridLayout_3->addWidget(label_12, 4, 0, 1, 3);
 
         label_11 = new QLabel(layoutWidget2);
         label_11->setObjectName(QString::fromUtf8("label_11"));
-        label_11->setFont(font6);
+        label_11->setFont(font5);
 
-        gridLayout_3->addWidget(label_11, 0, 0, 1, 2);
-
-        label_14 = new QLabel(layoutWidget2);
-        label_14->setObjectName(QString::fromUtf8("label_14"));
-        label_14->setFont(font6);
-
-        gridLayout_3->addWidget(label_14, 7, 0, 1, 1);
-
-        label_12 = new QLabel(layoutWidget2);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setFont(font6);
-
-        gridLayout_3->addWidget(label_12, 5, 0, 1, 2);
+        gridLayout_3->addWidget(label_11, 0, 0, 1, 3);
 
         existingComboBox = new QComboBox(layoutWidget2);
         existingComboBox->setObjectName(QString::fromUtf8("existingComboBox"));
-        existingComboBox->setFont(font5);
+        QFont font6;
+        font6.setPointSize(10);
+        existingComboBox->setFont(font6);
 
-        gridLayout_3->addWidget(existingComboBox, 1, 0, 1, 2);
+        gridLayout_3->addWidget(existingComboBox, 1, 0, 1, 3);
 
-        pushButton_2 = new QPushButton(layoutWidget2);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        lineEdit_2 = new QLineEdit(layoutWidget2);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setFont(font6);
 
-        gridLayout_3->addWidget(pushButton_2, 3, 0, 1, 2);
+        gridLayout_3->addWidget(lineEdit_2, 6, 2, 1, 1);
+
+        label_28 = new QLabel(layoutWidget2);
+        label_28->setObjectName(QString::fromUtf8("label_28"));
+        label_28->setFont(font5);
+
+        gridLayout_3->addWidget(label_28, 7, 0, 1, 1);
+
+        lineEdit = new QLineEdit(layoutWidget2);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setFont(font6);
+
+        gridLayout_3->addWidget(lineEdit, 5, 2, 1, 1);
+
+        label_13 = new QLabel(layoutWidget2);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+        label_13->setFont(font5);
+
+        gridLayout_3->addWidget(label_13, 5, 0, 1, 1);
+
+        label_14 = new QLabel(layoutWidget2);
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+        label_14->setFont(font5);
+
+        gridLayout_3->addWidget(label_14, 6, 0, 1, 1);
+
+        lineEdit_3 = new QLineEdit(layoutWidget2);
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        lineEdit_3->setFont(font6);
+
+        gridLayout_3->addWidget(lineEdit_3, 7, 2, 1, 1);
 
         layoutWidget3 = new QWidget(purchasingPage);
         layoutWidget3->setObjectName(QString::fromUtf8("layoutWidget3"));
-        layoutWidget3->setGeometry(QRect(810, 530, 401, 211));
+        layoutWidget3->setGeometry(QRect(830, 520, 401, 211));
         gridLayout_4 = new QGridLayout(layoutWidget3);
         gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
         gridLayout_4->setContentsMargins(0, 0, 0, 0);
-        diamondPrice = new QLabel(layoutWidget3);
-        diamondPrice->setObjectName(QString::fromUtf8("diamondPrice"));
-        diamondPrice->setFont(font2);
+        totalPrice = new QLabel(layoutWidget3);
+        totalPrice->setObjectName(QString::fromUtf8("totalPrice"));
+        totalPrice->setFont(font2);
 
-        gridLayout_4->addWidget(diamondPrice, 3, 1, 1, 1);
+        gridLayout_4->addWidget(totalPrice, 10, 1, 1, 1);
 
-        label_15 = new QLabel(layoutWidget3);
-        label_15->setObjectName(QString::fromUtf8("label_15"));
-        label_15->setFont(font2);
+        silverPrice = new QLabel(layoutWidget3);
+        silverPrice->setObjectName(QString::fromUtf8("silverPrice"));
+        silverPrice->setFont(font2);
 
-        gridLayout_4->addWidget(label_15, 4, 0, 1, 1);
+        gridLayout_4->addWidget(silverPrice, 1, 1, 1, 1);
 
         unicornPrice = new QLabel(layoutWidget3);
         unicornPrice->setObjectName(QString::fromUtf8("unicornPrice"));
@@ -286,23 +291,47 @@ public:
 
         gridLayout_4->addWidget(unicornPrice, 5, 1, 1, 1);
 
-        crabPrice = new QLabel(layoutWidget3);
-        crabPrice->setObjectName(QString::fromUtf8("crabPrice"));
-        crabPrice->setFont(font2);
-
-        gridLayout_4->addWidget(crabPrice, 4, 1, 1, 1);
-
         label_21 = new QLabel(layoutWidget3);
         label_21->setObjectName(QString::fromUtf8("label_21"));
         label_21->setFont(font2);
 
         gridLayout_4->addWidget(label_21, 5, 0, 1, 1);
 
+        label_23 = new QLabel(layoutWidget3);
+        label_23->setObjectName(QString::fromUtf8("label_23"));
+        label_23->setFont(font2);
+
+        gridLayout_4->addWidget(label_23, 10, 0, 1, 1);
+
+        crabPrice = new QLabel(layoutWidget3);
+        crabPrice->setObjectName(QString::fromUtf8("crabPrice"));
+        crabPrice->setFont(font2);
+
+        gridLayout_4->addWidget(crabPrice, 4, 1, 1, 1);
+
         label_16 = new QLabel(layoutWidget3);
         label_16->setObjectName(QString::fromUtf8("label_16"));
         label_16->setFont(font2);
 
         gridLayout_4->addWidget(label_16, 2, 0, 1, 1);
+
+        diamondPrice = new QLabel(layoutWidget3);
+        diamondPrice->setObjectName(QString::fromUtf8("diamondPrice"));
+        diamondPrice->setFont(font2);
+
+        gridLayout_4->addWidget(diamondPrice, 3, 1, 1, 1);
+
+        goldPrice = new QLabel(layoutWidget3);
+        goldPrice->setObjectName(QString::fromUtf8("goldPrice"));
+        goldPrice->setFont(font2);
+
+        gridLayout_4->addWidget(goldPrice, 2, 1, 1, 1);
+
+        label_15 = new QLabel(layoutWidget3);
+        label_15->setObjectName(QString::fromUtf8("label_15"));
+        label_15->setFont(font2);
+
+        gridLayout_4->addWidget(label_15, 4, 0, 1, 1);
 
         label_9 = new QLabel(layoutWidget3);
         label_9->setObjectName(QString::fromUtf8("label_9"));
@@ -316,54 +345,18 @@ public:
 
         gridLayout_4->addWidget(label_17, 3, 0, 1, 1);
 
-        silverPrice = new QLabel(layoutWidget3);
-        silverPrice->setObjectName(QString::fromUtf8("silverPrice"));
-        silverPrice->setFont(font2);
-
-        gridLayout_4->addWidget(silverPrice, 1, 1, 1, 1);
-
-        label_23 = new QLabel(layoutWidget3);
-        label_23->setObjectName(QString::fromUtf8("label_23"));
-        label_23->setFont(font2);
-
-        gridLayout_4->addWidget(label_23, 7, 0, 1, 1);
-
-        goldPrice = new QLabel(layoutWidget3);
-        goldPrice->setObjectName(QString::fromUtf8("goldPrice"));
-        goldPrice->setFont(font2);
-
-        gridLayout_4->addWidget(goldPrice, 2, 1, 1, 1);
-
-        label_27 = new QLabel(layoutWidget3);
-        label_27->setObjectName(QString::fromUtf8("label_27"));
-        QFont font7;
-        font7.setPointSize(2);
-        label_27->setFont(font7);
-
-        gridLayout_4->addWidget(label_27, 6, 0, 1, 1);
-
-        totalPrice = new QLabel(layoutWidget3);
-        totalPrice->setObjectName(QString::fromUtf8("totalPrice"));
-        totalPrice->setFont(font2);
-
-        gridLayout_4->addWidget(totalPrice, 7, 1, 1, 1);
-
-        label_28 = new QLabel(purchasingPage);
-        label_28->setObjectName(QString::fromUtf8("label_28"));
-        label_28->setGeometry(QRect(780, 440, 70, 22));
-        label_28->setFont(font6);
-        lineEdit_3 = new QLineEdit(purchasingPage);
-        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
-        lineEdit_3->setGeometry(QRect(860, 440, 383, 22));
-        lineEdit_3->setFont(font5);
-        label_22 = new QLabel(purchasingPage);
-        label_22->setObjectName(QString::fromUtf8("label_22"));
-        label_22->setGeometry(QRect(810, 680, 197, 25));
-        label_22->setFont(font2);
-        subtotalPrice = new QLabel(purchasingPage);
+        subtotalPrice = new QLabel(layoutWidget3);
         subtotalPrice->setObjectName(QString::fromUtf8("subtotalPrice"));
-        subtotalPrice->setGeometry(QRect(1010, 680, 197, 25));
         subtotalPrice->setFont(font2);
+
+        gridLayout_4->addWidget(subtotalPrice, 8, 1, 1, 1);
+
+        label_22 = new QLabel(layoutWidget3);
+        label_22->setObjectName(QString::fromUtf8("label_22"));
+        label_22->setFont(font2);
+
+        gridLayout_4->addWidget(label_22, 8, 0, 1, 1);
+
 
         retranslateUi(purchasingPage);
         QObject::connect(buttonBox, SIGNAL(accepted()), purchasingPage, SLOT(accept()));
@@ -377,10 +370,16 @@ public:
         purchasingPage->setWindowTitle(QCoreApplication::translate("purchasingPage", "Dialog", nullptr));
         label->setText(QCoreApplication::translate("purchasingPage", "Purchasing Page", nullptr));
         label_protectionPlan->setText(QCoreApplication::translate("purchasingPage", "Service/Protection Plans", nullptr));
-        label_3->setText(QCoreApplication::translate("purchasingPage", "Maintance Plan", nullptr));
-        label_7->setText(QCoreApplication::translate("purchasingPage", "Crab Plan", nullptr));
+        maintancePlanTitle->setText(QCoreApplication::translate("purchasingPage", "Maintance Plan", nullptr));
+        label_7->setText(QCoreApplication::translate("purchasingPage", "Crab Plan\n"
+"Lifetime service with 34/8 hours a day live chat support.\n"
+"Crab dinner every other Tuesday delivered to your house.", nullptr));
         checkBoxCrab->setText(QCoreApplication::translate("purchasingPage", "$50", nullptr));
-        label_8->setText(QCoreApplication::translate("purchasingPage", "Unicorn Plan", nullptr));
+        label_8->setText(QCoreApplication::translate("purchasingPage", "Unicorn Plan\n"
+"Unlimited service with no regards to time and space.\n"
+"Instanteous service technician digitally transported to your location to\n"
+"diagnose and repair your system.\n"
+"We will ship a Unicorn to your house that you can ride at your leisure.", nullptr));
         checkBoxUnicorn->setText(QCoreApplication::translate("purchasingPage", "$80", nullptr));
         label_2->setText(QCoreApplication::translate("purchasingPage", "Reciept", nullptr));
         label_10->setText(QCoreApplication::translate("purchasingPage", "Customer Info", nullptr));
@@ -401,29 +400,27 @@ public:
         label_4->setText(QCoreApplication::translate("purchasingPage", "Silver Protection Plan:\n"
 "\342\200\242 This package offers 24/7 16GB DDos Protection for servers. \n"
 "\342\200\242 It comes with our Bonzi Buddy antivirus software.", nullptr));
-        lineEdit_2->setText(QString());
-        label_13->setText(QCoreApplication::translate("purchasingPage", "Name:", nullptr));
-        label_11->setText(QCoreApplication::translate("purchasingPage", "Existing Customer (Please select from drop down)", nullptr));
-        label_14->setText(QCoreApplication::translate("purchasingPage", "Address 1:", nullptr));
         label_12->setText(QCoreApplication::translate("purchasingPage", "New Customers (Please fill in information below)", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("purchasingPage", "Test", nullptr));
-        diamondPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
-        label_15->setText(QCoreApplication::translate("purchasingPage", "Crab", nullptr));
+        label_11->setText(QCoreApplication::translate("purchasingPage", "Existing Customer (Please select from drop down)", nullptr));
+        lineEdit_2->setText(QString());
+        label_28->setText(QCoreApplication::translate("purchasingPage", "Address 2:", nullptr));
+        label_13->setText(QCoreApplication::translate("purchasingPage", "Name:", nullptr));
+        label_14->setText(QCoreApplication::translate("purchasingPage", "Address 1:", nullptr));
+        lineEdit_3->setText(QString());
+        totalPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
+        silverPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
         unicornPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
-        crabPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
         label_21->setText(QCoreApplication::translate("purchasingPage", "Unicorn", nullptr));
+        label_23->setText(QCoreApplication::translate("purchasingPage", "Grand  Total:", nullptr));
+        crabPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
         label_16->setText(QCoreApplication::translate("purchasingPage", "Gold", nullptr));
+        diamondPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
+        goldPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
+        label_15->setText(QCoreApplication::translate("purchasingPage", "Crab", nullptr));
         label_9->setText(QCoreApplication::translate("purchasingPage", "Silver", nullptr));
         label_17->setText(QCoreApplication::translate("purchasingPage", "Diamond", nullptr));
-        silverPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
-        label_23->setText(QCoreApplication::translate("purchasingPage", "Grand  Total:", nullptr));
-        goldPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
-        label_27->setText(QString());
-        totalPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
-        label_28->setText(QCoreApplication::translate("purchasingPage", "Address 2:", nullptr));
-        lineEdit_3->setText(QString());
-        label_22->setText(QCoreApplication::translate("purchasingPage", "Subtotal", nullptr));
         subtotalPrice->setText(QCoreApplication::translate("purchasingPage", "0", nullptr));
+        label_22->setText(QCoreApplication::translate("purchasingPage", "Subtotal", nullptr));
     } // retranslateUi
 
 };

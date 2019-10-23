@@ -67,14 +67,14 @@ void readInCustomerData(Customer customerArr[], //array of customer that will be
         QString tempService1  = inOrder.readLine();
         QString tempService2  = inOrder.readLine();
         QString tempTax          = inOrder.readLine();
-
+        /*
          qDebug() << "p1: "       << tempProduct1;
          qDebug() << "p2: " << tempProduct2;
          qDebug() << "p3: " << tempProduct3;
          qDebug() << "s1: "     << tempService1;
          qDebug() << "s2: "          << tempService2;
          qDebug() << "tax: "     << tempTax;
-
+        */
          customerArr[i].getCustomerOrder().setnumber_of_product_one(tempProduct1.toInt());
          customerArr[i].getCustomerOrder().setnumber_of_product_two(tempProduct2.toInt());
          customerArr[i].getCustomerOrder().setnumber_of_product_three(tempProduct3.toInt());
@@ -83,7 +83,7 @@ void readInCustomerData(Customer customerArr[], //array of customer that will be
          customerArr[i].getCustomerOrder().settax(tempTax.toInt());
          customerArr[i].getCustomerOrder().update_total();
 
-        totalNumCustomers = i + 1; //Added one to the index for the exact number of customer
+        totalNumCustomers = i; //index for the last number of customer
 
     }//END for loop
 
@@ -105,12 +105,12 @@ void writeInCustomerData(Customer customerArr[], //array of customer that will b
 
 
     //Error message for when the file dont open
-    if(!fileCustomer.open(QFile::ReadOnly | QFile::Text))
+    if(!fileCustomer.open(QFile::WriteOnly | QFile::Text))
     {
         QMessageBox::warning(nullptr, "title", "customer file not open");   //switched this to nullptr - ayako
     }
 
-    if(!fileOrder.open(QFile::ReadOnly | QFile::Text))
+    if(!fileOrder.open(QFile::WriteOnly | QFile::Text))
     {
         QMessageBox::warning(nullptr, "title", "order file not open");   //switched this to nullptr - ayako
     }
@@ -149,14 +149,14 @@ void writeInCustomerData(Customer customerArr[], //array of customer that will b
         QString tempService1  = QString::number(customerArr[i].getCustomerOrder().getserviceplan_one());
         QString tempService2  = QString::number(customerArr[i].getCustomerOrder().getserviceplan_two());
         QString tempTax          = QString::number(customerArr[i].getCustomerOrder().gettax());
-
+        /*
          qDebug() << "p1: "  << tempProduct1;
          qDebug() << "p2: "  << tempProduct2;
          qDebug() << "p3: "  << tempProduct3;
          qDebug() << "s1: "  << tempService1;
          qDebug() << "s2: "  << tempService2;
          qDebug() << "tax: " << tempTax;
-
+        */
          outOrder << tempProduct1 << endl;
          outOrder << tempProduct2 << endl;
          outOrder << tempProduct3 << endl;
