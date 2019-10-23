@@ -38,11 +38,6 @@ Cisco
 San Jose, CA 9513
 very interested
 key
-Nicholas
-12 Address Street
-Address City, AD, 11111
-very interested
-key
 Mike
 Mike's House Avenue
 Mike City, MC, 00001
