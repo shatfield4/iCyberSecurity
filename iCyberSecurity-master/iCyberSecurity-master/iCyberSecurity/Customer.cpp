@@ -1,9 +1,7 @@
-#include <string>
-//#include "Key.h"
-//#include "interestlevel.h"
 #include "Customer.h"
 #include "order.h"
 
+#include <string>
 
 void Customer::setName(std::string x)
 {

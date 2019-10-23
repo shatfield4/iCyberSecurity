@@ -3,7 +3,6 @@
 #include "Customer.h"
 #include "readAndWriteFunctions.h"
 #include "sorting.h"
-#include "readAndWriteFunctions.h"
 
 #include <QFile>
 #include<QStandardPaths>
@@ -18,6 +17,13 @@ AdminPage::AdminPage(QWidget *parent) :
     ui(new Ui::AdminPage)
 {
     ui->setupUi(this);
+
+    //preload the customer list
+    on_loadCustomerData_clicked();
+    on_pushButton_clicked();
+    on_pushButton_2_clicked();
+    on_deleteListLoadButton_clicked();
+
 
     //Update delete combo box with existing customers
     Customer customerArr[500];
@@ -402,4 +408,30 @@ void AdminPage::on_deleteListLoadButton_clicked()
     }//END for loop
 
     ui->deleteTable->resizeColumnsToContents();
+}
+
+void AdminPage::on_deletePushButton_clicked()
+{
+    Customer customerArr[500];
+    Customer deletingCustomer;
+    int count = 0;
+
+    readInCustomerData(customerArr, 500, count);
+
+    QString deletingName = ui->deleteComboBox->currentText();
+    QMessageBox::information(this, " ", "Deleted the customer");
+
+    for (int i = 0; i <= count; i++)
+    {
+       if(deletingName == QString::fromStdString(customerArr[i].getName()))
+           deletingCustomer = customerArr[i];
+    }
+
+    count++; //Adding one since deleteCustomer needs the acutally number of customers
+    deleteCustomer(deletingCustomer, customerArr, count);
+
+    count--;
+    writeInCustomerData(customerArr, 500, count);
+
+    on_deleteListLoadButton_clicked();
 }

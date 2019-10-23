@@ -41,6 +41,7 @@ void deleteCustomer(Customer toDelete, Customer unsorted[], int &count)
         count--;
     }
 }
+
 //! fills the SortName, and SortKey with unsorted customers, and then it sorts both lists.
 void sortCustomers(Customer unsorted[], Customer sortname[], Customer sortkey[], int count, int &keyCount)
 {
