@@ -443,3 +443,8 @@ void AdminPage::on_deletePushButton_clicked()
         ui->deleteComboBox->addItem(QString::fromStdString(customerArr[index].getName()));
     }
 }
+
+void AdminPage::on_pushButton_6_clicked()
+{
+    QMessageBox::warning(this, "Help", "To delete a customer, select the customer from the drop down menu. Then press delete. It will remove the customer from the table and the text file.");
+}

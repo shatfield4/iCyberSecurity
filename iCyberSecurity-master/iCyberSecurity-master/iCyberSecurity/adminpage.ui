@@ -57,13 +57,13 @@
       <string>Help</string>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>30</x>
        <y>530</y>
        <width>701</width>
-       <height>31</height>
+       <height>35</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
@@ -149,7 +149,7 @@
       <string>Help</string>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -342,13 +342,13 @@
       </rect>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>40</x>
        <y>520</y>
        <width>871</width>
-       <height>31</height>
+       <height>35</height>
       </rect>
      </property>
      <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,50,10">
@@ -380,6 +380,19 @@
        </widget>
       </item>
      </layout>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>862</x>
+       <y>480</y>
+       <width>41</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Help</string>
+     </property>
     </widget>
    </widget>
    <widget class="QWidget" name="tab_2">
