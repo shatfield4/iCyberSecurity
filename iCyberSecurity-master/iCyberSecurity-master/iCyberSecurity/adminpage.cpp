@@ -116,8 +116,9 @@ void AdminPage::on_loadCustomerData_clicked()
 
 void AdminPage::on_buttonLoadPamphlets_clicked()
 {
+    QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/pamphletsubmissions.txt");
     //QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/pamphletsubmissions.txt");
-    QFile file("C:/Users/kaito/Desktop/pamphletsubmissions.txt");
+    //QFile file("C:/Users/kaito/Desktop/pamphletsubmissions.txt");
 
     if(!file.open(QFile::ReadOnly | QFile::Text))
     {
@@ -309,8 +310,8 @@ void AdminPage::on_pushButton_4_clicked()
 
 void AdminPage::on_buttonAddCustomer_clicked()
 {
-    //QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
-    QFile file("C:\\Users\\kaito\\Desktop\\customers.txt");
+    QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+    //QFile file("C:\\Users\\kaito\\Desktop\\customers.txt");
 
     if (!file.open(QFile::WriteOnly | QFile::Append | QFile::Text))
     {

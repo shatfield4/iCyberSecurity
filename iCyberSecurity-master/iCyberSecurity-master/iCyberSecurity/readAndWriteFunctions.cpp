@@ -15,10 +15,10 @@ void readInCustomerData(Customer customerArr[], //array of customer that will be
                                         int& totalNumCustomers) //total number of customers from the data
 {
 
-    QFile fileCustomer("C:\\Users\\kaito\\Desktop\\customers.txt");
-    QFile fileOrder("C:\\Users\\kaito\\Desktop\\orders.txt");
-    //QFile fileCustomer("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
-    //QFile fileOrder("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/orders.txt");
+    //QFile fileCustomer("C:\\Users\\kaito\\Desktop\\customers.txt");
+    //QFile fileOrder("C:\\Users\\kaito\\Desktop\\orders.txt");
+    QFile fileCustomer("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+    QFile fileOrder("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/orders.txt");
     //QFile fileCustomer("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/customers.txt");
     //QFile fileOrder("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/orders.txt");
 
@@ -96,10 +96,10 @@ void writeInCustomerData(Customer customerArr[], //array of customer that will b
                                         int& totalNumCustomers) //total number of customers from the data
 {
 
-    QFile fileCustomer("C:\\Users\\kaito\\Desktop\\customers.txt");
-    QFile fileOrder("C:\\Users\\kaito\\Desktop\\orders.txt");
-    //QFile fileCustomer("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
-    //QFile fileOrder("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/orders.txt");
+    //QFile fileCustomer("C:\\Users\\kaito\\Desktop\\customers.txt");
+    //QFile fileOrder("C:\\Users\\kaito\\Desktop\\orders.txt");
+    QFile fileCustomer("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+    QFile fileOrder("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/orders.txt");
     //QFile fileCustomer("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/customers.txt");
     //QFile fileOrder("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/orders.txt");
 

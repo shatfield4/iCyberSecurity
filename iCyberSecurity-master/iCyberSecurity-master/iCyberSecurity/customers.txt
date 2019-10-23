@@ -38,13 +38,3 @@ Cisco
 San Jose, CA 9513
 very interested
 key
-Nicholas
-12 Address Street
-Address City, AD, 11111
-very interested
-key
-Ayako
-Ayako Street
-Ayako, AY, 22222
-never call again
-nice to have
