@@ -18,15 +18,6 @@ AdminPage::AdminPage(QWidget *parent) :
     ui(new Ui::AdminPage)
 {
     ui->setupUi(this);
-
-    ui->comboInterest->addItem("very interested", "Very Interested");
-    ui->comboInterest->addItem("somewhat interested", "Somewhat Interested");
-    ui->comboInterest->addItem("not interested", "Not Interested");
-    ui->comboInterest->addItem("never call again", "NOTATALL");
-
-    ui->comboKey->addItem("key", "Key");
-    ui->comboKey->addItem("nice to have", "Nice to Have");
-
 }
 
 AdminPage::~AdminPage()
@@ -60,7 +51,7 @@ void AdminPage::on_loadCustomerData_clicked()
                                     500,                  //the array size of customerArr[]
                                     count); //total number of customers from the data
 
-    for (int i = 0; i < count; i++)
+    for (int i = 0; i <= count; i++)
     {
         //CREATING THE TABLE FOR CUSTOMER LIST AND OUTPUT DATA
 
@@ -104,13 +95,12 @@ void AdminPage::on_loadCustomerData_clicked()
     }//END for loop
 
     ui->customerTable->resizeColumnsToContents();
-
-
 }
 
 void AdminPage::on_buttonLoadPamphlets_clicked()
 {
-    QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/pamphletsubmissions.txt");
+    //QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/pamphletsubmissions.txt");
+    QFile file("C:/Users/kaito/Desktop/pamphletsubmissions.txt");
 
     if(!file.open(QFile::ReadOnly | QFile::Text))
     {
@@ -168,7 +158,7 @@ void AdminPage::on_pushButton_clicked()
 
     sortCustomers(unsorted, sortName, sortKey, count, keyCount);
 
-    for (int i = 0; i < count; i++)
+    for (int i = 0; i <= count; i++)
     {
         //CREATING THE TABLE FOR CUSTOMER LIST AND OUTPUT DATA
 
@@ -212,8 +202,6 @@ void AdminPage::on_pushButton_clicked()
     }//END for loop
 
     ui->customerTable->resizeColumnsToContents();
-
-
 }
 
 void AdminPage::on_pushButton_2_clicked()
@@ -246,7 +234,7 @@ void AdminPage::on_pushButton_2_clicked()
 
     sortCustomers(unsorted, sortName, sortKey, count, keyCount);
 
-    for (int i = 0; i < keyCount; i++)
+    for (int i = 0; i <= keyCount; i++)
     {
         //CREATING THE TABLE FOR CUSTOMER LIST AND OUTPUT DATA
 
@@ -304,7 +292,8 @@ void AdminPage::on_pushButton_4_clicked()
 
 void AdminPage::on_buttonAddCustomer_clicked()
 {
-    QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+    //QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+    QFile file("C:\\Users\\kaito\\Desktop\\customers.txt");
 
     if (!file.open(QFile::WriteOnly | QFile::Append | QFile::Text))
     {

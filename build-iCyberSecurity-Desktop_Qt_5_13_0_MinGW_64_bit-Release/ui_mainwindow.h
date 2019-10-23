@@ -33,7 +33,6 @@ public:
     QTabWidget *tabsCustomer;
     QWidget *tabCOO;
     QTextBrowser *textBrowserCOO;
-    QPushButton *pushButton;
     QWidget *tabBusinessOutcomes;
     QTextBrowser *textBrowserBusinessOutcomes;
     QWidget *tabProducts;
@@ -50,6 +49,7 @@ public:
     QTextBrowser *textCrab;
     QWidget *tabUnicorn;
     QTextBrowser *textUnicorn;
+    QPushButton *pushButton_2;
     QWidget *tabReviews;
     QTextBrowser *textReviews;
     QLabel *labelName;
@@ -59,6 +59,7 @@ public:
     QPlainTextEdit *editStars;
     QPlainTextEdit *editReviews;
     QPushButton *pushSubmit;
+    QPushButton *pushButton;
     QWidget *tabContact;
     QPushButton *pampletSubmitButton;
     QPlainTextEdit *guranteePolicyText;
@@ -68,12 +69,14 @@ public:
     QLineEdit *pampletAddressInput;
     QLabel *pampletNameLabel;
     QLabel *pampletAddressLabel;
+    QPushButton *pushButton_3;
     QWidget *tabAdminLogin;
     QLabel *label;
     QLabel *label_2;
     QLineEdit *lineEditUsername;
     QLineEdit *lineEditPassword;
     QPushButton *buttonLogin;
+    QPushButton *pushButton_4;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -93,9 +96,6 @@ public:
         textBrowserCOO = new QTextBrowser(tabCOO);
         textBrowserCOO->setObjectName(QString::fromUtf8("textBrowserCOO"));
         textBrowserCOO->setGeometry(QRect(10, 70, 881, 451));
-        pushButton = new QPushButton(tabCOO);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(340, 540, 201, 28));
         tabsCustomer->addTab(tabCOO, QString());
         tabBusinessOutcomes = new QWidget();
         tabBusinessOutcomes->setObjectName(QString::fromUtf8("tabBusinessOutcomes"));
@@ -144,6 +144,9 @@ public:
         textUnicorn->setObjectName(QString::fromUtf8("textUnicorn"));
         textUnicorn->setGeometry(QRect(10, 10, 841, 121));
         tabsPlans->addTab(tabUnicorn, QString());
+        pushButton_2 = new QPushButton(tabProducts);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(380, 510, 93, 28));
         tabsCustomer->addTab(tabProducts, QString());
         tabReviews = new QWidget();
         tabReviews->setObjectName(QString::fromUtf8("tabReviews"));
@@ -171,6 +174,9 @@ public:
         pushSubmit = new QPushButton(tabReviews);
         pushSubmit->setObjectName(QString::fromUtf8("pushSubmit"));
         pushSubmit->setGeometry(QRect(700, 510, 93, 28));
+        pushButton = new QPushButton(tabReviews);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(830, 20, 41, 28));
         tabsCustomer->addTab(tabReviews, QString());
         tabContact = new QWidget();
         tabContact->setObjectName(QString::fromUtf8("tabContact"));
@@ -208,6 +214,9 @@ public:
         pampletAddressLabel->setObjectName(QString::fromUtf8("pampletAddressLabel"));
         pampletAddressLabel->setGeometry(QRect(370, 450, 131, 21));
         pampletAddressLabel->setFont(font);
+        pushButton_3 = new QPushButton(tabContact);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setGeometry(QRect(830, 520, 41, 28));
         tabsCustomer->addTab(tabContact, QString());
         tabAdminLogin = new QWidget();
         tabAdminLogin->setObjectName(QString::fromUtf8("tabAdminLogin"));
@@ -226,6 +235,9 @@ public:
         buttonLogin = new QPushButton(tabAdminLogin);
         buttonLogin->setObjectName(QString::fromUtf8("buttonLogin"));
         buttonLogin->setGeometry(QRect(210, 260, 75, 23));
+        pushButton_4 = new QPushButton(tabAdminLogin);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setGeometry(QRect(830, 510, 41, 28));
         tabsCustomer->addTab(tabAdminLogin, QString());
 
         horizontalLayout->addWidget(tabsCustomer);
@@ -233,7 +245,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 916, 21));
+        menubar->setGeometry(QRect(0, 0, 916, 26));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -241,7 +253,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabsCustomer->setCurrentIndex(4);
+        tabsCustomer->setCurrentIndex(3);
         tabsProduct->setCurrentIndex(1);
         tabsPlans->setCurrentIndex(1);
 
@@ -255,86 +267,86 @@ public:
         textBrowserCOO->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">What is iCyberSecurity?<br />iCyberSecurity is a global antivirus platform. With over 17 trillion users worldwide, we are the planet's LEADING antivirus experts. Our goal is to eliminate all viruses that can infect any type of system by using our state of the art cyberantibiotics. By ordering our products, we can guarantee the safety and privacy of your systems anytime, anywhere.</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-rig"
-                        "ht:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:14pt;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">Why is iCyberSecurity for you?</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">iCyberSecurity is for you because it boasts 3 key points.</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">1. Affordability.</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">iCyberSecurity is the cheapes"
-                        "t option by far and our serviceplan has the greatest cost to service ratio.</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">2. Protection.</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">iCyberSecurity is the strongest option by far and our many customers have nothing but positive reviews to give.</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">3. It's not made by John McAfee</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14"
-                        "pt;\">iCybersecurity is not backed or owned by John McAffee, or associated with any of John McAffee's relatives in any way. </span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:14pt;\">*iCybersecurity is the physical embodiment of John McAffee</span></p></body></html>", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Purchase Plans", nullptr));
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">What is iCyberSecurity?<br />iCyberSecurity is a global antivirus platform. With over 17 trillion users worldwide, we are the planet's LEADING antivirus experts. Our goal is to eliminate all viruses that can infect any type of system by using our state of the art cyberantibiotics. By ordering our products, we can guarantee the safety and privacy of your systems anytime, anywhere.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; tex"
+                        "t-indent:0px; font-size:14pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Why is iCyberSecurity for you?</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">iCyberSecurity is for you because it boasts 3 key points.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">1. Affordability.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">iCyberSecurity is the cheapest option by far and our serviceplan has the greatest cost to service ratio.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-bloc"
+                        "k-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">2. Protection.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">iCyberSecurity is the strongest option by far and our many customers have nothing but positive reviews to give.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">3. It's not made by John McAfee</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">iCybersecurity is not backed or owned by John McAffee, or associated with any of John McAffee's relatives in any way. </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">*iCyber"
+                        "security is the physical embodiment of John McAffee</span></p></body></html>", nullptr));
         tabsCustomer->setTabText(tabsCustomer->indexOf(tabCOO), QCoreApplication::translate("MainWindow", "iCyberSecurity", nullptr));
         textBrowserBusinessOutcomes->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e; background-color:#ffffff;\">Business Outcomes:</span><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;\"><br />\342\200\242 iCyberSecurity offers one of the best and updated cyber security programs available in the world. Our"
-                        " 24/7 support team is always available if anything goes wrong and is constantly looking for new viruses/threats every day.<br />\342\200\242 Our system is not only fast, it is accurate.<br />\342\200\242 Our system is very complex but can be installed in less than 24 hours to get you up and running while being protected at the same time.<br />Features:<br />\342\200\242 Our system keeps you updated any time any threat is detected<br />\342\200\242 Our system is completely customizable; if you don\342\200\231t like what you see, it\342\200\231s completely open for you to configure<br />\342\200\242 State of the art automatic removal of any threats detected</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;\">- Can detect and "
-                        "remove any threats within 500 miliseconds of being installed</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e; background-color:#ffffff;\">Business Outcomes:</span><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;\"><br />\342\200\242 iCyberSecurity offers one of the best and updated cyber security programs available in the world. Our "
+                        "24/7 support team is always available if anything goes wrong and is constantly looking for new viruses/threats every day.<br />\342\200\242 Our system is not only fast, it is accurate.<br />\342\200\242 Our system is very complex but can be installed in less than 24 hours to get you up and running while being protected at the same time.<br />Features:<br />\342\200\242 Our system keeps you updated any time any threat is detected<br />\342\200\242 Our system is completely customizable; if you don\342\200\231t like what you see, it\342\200\231s completely open for you to configure<br />\342\200\242 State of the art automatic removal of any threats detected</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:16px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; background-color:#ffffff;\"><span style=\" font-family:'-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol'; font-size:12pt; color:#24292e;\">- Can detect and r"
+                        "emove any threats within 500 miliseconds of being installed</span></p></body></html>", nullptr));
         tabsCustomer->setTabText(tabsCustomer->indexOf(tabBusinessOutcomes), QCoreApplication::translate("MainWindow", "Business Outcomes", nullptr));
         textBrowserEnvironments->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">iCyberSecurity currently supports these environments:</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">Windows, MacOS, Linux, WiFi and Bluetooth connections, iOS11, Android, Home Systems, and Amazon Rainforests.</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">iCyberSecurity currently supports these environments:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Windows, MacOS, Linux, WiFi and Bluetooth connections, iOS11, Android, Home Systems, and Amazon Rainforests.</span></p></body></html>", nullptr));
         textSilver->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">Silver Protection Plan:</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342\200\242 This package offers 24/7 16GB DDos Protection for servers. </span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342"
-                        "\200\242 It comes with our Bonzi Buddy antivirus software.</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Silver Protection Plan:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">\342\200\242 This package offers 24/7 16GB DDos Protection for servers. </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">\342\200\242 It comes with our Bonzi Buddy antivirus software.</span></p></body></html>", nullptr));
         tabsProduct->setTabText(tabsProduct->indexOf(tabSilver), QCoreApplication::translate("MainWindow", "Silver", nullptr));
         textGold->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">Gold Protection Plan:</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342\200\242 This package offers 24/7 24GB DDos Protection for servers. </span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342"
-                        "\200\242 It comes with our Storm Worm antivirus software. </span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342\200\242 Grants Access to our 24/7 overseas tech support. </span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Gold Protection Plan:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">\342\200\242 This package offers 24/7 24GB DDos Protection for servers. </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">\342\200\242 It comes with our Storm Worm antivirus software. </span></p>\n"
+"<p style=\" margi"
+                        "n-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">\342\200\242 Grants Access to our 24/7 overseas tech support. </span></p></body></html>", nullptr));
         tabsProduct->setTabText(tabsProduct->indexOf(tabGold), QCoreApplication::translate("MainWindow", "Gold", nullptr));
         textDiamond->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">Diamond Protection Plan: </span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342\200\242 This package offers 24/7 24GB DDos Protection for servers.</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342"
-                        "\200\242 It comes with our ILOVEYOU antivirus software. </span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">\342\200\242 You gain access to our Diamond rank exclusive support. (not overseas)</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Diamond Protection Plan: </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">\342\200\242 This package offers 24/7 24GB DDos Protection for servers.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">\342\200\242 It comes with our ILOVEYOU antivirus software. </span></p>\n"
+"<p style=\" marg"
+                        "in-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">\342\200\242 You gain access to our Diamond rank exclusive support. (not overseas)</span></p></body></html>", nullptr));
         tabsProduct->setTabText(tabsProduct->indexOf(tabDiamond), QCoreApplication::translate("MainWindow", "Diamond", nullptr));
         textCrab->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">Crab Package:</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">Lifetime service with 34/8 hours a day live chat support.<br />Crab dinner every other Tuesday delivered to your house.</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Crab Package:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Lifetime service with 34/8 hours a day live chat support.<br />Crab dinner every other Tuesday delivered to your house.</span></p></body></html>", nullptr));
         tabsPlans->setTabText(tabsPlans->indexOf(tabCrab), QCoreApplication::translate("MainWindow", "Crab Package", nullptr));
         textUnicorn->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">Unicorn Plan:</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:12pt;\">Unlimited service with no regards to time and space. Instanteous service technician digitally transported to your location to diagnose and repair your system.<br />We will ship a Unicorn to your house that you can ride at your leisure.</span></p></body></html>", nullptr));
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Unicorn Plan:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Unlimited service with no regards to time and space. Instanteous service technician digitally transported to your location to diagnose and repair your system.<br />We will ship a Unicorn to your house that you can ride at your leisure.</span></p></body></html>", nullptr));
         tabsPlans->setTabText(tabsPlans->indexOf(tabUnicorn), QCoreApplication::translate("MainWindow", "Unicorn Plan", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "order now", nullptr));
         tabsCustomer->setTabText(tabsCustomer->indexOf(tabProducts), QCoreApplication::translate("MainWindow", "Products", nullptr));
         labelName->setText(QCoreApplication::translate("MainWindow", "Name", nullptr));
         labelStars->setText(QCoreApplication::translate("MainWindow", "Stars", nullptr));
         labelReviews->setText(QCoreApplication::translate("MainWindow", "Review", nullptr));
         pushSubmit->setText(QCoreApplication::translate("MainWindow", "Submit", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Help", nullptr));
         tabsCustomer->setTabText(tabsCustomer->indexOf(tabReviews), QCoreApplication::translate("MainWindow", "Reviews", nullptr));
         pampletSubmitButton->setText(QCoreApplication::translate("MainWindow", "Submit", nullptr));
         guranteePolicyText->setPlainText(QCoreApplication::translate("MainWindow", "Gurantee Policy\n"
@@ -363,10 +375,12 @@ public:
         pampletAddressInput->setText(QString());
         pampletNameLabel->setText(QCoreApplication::translate("MainWindow", "Name", nullptr));
         pampletAddressLabel->setText(QCoreApplication::translate("MainWindow", "Email Address", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Help", nullptr));
         tabsCustomer->setTabText(tabsCustomer->indexOf(tabContact), QCoreApplication::translate("MainWindow", "Contact Us", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "USERNAME", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "PASSWORD", nullptr));
         buttonLogin->setText(QCoreApplication::translate("MainWindow", "LOGIN", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "Help", nullptr));
         tabsCustomer->setTabText(tabsCustomer->indexOf(tabAdminLogin), QCoreApplication::translate("MainWindow", "Admin Login", nullptr));
     } // retranslateUi
 
