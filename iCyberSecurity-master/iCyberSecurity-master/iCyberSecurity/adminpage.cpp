@@ -431,8 +431,15 @@ void AdminPage::on_deletePushButton_clicked()
     count++; //Adding one since deleteCustomer needs the acutally number of customers
     deleteCustomer(deletingCustomer, customerArr, count);
 
-    count--;
     writeInCustomerData(customerArr, 500, count);
 
     on_deleteListLoadButton_clicked();
+    count--;
+    //clear information in combo box and refill it
+    ui->deleteComboBox->clear();
+
+    for(int index = 0; index <= count; index++)
+    {
+        ui->deleteComboBox->addItem(QString::fromStdString(customerArr[index].getName()));
+    }
 }
