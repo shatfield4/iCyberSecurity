@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QTabWidget" name="tabWidget">
+  <widget class="QTabWidget" name="DeleteCustomerTab">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>2</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
@@ -111,7 +111,7 @@
    </widget>
    <widget class="QWidget" name="tabAddCustomer">
     <attribute name="title">
-     <string>Add customer</string>
+     <string>Add Customer</string>
     </attribute>
     <widget class="QPushButton" name="buttonAddCustomer">
      <property name="geometry">
@@ -305,6 +305,78 @@
           <string>nice to have</string>
          </property>
         </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>Delete Customer</string>
+    </attribute>
+    <widget class="QPushButton" name="deleteListLoadButton">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>470</y>
+       <width>183</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Load Customer Data</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="deleteTable">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>11</y>
+       <width>901</width>
+       <height>451</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>520</y>
+       <width>871</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,50,10">
+      <item row="0" column="0">
+       <widget class="QLabel" name="deleteDropdownLabel">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Please choose a customer to delete.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="deleteComboBox"/>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="deletePushButton">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Delete Customer</string>
+        </property>
        </widget>
       </item>
      </layout>

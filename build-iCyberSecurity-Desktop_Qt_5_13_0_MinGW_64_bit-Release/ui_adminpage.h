@@ -28,7 +28,7 @@ QT_BEGIN_NAMESPACE
 class Ui_AdminPage
 {
 public:
-    QTabWidget *tabWidget;
+    QTabWidget *DeleteCustomerTab;
     QWidget *tab;
     QTableWidget *customerTable;
     QPushButton *pushButton_3;
@@ -52,6 +52,14 @@ public:
     QComboBox *comboInterest;
     QLabel *label_5;
     QComboBox *comboKey;
+    QWidget *tab_5;
+    QPushButton *deleteListLoadButton;
+    QTableWidget *deleteTable;
+    QWidget *widget2;
+    QGridLayout *gridLayout_2;
+    QLabel *deleteDropdownLabel;
+    QComboBox *deleteComboBox;
+    QPushButton *deletePushButton;
     QWidget *tab_2;
     QTableWidget *pamphletTable;
     QPushButton *buttonLoadPamphlets;
@@ -62,9 +70,9 @@ public:
         if (AdminPage->objectName().isEmpty())
             AdminPage->setObjectName(QString::fromUtf8("AdminPage"));
         AdminPage->resize(965, 619);
-        tabWidget = new QTabWidget(AdminPage);
-        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tabWidget->setGeometry(QRect(10, 20, 941, 601));
+        DeleteCustomerTab = new QTabWidget(AdminPage);
+        DeleteCustomerTab->setObjectName(QString::fromUtf8("DeleteCustomerTab"));
+        DeleteCustomerTab->setGeometry(QRect(10, 20, 941, 601));
         tab = new QWidget();
         tab->setObjectName(QString::fromUtf8("tab"));
         customerTable = new QTableWidget(tab);
@@ -101,7 +109,7 @@ public:
 
         horizontalLayout->addWidget(pushButton_2);
 
-        tabWidget->addTab(tab, QString());
+        DeleteCustomerTab->addTab(tab, QString());
         tabAddCustomer = new QWidget();
         tabAddCustomer->setObjectName(QString::fromUtf8("tabAddCustomer"));
         buttonAddCustomer = new QPushButton(tabAddCustomer);
@@ -187,7 +195,42 @@ public:
 
         gridLayout->addWidget(comboKey, 4, 1, 1, 1);
 
-        tabWidget->addTab(tabAddCustomer, QString());
+        DeleteCustomerTab->addTab(tabAddCustomer, QString());
+        tab_5 = new QWidget();
+        tab_5->setObjectName(QString::fromUtf8("tab_5"));
+        deleteListLoadButton = new QPushButton(tab_5);
+        deleteListLoadButton->setObjectName(QString::fromUtf8("deleteListLoadButton"));
+        deleteListLoadButton->setGeometry(QRect(380, 470, 183, 29));
+        deleteListLoadButton->setFont(font);
+        deleteTable = new QTableWidget(tab_5);
+        deleteTable->setObjectName(QString::fromUtf8("deleteTable"));
+        deleteTable->setGeometry(QRect(15, 11, 901, 451));
+        widget2 = new QWidget(tab_5);
+        widget2->setObjectName(QString::fromUtf8("widget2"));
+        widget2->setGeometry(QRect(40, 520, 871, 31));
+        gridLayout_2 = new QGridLayout(widget2);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        gridLayout_2->setContentsMargins(0, 0, 0, 0);
+        deleteDropdownLabel = new QLabel(widget2);
+        deleteDropdownLabel->setObjectName(QString::fromUtf8("deleteDropdownLabel"));
+        deleteDropdownLabel->setFont(font);
+
+        gridLayout_2->addWidget(deleteDropdownLabel, 0, 0, 1, 1);
+
+        deleteComboBox = new QComboBox(widget2);
+        deleteComboBox->setObjectName(QString::fromUtf8("deleteComboBox"));
+
+        gridLayout_2->addWidget(deleteComboBox, 0, 1, 1, 1);
+
+        deletePushButton = new QPushButton(widget2);
+        deletePushButton->setObjectName(QString::fromUtf8("deletePushButton"));
+        deletePushButton->setFont(font);
+
+        gridLayout_2->addWidget(deletePushButton, 0, 2, 1, 1);
+
+        gridLayout_2->setColumnStretch(1, 50);
+        gridLayout_2->setColumnStretch(2, 10);
+        DeleteCustomerTab->addTab(tab_5, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
         pamphletTable = new QTableWidget(tab_2);
@@ -211,11 +254,11 @@ public:
         pushButton_4 = new QPushButton(tab_2);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
         pushButton_4->setGeometry(QRect(872, 540, 51, 28));
-        tabWidget->addTab(tab_2, QString());
+        DeleteCustomerTab->addTab(tab_2, QString());
 
         retranslateUi(AdminPage);
 
-        tabWidget->setCurrentIndex(0);
+        DeleteCustomerTab->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(AdminPage);
@@ -228,7 +271,7 @@ public:
         loadCustomerData->setText(QCoreApplication::translate("AdminPage", "Load Customer Data From File", nullptr));
         pushButton->setText(QCoreApplication::translate("AdminPage", "Sort By Customer Name", nullptr));
         pushButton_2->setText(QCoreApplication::translate("AdminPage", "Sort By Key", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("AdminPage", "Customer Listing", nullptr));
+        DeleteCustomerTab->setTabText(DeleteCustomerTab->indexOf(tab), QCoreApplication::translate("AdminPage", "Customer Listing", nullptr));
         buttonAddCustomer->setText(QCoreApplication::translate("AdminPage", "Add Customer", nullptr));
         pushButton_5->setText(QCoreApplication::translate("AdminPage", "Help", nullptr));
         label->setText(QCoreApplication::translate("AdminPage", "Name", nullptr));
@@ -246,14 +289,18 @@ public:
         comboKey->setItemText(1, QCoreApplication::translate("AdminPage", "key", nullptr));
         comboKey->setItemText(2, QCoreApplication::translate("AdminPage", "nice to have", nullptr));
 
-        tabWidget->setTabText(tabWidget->indexOf(tabAddCustomer), QCoreApplication::translate("AdminPage", "Add customer", nullptr));
+        DeleteCustomerTab->setTabText(DeleteCustomerTab->indexOf(tabAddCustomer), QCoreApplication::translate("AdminPage", "Add Customer", nullptr));
+        deleteListLoadButton->setText(QCoreApplication::translate("AdminPage", "Load Customer Data", nullptr));
+        deleteDropdownLabel->setText(QCoreApplication::translate("AdminPage", "Please choose a customer to delete.", nullptr));
+        deletePushButton->setText(QCoreApplication::translate("AdminPage", "Delete Customer", nullptr));
+        DeleteCustomerTab->setTabText(DeleteCustomerTab->indexOf(tab_5), QCoreApplication::translate("AdminPage", "Delete Customer", nullptr));
         QTableWidgetItem *___qtablewidgetitem = pamphletTable->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QCoreApplication::translate("AdminPage", "Name", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = pamphletTable->horizontalHeaderItem(1);
         ___qtablewidgetitem1->setText(QCoreApplication::translate("AdminPage", "Email", nullptr));
         buttonLoadPamphlets->setText(QCoreApplication::translate("AdminPage", "Load Pamphlet Submissions", nullptr));
         pushButton_4->setText(QCoreApplication::translate("AdminPage", "Help", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("AdminPage", "Pamphlet Requests", nullptr));
+        DeleteCustomerTab->setTabText(DeleteCustomerTab->indexOf(tab_2), QCoreApplication::translate("AdminPage", "Pamphlet Requests", nullptr));
     } // retranslateUi
 
 };

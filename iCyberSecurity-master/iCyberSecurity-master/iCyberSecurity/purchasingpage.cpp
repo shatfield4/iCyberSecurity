@@ -23,56 +23,21 @@ purchasingPage::purchasingPage(QWidget *parent) :
 {
     ui->setupUi(this);
 
-
     //Update combo box with existing customers
-            Customer customerArr[500];
-            int count = 0;
+    Customer customerArr[500];
+    int count = 0;
 
+    readInCustomerData(customerArr,500,count);
 
-            //QFile file("C:/Users/Sean Hatfield/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/textFiles/customers.txt");
-            QFile file("C:/Users/Nicholas/Documents/GitHub/iCyberSecurity/iCyberSecurity-master/iCyberSecurity-master/iCyberSecurity/customers.txt");
+    for(int index = 0; index <= count; index++)
+    {
+        ui->existingComboBox->addItem(QString::fromStdString(customerArr[index].getName()));
+    }
 
-            if(!file.open(QFile::ReadOnly | QFile::Text))
-            {
-                QMessageBox::warning(this, "title", "file not open");
-            }
-            QTextStream in(&file);
+    //Add item for not a previous customer
+    ui->existingComboBox->addItem("Not a previous customer");
 
-            for (int i = 0; !in.atEnd(); i++)
-            {
-               QString tempName = in.readLine();
-               QString tempAddress1 = in.readLine();
-               QString tempAddress2 = in.readLine();
-               QString tempInterest = in.readLine();
-               QString tempKey = in.readLine();
-
-                qDebug() << "Name: " << tempName;
-                qDebug() << "Address 1: " << tempAddress1;
-                qDebug() << "Address 2: " << tempAddress2;
-                qDebug() << "Interest: " << tempInterest;
-                qDebug() << "Key: " << tempKey;
-
-                customerArr[i].setName(tempName.toUtf8().constData());
-                customerArr[i].setAddress1(tempAddress1.toUtf8().constData());
-                customerArr[i].setAddress2(tempAddress2.toUtf8().constData());
-                customerArr[i].setInterest(tempInterest.toUtf8().constData());
-                customerArr[i].setKey(tempKey.toUtf8().constData());
-
-                count = i;
-            }
-
-            for(int index = 0; index <= count; index++)
-            {
-                ui->existingComboBox->addItem(QString::fromStdString(customerArr[index].getName()));
-            }
-
-            //Add item for not a previous customer
-            ui->existingComboBox->addItem("Not a previous customer");
-
-            ARRAYCOUNT = count;
-
-            file.close();
-
+    ARRAYCOUNT = count;
 }
 
 purchasingPage::~purchasingPage()

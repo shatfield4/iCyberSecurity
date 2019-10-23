@@ -32,6 +32,8 @@ private slots:
 
     void on_pushButton_5_clicked();
 
+    void on_deleteListLoadButton_clicked();
+
 private:
     Ui::AdminPage *ui;
 };
